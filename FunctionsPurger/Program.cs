@@ -8,8 +8,8 @@ using PDDLSharp.Models.PDDL.Problem;
 using PDDLSharp.Parsers.PDDL;
 using PDDLSharp.Tools;
 
-var targetFolder = "../../../../Benchmarks";
-//var targetFolder = "../../../../Pham-Domains";
+//var targetFolder = "../../../../Benchmarks";
+var targetFolder = "../../../../Pham-Domains";
 var files = Directory.GetFiles(targetFolder, "*.pddl", SearchOption.AllDirectories);
 
 var listener = new ErrorListener();
