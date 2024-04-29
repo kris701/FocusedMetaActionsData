@@ -1,131 +1,193 @@
-; child-snack task with 15 children and 0.4 gluten factor 
-; constant factor of 1.3
-; random seed: 234324
-
-(define (problem prob-snack)
-  (:domain child-snack)
-  (:objects
-    child1 child2 child3 child4 child5 child6 child7 child8 child9 child10 child11 child12 child13 child14 child15 - child
-    bread1 bread2 bread3 bread4 bread5 bread6 bread7 bread8 bread9 bread10 bread11 bread12 bread13 bread14 bread15 - bread-portion
-    content1 content2 content3 content4 content5 content6 content7 content8 content9 content10 content11 content12 content13 content14 content15 - content-portion
-    tray1 tray2 tray3 - tray
-    table1 table2 table3 - place
-    sandw1 sandw2 sandw3 sandw4 sandw5 sandw6 sandw7 sandw8 sandw9 sandw10 sandw11 sandw12 sandw13 sandw14 sandw15 sandw16 sandw17 sandw18 sandw19 sandw20 - sandwich
-  )
-  (:init
-     (at tray1 kitchen)
-     (at tray2 kitchen)
-     (at tray3 kitchen)
-     (at_kitchen_bread bread1)
-     (at_kitchen_bread bread2)
-     (at_kitchen_bread bread3)
-     (at_kitchen_bread bread4)
-     (at_kitchen_bread bread5)
-     (at_kitchen_bread bread6)
-     (at_kitchen_bread bread7)
-     (at_kitchen_bread bread8)
-     (at_kitchen_bread bread9)
-     (at_kitchen_bread bread10)
-     (at_kitchen_bread bread11)
-     (at_kitchen_bread bread12)
-     (at_kitchen_bread bread13)
-     (at_kitchen_bread bread14)
-     (at_kitchen_bread bread15)
-     (at_kitchen_content content1)
-     (at_kitchen_content content2)
-     (at_kitchen_content content3)
-     (at_kitchen_content content4)
-     (at_kitchen_content content5)
-     (at_kitchen_content content6)
-     (at_kitchen_content content7)
-     (at_kitchen_content content8)
-     (at_kitchen_content content9)
-     (at_kitchen_content content10)
-     (at_kitchen_content content11)
-     (at_kitchen_content content12)
-     (at_kitchen_content content13)
-     (at_kitchen_content content14)
-     (at_kitchen_content content15)
-     (no_gluten_bread bread3)
-     (no_gluten_bread bread14)
-     (no_gluten_bread bread6)
-     (no_gluten_bread bread13)
-     (no_gluten_bread bread2)
-     (no_gluten_bread bread9)
-     (no_gluten_content content8)
-     (no_gluten_content content2)
-     (no_gluten_content content13)
-     (no_gluten_content content5)
-     (no_gluten_content content1)
-     (no_gluten_content content4)
-     (allergic_gluten child1)
-     (allergic_gluten child10)
-     (allergic_gluten child5)
-     (allergic_gluten child7)
-     (allergic_gluten child8)
-     (allergic_gluten child9)
-     (not_allergic_gluten child12)
-     (not_allergic_gluten child13)
-     (not_allergic_gluten child2)
-     (not_allergic_gluten child3)
-     (not_allergic_gluten child4)
-     (not_allergic_gluten child14)
-     (not_allergic_gluten child6)
-     (not_allergic_gluten child15)
-     (not_allergic_gluten child11)
-     (waiting child1 table3)
-     (waiting child2 table2)
-     (waiting child3 table1)
-     (waiting child4 table3)
-     (waiting child5 table1)
-     (waiting child6 table1)
-     (waiting child7 table3)
-     (waiting child8 table1)
-     (waiting child9 table1)
-     (waiting child10 table1)
-     (waiting child11 table2)
-     (waiting child12 table3)
-     (waiting child13 table1)
-     (waiting child14 table2)
-     (waiting child15 table2)
-     (notexist sandw1)
-     (notexist sandw2)
-     (notexist sandw3)
-     (notexist sandw4)
-     (notexist sandw5)
-     (notexist sandw6)
-     (notexist sandw7)
-     (notexist sandw8)
-     (notexist sandw9)
-     (notexist sandw10)
-     (notexist sandw11)
-     (notexist sandw12)
-     (notexist sandw13)
-     (notexist sandw14)
-     (notexist sandw15)
-     (notexist sandw16)
-     (notexist sandw17)
-     (notexist sandw18)
-     (notexist sandw19)
-     (notexist sandw20)
-  )
-  (:goal
-    (and
-     (served child1)
-     (served child2)
-     (served child3)
-     (served child4)
-     (served child5)
-     (served child6)
-     (served child7)
-     (served child8)
-     (served child9)
-     (served child10)
-     (served child11)
-     (served child12)
-     (served child13)
-     (served child14)
-     (served child15)
-    )
-  )
+(define
+	(problem prob-snack)
+	(:domain child-snack)
+	(:objects
+		child1 - child
+		child2 - child
+		child3 - child
+		child4 - child
+		child5 - child
+		child6 - child
+		child7 - child
+		child8 - child
+		child9 - child
+		child10 - child
+		child11 - child
+		child12 - child
+		child13 - child
+		child14 - child
+		child15 - child
+		bread1 - bread-portion
+		bread2 - bread-portion
+		bread3 - bread-portion
+		bread4 - bread-portion
+		bread5 - bread-portion
+		bread6 - bread-portion
+		bread7 - bread-portion
+		bread8 - bread-portion
+		bread9 - bread-portion
+		bread10 - bread-portion
+		bread11 - bread-portion
+		bread12 - bread-portion
+		bread13 - bread-portion
+		bread14 - bread-portion
+		bread15 - bread-portion
+		content1 - content-portion
+		content2 - content-portion
+		content3 - content-portion
+		content4 - content-portion
+		content5 - content-portion
+		content6 - content-portion
+		content7 - content-portion
+		content8 - content-portion
+		content9 - content-portion
+		content10 - content-portion
+		content11 - content-portion
+		content12 - content-portion
+		content13 - content-portion
+		content14 - content-portion
+		content15 - content-portion
+		tray1 - tray
+		tray2 - tray
+		tray3 - tray
+		table1 - place
+		table2 - place
+		table3 - place
+		sandw1 - sandwich
+		sandw2 - sandwich
+		sandw3 - sandwich
+		sandw4 - sandwich
+		sandw5 - sandwich
+		sandw6 - sandwich
+		sandw7 - sandwich
+		sandw8 - sandwich
+		sandw9 - sandwich
+		sandw10 - sandwich
+		sandw11 - sandwich
+		sandw12 - sandwich
+		sandw13 - sandwich
+		sandw14 - sandwich
+		sandw15 - sandwich
+		sandw16 - sandwich
+		sandw17 - sandwich
+		sandw18 - sandwich
+		sandw19 - sandwich
+		sandw20 - sandwich
+	)
+	(:init
+		(at tray1 kitchen)
+		(at tray2 kitchen)
+		(at tray3 kitchen)
+		(at_kitchen_bread bread1)
+		(at_kitchen_bread bread2)
+		(at_kitchen_bread bread3)
+		(at_kitchen_bread bread4)
+		(at_kitchen_bread bread5)
+		(at_kitchen_bread bread6)
+		(at_kitchen_bread bread7)
+		(at_kitchen_bread bread8)
+		(at_kitchen_bread bread9)
+		(at_kitchen_bread bread10)
+		(at_kitchen_bread bread11)
+		(at_kitchen_bread bread12)
+		(at_kitchen_bread bread13)
+		(at_kitchen_bread bread14)
+		(at_kitchen_bread bread15)
+		(at_kitchen_content content1)
+		(at_kitchen_content content2)
+		(at_kitchen_content content3)
+		(at_kitchen_content content4)
+		(at_kitchen_content content5)
+		(at_kitchen_content content6)
+		(at_kitchen_content content7)
+		(at_kitchen_content content8)
+		(at_kitchen_content content9)
+		(at_kitchen_content content10)
+		(at_kitchen_content content11)
+		(at_kitchen_content content12)
+		(at_kitchen_content content13)
+		(at_kitchen_content content14)
+		(at_kitchen_content content15)
+		(no_gluten_bread bread3)
+		(no_gluten_bread bread14)
+		(no_gluten_bread bread6)
+		(no_gluten_bread bread13)
+		(no_gluten_bread bread2)
+		(no_gluten_bread bread9)
+		(no_gluten_content content8)
+		(no_gluten_content content2)
+		(no_gluten_content content13)
+		(no_gluten_content content5)
+		(no_gluten_content content1)
+		(no_gluten_content content4)
+		(allergic_gluten child1)
+		(allergic_gluten child10)
+		(allergic_gluten child5)
+		(allergic_gluten child7)
+		(allergic_gluten child8)
+		(allergic_gluten child9)
+		(not_allergic_gluten child12)
+		(not_allergic_gluten child13)
+		(not_allergic_gluten child2)
+		(not_allergic_gluten child3)
+		(not_allergic_gluten child4)
+		(not_allergic_gluten child14)
+		(not_allergic_gluten child6)
+		(not_allergic_gluten child15)
+		(not_allergic_gluten child11)
+		(waiting child1 table3)
+		(waiting child2 table2)
+		(waiting child3 table1)
+		(waiting child4 table3)
+		(waiting child5 table1)
+		(waiting child6 table1)
+		(waiting child7 table3)
+		(waiting child8 table1)
+		(waiting child9 table1)
+		(waiting child10 table1)
+		(waiting child11 table2)
+		(waiting child12 table3)
+		(waiting child13 table1)
+		(waiting child14 table2)
+		(waiting child15 table2)
+		(notexist sandw1)
+		(notexist sandw2)
+		(notexist sandw3)
+		(notexist sandw4)
+		(notexist sandw5)
+		(notexist sandw6)
+		(notexist sandw7)
+		(notexist sandw8)
+		(notexist sandw9)
+		(notexist sandw10)
+		(notexist sandw11)
+		(notexist sandw12)
+		(notexist sandw13)
+		(notexist sandw14)
+		(notexist sandw15)
+		(notexist sandw16)
+		(notexist sandw17)
+		(notexist sandw18)
+		(notexist sandw19)
+		(notexist sandw20)
+	)
+	(:goal
+		(and
+			(served child1)
+			(served child2)
+			(served child3)
+			(served child4)
+			(served child5)
+			(served child6)
+			(served child7)
+			(served child8)
+			(served child9)
+			(served child10)
+			(served child11)
+			(served child12)
+			(served child13)
+			(served child14)
+			(served child15)
+		)
+	)
 )

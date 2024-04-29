@@ -1,632 +1,634 @@
-(define (problem strips-sat-x-1)
-(:domain satellite)
-(:objects
-	satellite0
-	instrument0
-	satellite1
-	instrument1
-	satellite2
-	instrument2
-	satellite3
-	instrument3
-	satellite4
-	instrument4
-	instrument5
-	instrument6
-	thermograph0
-	image1
-	thermograph4
-	thermograph3
-	image2
-	GroundStation2
-	GroundStation0
-	GroundStation3
-	GroundStation1
-	GroundStation4
-	Phenomenon5
-	Phenomenon6
-	Phenomenon7
-	Planet8
-	Star9
-	Star10
-	Phenomenon11
-	Phenomenon12
-	Phenomenon13
-	Star14
-	Planet15
-	Planet16
-	Planet17
-	Phenomenon18
-	Star19
-	Star20
-	Planet21
-	Star22
-	Planet23
-	Star24
-	Planet25
-	Phenomenon26
-	Planet27
-	Phenomenon28
-	Planet29
-	Star30
-	Phenomenon31
-	Star32
-	Planet33
-	Phenomenon34
-	Star35
-	Planet36
-	Star37
-	Phenomenon38
-	Planet39
-	Star40
-	Planet41
-	Phenomenon42
-	Phenomenon43
-	Phenomenon44
-	Planet45
-	Star46
-	Planet47
-	Star48
-	Phenomenon49
-	Phenomenon50
-	Star51
-	Star52
-	Star53
-	Phenomenon54
-	Star55
-	Phenomenon56
-	Star57
-	Phenomenon58
-	Star59
-	Phenomenon60
-	Phenomenon61
-	Phenomenon62
-	Star63
-	Phenomenon64
-	Planet65
-	Planet66
-	Planet67
-	Planet68
-	Star69
-	Phenomenon70
-	Star71
-	Star72
-	Phenomenon73
-	Star74
-	Star75
-	Planet76
-	Planet77
-	Star78
-	Phenomenon79
-	Star80
-	Planet81
-	Planet82
-	Phenomenon83
-	Phenomenon84
-	Planet85
-	Phenomenon86
-	Star87
-	Phenomenon88
-	Planet89
-	Planet90
-	Star91
-	Phenomenon92
-	Planet93
-	Planet94
-	Planet95
-	Planet96
-	Phenomenon97
-	Star98
-	Star99
-	Phenomenon100
-	Phenomenon101
-	Planet102
-	Planet103
-	Phenomenon104
-	Planet105
-	Star106
-	Phenomenon107
-	Star108
-	Planet109
-	Planet110
-	Planet111
-	Planet112
-	Phenomenon113
-	Phenomenon114
-	Phenomenon115
-	Star116
-	Star117
-	Star118
-	Planet119
-	Phenomenon120
-	Planet121
-	Planet122
-	Star123
-	Star124
-	Phenomenon125
-	Planet126
-	Planet127
-	Planet128
-	Phenomenon129
-	Star130
-	Phenomenon131
-	Star132
-	Planet133
-	Phenomenon134
-	Phenomenon135
-	Star136
-	Planet137
-	Planet138
-	Planet139
-	Phenomenon140
-	Phenomenon141
-	Star142
-	Star143
-	Planet144
-	Phenomenon145
-	Phenomenon146
-	Phenomenon147
-	Star148
-	Star149
-	Phenomenon150
-	Planet151
-	Planet152
-	Phenomenon153
-	Star154
-	Planet155
-	Planet156
-	Planet157
-	Planet158
-	Star159
-	Phenomenon160
-	Planet161
-	Phenomenon162
-	Phenomenon163
-	Phenomenon164
-	Planet165
-	Planet166
-	Planet167
-	Star168
-	Phenomenon169
-	Star170
-	Phenomenon171
-	Phenomenon172
-	Planet173
-	Phenomenon174
-	Planet175
-	Star176
-	Phenomenon177
-	Planet178
-	Planet179
-	Planet180
-	Star181
-	Planet182
-	Star183
-	Phenomenon184
-	Star185
-	Star186
-	Phenomenon187
-	Phenomenon188
-	Star189
-	Star190
-	Star191
-	Star192
-	Phenomenon193
-	Star194
-	Star195
-	Planet196
-	Star197
-	Phenomenon198
-	Phenomenon199
-	Phenomenon200
-	Planet201
-	Star202
-	Planet203
-	Phenomenon204
-)
-(:init
-	(satellite satellite0)
-	(instrument instrument0)
-	(supports instrument0 thermograph3)
-	(supports instrument0 image1)
-	(calibration_target instrument0 GroundStation4)
-	(on_board instrument0 satellite0)
-	(power_avail satellite0)
-	(pointing satellite0 Star19)
-	(satellite satellite1)
-	(instrument instrument1)
-	(supports instrument1 thermograph4)
-	(calibration_target instrument1 GroundStation1)
-	(on_board instrument1 satellite1)
-	(power_avail satellite1)
-	(pointing satellite1 Phenomenon200)
-	(satellite satellite2)
-	(instrument instrument2)
-	(supports instrument2 image2)
-	(calibration_target instrument2 GroundStation0)
-	(on_board instrument2 satellite2)
-	(power_avail satellite2)
-	(pointing satellite2 Planet196)
-	(satellite satellite3)
-	(instrument instrument3)
-	(supports instrument3 image2)
-	(supports instrument3 image1)
-	(supports instrument3 thermograph4)
-	(calibration_target instrument3 GroundStation4)
-	(on_board instrument3 satellite3)
-	(power_avail satellite3)
-	(pointing satellite3 Phenomenon86)
-	(satellite satellite4)
-	(instrument instrument4)
-	(supports instrument4 thermograph4)
-	(calibration_target instrument4 GroundStation3)
-	(instrument instrument5)
-	(supports instrument5 image1)
-	(supports instrument5 thermograph4)
-	(calibration_target instrument5 GroundStation1)
-	(instrument instrument6)
-	(supports instrument6 image2)
-	(supports instrument6 thermograph3)
-	(supports instrument6 thermograph4)
-	(calibration_target instrument6 GroundStation4)
-	(on_board instrument4 satellite4)
-	(on_board instrument5 satellite4)
-	(on_board instrument6 satellite4)
-	(power_avail satellite4)
-	(pointing satellite4 Star142)
-	(mode thermograph0)
-	(mode image1)
-	(mode thermograph4)
-	(mode thermograph3)
-	(mode image2)
-	(direction GroundStation2)
-	(direction GroundStation0)
-	(direction GroundStation3)
-	(direction GroundStation1)
-	(direction GroundStation4)
-	(direction Phenomenon5)
-	(direction Phenomenon6)
-	(direction Phenomenon7)
-	(direction Planet8)
-	(direction Star9)
-	(direction Star10)
-	(direction Phenomenon11)
-	(direction Phenomenon12)
-	(direction Phenomenon13)
-	(direction Star14)
-	(direction Planet15)
-	(direction Planet16)
-	(direction Planet17)
-	(direction Phenomenon18)
-	(direction Star19)
-	(direction Star20)
-	(direction Planet21)
-	(direction Star22)
-	(direction Planet23)
-	(direction Star24)
-	(direction Planet25)
-	(direction Phenomenon26)
-	(direction Planet27)
-	(direction Phenomenon28)
-	(direction Planet29)
-	(direction Star30)
-	(direction Phenomenon31)
-	(direction Star32)
-	(direction Planet33)
-	(direction Phenomenon34)
-	(direction Star35)
-	(direction Planet36)
-	(direction Star37)
-	(direction Phenomenon38)
-	(direction Planet39)
-	(direction Star40)
-	(direction Planet41)
-	(direction Phenomenon42)
-	(direction Phenomenon43)
-	(direction Phenomenon44)
-	(direction Planet45)
-	(direction Star46)
-	(direction Planet47)
-	(direction Star48)
-	(direction Phenomenon49)
-	(direction Phenomenon50)
-	(direction Star51)
-	(direction Star52)
-	(direction Star53)
-	(direction Phenomenon54)
-	(direction Star55)
-	(direction Phenomenon56)
-	(direction Star57)
-	(direction Phenomenon58)
-	(direction Star59)
-	(direction Phenomenon60)
-	(direction Phenomenon61)
-	(direction Phenomenon62)
-	(direction Star63)
-	(direction Phenomenon64)
-	(direction Planet65)
-	(direction Planet66)
-	(direction Planet67)
-	(direction Planet68)
-	(direction Star69)
-	(direction Phenomenon70)
-	(direction Star71)
-	(direction Star72)
-	(direction Phenomenon73)
-	(direction Star74)
-	(direction Star75)
-	(direction Planet76)
-	(direction Planet77)
-	(direction Star78)
-	(direction Phenomenon79)
-	(direction Star80)
-	(direction Planet81)
-	(direction Planet82)
-	(direction Phenomenon83)
-	(direction Phenomenon84)
-	(direction Planet85)
-	(direction Phenomenon86)
-	(direction Star87)
-	(direction Phenomenon88)
-	(direction Planet89)
-	(direction Planet90)
-	(direction Star91)
-	(direction Phenomenon92)
-	(direction Planet93)
-	(direction Planet94)
-	(direction Planet95)
-	(direction Planet96)
-	(direction Phenomenon97)
-	(direction Star98)
-	(direction Star99)
-	(direction Phenomenon100)
-	(direction Phenomenon101)
-	(direction Planet102)
-	(direction Planet103)
-	(direction Phenomenon104)
-	(direction Planet105)
-	(direction Star106)
-	(direction Phenomenon107)
-	(direction Star108)
-	(direction Planet109)
-	(direction Planet110)
-	(direction Planet111)
-	(direction Planet112)
-	(direction Phenomenon113)
-	(direction Phenomenon114)
-	(direction Phenomenon115)
-	(direction Star116)
-	(direction Star117)
-	(direction Star118)
-	(direction Planet119)
-	(direction Phenomenon120)
-	(direction Planet121)
-	(direction Planet122)
-	(direction Star123)
-	(direction Star124)
-	(direction Phenomenon125)
-	(direction Planet126)
-	(direction Planet127)
-	(direction Planet128)
-	(direction Phenomenon129)
-	(direction Star130)
-	(direction Phenomenon131)
-	(direction Star132)
-	(direction Planet133)
-	(direction Phenomenon134)
-	(direction Phenomenon135)
-	(direction Star136)
-	(direction Planet137)
-	(direction Planet138)
-	(direction Planet139)
-	(direction Phenomenon140)
-	(direction Phenomenon141)
-	(direction Star142)
-	(direction Star143)
-	(direction Planet144)
-	(direction Phenomenon145)
-	(direction Phenomenon146)
-	(direction Phenomenon147)
-	(direction Star148)
-	(direction Star149)
-	(direction Phenomenon150)
-	(direction Planet151)
-	(direction Planet152)
-	(direction Phenomenon153)
-	(direction Star154)
-	(direction Planet155)
-	(direction Planet156)
-	(direction Planet157)
-	(direction Planet158)
-	(direction Star159)
-	(direction Phenomenon160)
-	(direction Planet161)
-	(direction Phenomenon162)
-	(direction Phenomenon163)
-	(direction Phenomenon164)
-	(direction Planet165)
-	(direction Planet166)
-	(direction Planet167)
-	(direction Star168)
-	(direction Phenomenon169)
-	(direction Star170)
-	(direction Phenomenon171)
-	(direction Phenomenon172)
-	(direction Planet173)
-	(direction Phenomenon174)
-	(direction Planet175)
-	(direction Star176)
-	(direction Phenomenon177)
-	(direction Planet178)
-	(direction Planet179)
-	(direction Planet180)
-	(direction Star181)
-	(direction Planet182)
-	(direction Star183)
-	(direction Phenomenon184)
-	(direction Star185)
-	(direction Star186)
-	(direction Phenomenon187)
-	(direction Phenomenon188)
-	(direction Star189)
-	(direction Star190)
-	(direction Star191)
-	(direction Star192)
-	(direction Phenomenon193)
-	(direction Star194)
-	(direction Star195)
-	(direction Planet196)
-	(direction Star197)
-	(direction Phenomenon198)
-	(direction Phenomenon199)
-	(direction Phenomenon200)
-	(direction Planet201)
-	(direction Star202)
-	(direction Planet203)
-	(direction Phenomenon204)
-)
-(:goal (and
-	(pointing satellite2 Phenomenon115)
-	(have_image Phenomenon5 image1)
-	(have_image Planet8 image2)
-	(have_image Star10 thermograph3)
-	(have_image Phenomenon13 image1)
-	(have_image Star14 thermograph4)
-	(have_image Planet15 image2)
-	(have_image Planet17 image2)
-	(have_image Phenomenon18 image1)
-	(have_image Star19 thermograph4)
-	(have_image Star20 thermograph4)
-	(have_image Star22 thermograph3)
-	(have_image Planet23 image1)
-	(have_image Phenomenon28 thermograph3)
-	(have_image Star30 thermograph3)
-	(have_image Phenomenon31 thermograph4)
-	(have_image Star32 image2)
-	(have_image Planet33 thermograph3)
-	(have_image Phenomenon34 image2)
-	(have_image Phenomenon38 image2)
-	(have_image Planet39 image2)
-	(have_image Star40 image2)
-	(have_image Planet41 image1)
-	(have_image Phenomenon42 thermograph3)
-	(have_image Phenomenon43 thermograph3)
-	(have_image Phenomenon44 thermograph4)
-	(have_image Star46 image1)
-	(have_image Planet47 image1)
-	(have_image Star48 image1)
-	(have_image Phenomenon49 image1)
-	(have_image Star52 thermograph3)
-	(have_image Star53 thermograph3)
-	(have_image Phenomenon54 thermograph3)
-	(have_image Star55 image1)
-	(have_image Phenomenon56 image2)
-	(have_image Star57 image2)
-	(have_image Phenomenon58 thermograph3)
-	(have_image Star59 thermograph4)
-	(have_image Phenomenon61 image2)
-	(have_image Star63 image1)
-	(have_image Phenomenon64 thermograph3)
-	(have_image Planet65 thermograph4)
-	(have_image Planet66 thermograph3)
-	(have_image Planet67 thermograph3)
-	(have_image Star69 thermograph4)
-	(have_image Phenomenon70 thermograph3)
-	(have_image Star72 image2)
-	(have_image Star74 thermograph3)
-	(have_image Planet76 thermograph3)
-	(have_image Planet77 thermograph3)
-	(have_image Star78 thermograph4)
-	(have_image Phenomenon79 image1)
-	(have_image Planet81 image1)
-	(have_image Planet85 image2)
-	(have_image Phenomenon86 image2)
-	(have_image Star87 thermograph3)
-	(have_image Planet90 thermograph4)
-	(have_image Planet93 image1)
-	(have_image Planet94 image2)
-	(have_image Phenomenon97 image2)
-	(have_image Star98 thermograph3)
-	(have_image Star99 thermograph3)
-	(have_image Phenomenon100 thermograph3)
-	(have_image Phenomenon101 image1)
-	(have_image Planet102 thermograph3)
-	(have_image Planet103 thermograph3)
-	(have_image Phenomenon104 thermograph3)
-	(have_image Planet105 image2)
-	(have_image Star106 thermograph3)
-	(have_image Star108 thermograph4)
-	(have_image Planet109 thermograph3)
-	(have_image Planet112 thermograph4)
-	(have_image Phenomenon113 image1)
-	(have_image Phenomenon114 image2)
-	(have_image Phenomenon115 image2)
-	(have_image Star118 image2)
-	(have_image Planet119 image2)
-	(have_image Phenomenon120 thermograph4)
-	(have_image Planet121 image2)
-	(have_image Planet122 image2)
-	(have_image Star123 thermograph4)
-	(have_image Star124 thermograph3)
-	(have_image Phenomenon125 image2)
-	(have_image Planet127 thermograph4)
-	(have_image Planet128 image2)
-	(have_image Star130 thermograph4)
-	(have_image Star132 thermograph3)
-	(have_image Planet133 image1)
-	(have_image Phenomenon134 image2)
-	(have_image Phenomenon135 thermograph4)
-	(have_image Star136 image1)
-	(have_image Planet137 image2)
-	(have_image Planet138 thermograph4)
-	(have_image Planet139 image1)
-	(have_image Phenomenon140 thermograph3)
-	(have_image Star142 thermograph4)
-	(have_image Planet144 image2)
-	(have_image Phenomenon145 image1)
-	(have_image Phenomenon146 thermograph4)
-	(have_image Star148 image2)
-	(have_image Star149 image1)
-	(have_image Phenomenon150 thermograph4)
-	(have_image Planet151 image1)
-	(have_image Planet152 thermograph3)
-	(have_image Phenomenon153 thermograph3)
-	(have_image Star154 thermograph3)
-	(have_image Planet155 image2)
-	(have_image Planet156 image2)
-	(have_image Star159 thermograph3)
-	(have_image Phenomenon160 thermograph4)
-	(have_image Planet161 thermograph3)
-	(have_image Phenomenon163 thermograph3)
-	(have_image Phenomenon164 thermograph3)
-	(have_image Planet165 thermograph3)
-	(have_image Planet166 image2)
-	(have_image Star168 image1)
-	(have_image Phenomenon169 image1)
-	(have_image Phenomenon171 image1)
-	(have_image Phenomenon172 thermograph4)
-	(have_image Planet173 image2)
-	(have_image Planet175 image2)
-	(have_image Star176 image2)
-	(have_image Planet179 thermograph4)
-	(have_image Star181 image1)
-	(have_image Star183 thermograph4)
-	(have_image Star185 thermograph4)
-	(have_image Phenomenon187 thermograph3)
-	(have_image Phenomenon188 image1)
-	(have_image Star189 image1)
-	(have_image Star190 image1)
-	(have_image Star191 image1)
-	(have_image Star192 thermograph4)
-	(have_image Phenomenon193 image2)
-	(have_image Star194 thermograph4)
-	(have_image Phenomenon198 thermograph3)
-	(have_image Phenomenon199 thermograph3)
-	(have_image Phenomenon200 thermograph4)
-	(have_image Planet201 thermograph3)
-	(have_image Star202 image2)
-	(have_image Planet203 image1)
-	(have_image Phenomenon204 image1)
-))
-
+(define
+	(problem strips-sat-x-1)
+	(:domain satellite)
+	(:objects
+		satellite0
+		instrument0
+		satellite1
+		instrument1
+		satellite2
+		instrument2
+		satellite3
+		instrument3
+		satellite4
+		instrument4
+		instrument5
+		instrument6
+		thermograph0
+		image1
+		thermograph4
+		thermograph3
+		image2
+		groundstation2
+		groundstation0
+		groundstation3
+		groundstation1
+		groundstation4
+		phenomenon5
+		phenomenon6
+		phenomenon7
+		planet8
+		star9
+		star10
+		phenomenon11
+		phenomenon12
+		phenomenon13
+		star14
+		planet15
+		planet16
+		planet17
+		phenomenon18
+		star19
+		star20
+		planet21
+		star22
+		planet23
+		star24
+		planet25
+		phenomenon26
+		planet27
+		phenomenon28
+		planet29
+		star30
+		phenomenon31
+		star32
+		planet33
+		phenomenon34
+		star35
+		planet36
+		star37
+		phenomenon38
+		planet39
+		star40
+		planet41
+		phenomenon42
+		phenomenon43
+		phenomenon44
+		planet45
+		star46
+		planet47
+		star48
+		phenomenon49
+		phenomenon50
+		star51
+		star52
+		star53
+		phenomenon54
+		star55
+		phenomenon56
+		star57
+		phenomenon58
+		star59
+		phenomenon60
+		phenomenon61
+		phenomenon62
+		star63
+		phenomenon64
+		planet65
+		planet66
+		planet67
+		planet68
+		star69
+		phenomenon70
+		star71
+		star72
+		phenomenon73
+		star74
+		star75
+		planet76
+		planet77
+		star78
+		phenomenon79
+		star80
+		planet81
+		planet82
+		phenomenon83
+		phenomenon84
+		planet85
+		phenomenon86
+		star87
+		phenomenon88
+		planet89
+		planet90
+		star91
+		phenomenon92
+		planet93
+		planet94
+		planet95
+		planet96
+		phenomenon97
+		star98
+		star99
+		phenomenon100
+		phenomenon101
+		planet102
+		planet103
+		phenomenon104
+		planet105
+		star106
+		phenomenon107
+		star108
+		planet109
+		planet110
+		planet111
+		planet112
+		phenomenon113
+		phenomenon114
+		phenomenon115
+		star116
+		star117
+		star118
+		planet119
+		phenomenon120
+		planet121
+		planet122
+		star123
+		star124
+		phenomenon125
+		planet126
+		planet127
+		planet128
+		phenomenon129
+		star130
+		phenomenon131
+		star132
+		planet133
+		phenomenon134
+		phenomenon135
+		star136
+		planet137
+		planet138
+		planet139
+		phenomenon140
+		phenomenon141
+		star142
+		star143
+		planet144
+		phenomenon145
+		phenomenon146
+		phenomenon147
+		star148
+		star149
+		phenomenon150
+		planet151
+		planet152
+		phenomenon153
+		star154
+		planet155
+		planet156
+		planet157
+		planet158
+		star159
+		phenomenon160
+		planet161
+		phenomenon162
+		phenomenon163
+		phenomenon164
+		planet165
+		planet166
+		planet167
+		star168
+		phenomenon169
+		star170
+		phenomenon171
+		phenomenon172
+		planet173
+		phenomenon174
+		planet175
+		star176
+		phenomenon177
+		planet178
+		planet179
+		planet180
+		star181
+		planet182
+		star183
+		phenomenon184
+		star185
+		star186
+		phenomenon187
+		phenomenon188
+		star189
+		star190
+		star191
+		star192
+		phenomenon193
+		star194
+		star195
+		planet196
+		star197
+		phenomenon198
+		phenomenon199
+		phenomenon200
+		planet201
+		star202
+		planet203
+		phenomenon204
+	)
+	(:init
+		(satellite satellite0)
+		(instrument instrument0)
+		(supports instrument0 thermograph3)
+		(supports instrument0 image1)
+		(calibration_target instrument0 groundstation4)
+		(on_board instrument0 satellite0)
+		(power_avail satellite0)
+		(pointing satellite0 star19)
+		(satellite satellite1)
+		(instrument instrument1)
+		(supports instrument1 thermograph4)
+		(calibration_target instrument1 groundstation1)
+		(on_board instrument1 satellite1)
+		(power_avail satellite1)
+		(pointing satellite1 phenomenon200)
+		(satellite satellite2)
+		(instrument instrument2)
+		(supports instrument2 image2)
+		(calibration_target instrument2 groundstation0)
+		(on_board instrument2 satellite2)
+		(power_avail satellite2)
+		(pointing satellite2 planet196)
+		(satellite satellite3)
+		(instrument instrument3)
+		(supports instrument3 image2)
+		(supports instrument3 image1)
+		(supports instrument3 thermograph4)
+		(calibration_target instrument3 groundstation4)
+		(on_board instrument3 satellite3)
+		(power_avail satellite3)
+		(pointing satellite3 phenomenon86)
+		(satellite satellite4)
+		(instrument instrument4)
+		(supports instrument4 thermograph4)
+		(calibration_target instrument4 groundstation3)
+		(instrument instrument5)
+		(supports instrument5 image1)
+		(supports instrument5 thermograph4)
+		(calibration_target instrument5 groundstation1)
+		(instrument instrument6)
+		(supports instrument6 image2)
+		(supports instrument6 thermograph3)
+		(supports instrument6 thermograph4)
+		(calibration_target instrument6 groundstation4)
+		(on_board instrument4 satellite4)
+		(on_board instrument5 satellite4)
+		(on_board instrument6 satellite4)
+		(power_avail satellite4)
+		(pointing satellite4 star142)
+		(mode thermograph0)
+		(mode image1)
+		(mode thermograph4)
+		(mode thermograph3)
+		(mode image2)
+		(direction groundstation2)
+		(direction groundstation0)
+		(direction groundstation3)
+		(direction groundstation1)
+		(direction groundstation4)
+		(direction phenomenon5)
+		(direction phenomenon6)
+		(direction phenomenon7)
+		(direction planet8)
+		(direction star9)
+		(direction star10)
+		(direction phenomenon11)
+		(direction phenomenon12)
+		(direction phenomenon13)
+		(direction star14)
+		(direction planet15)
+		(direction planet16)
+		(direction planet17)
+		(direction phenomenon18)
+		(direction star19)
+		(direction star20)
+		(direction planet21)
+		(direction star22)
+		(direction planet23)
+		(direction star24)
+		(direction planet25)
+		(direction phenomenon26)
+		(direction planet27)
+		(direction phenomenon28)
+		(direction planet29)
+		(direction star30)
+		(direction phenomenon31)
+		(direction star32)
+		(direction planet33)
+		(direction phenomenon34)
+		(direction star35)
+		(direction planet36)
+		(direction star37)
+		(direction phenomenon38)
+		(direction planet39)
+		(direction star40)
+		(direction planet41)
+		(direction phenomenon42)
+		(direction phenomenon43)
+		(direction phenomenon44)
+		(direction planet45)
+		(direction star46)
+		(direction planet47)
+		(direction star48)
+		(direction phenomenon49)
+		(direction phenomenon50)
+		(direction star51)
+		(direction star52)
+		(direction star53)
+		(direction phenomenon54)
+		(direction star55)
+		(direction phenomenon56)
+		(direction star57)
+		(direction phenomenon58)
+		(direction star59)
+		(direction phenomenon60)
+		(direction phenomenon61)
+		(direction phenomenon62)
+		(direction star63)
+		(direction phenomenon64)
+		(direction planet65)
+		(direction planet66)
+		(direction planet67)
+		(direction planet68)
+		(direction star69)
+		(direction phenomenon70)
+		(direction star71)
+		(direction star72)
+		(direction phenomenon73)
+		(direction star74)
+		(direction star75)
+		(direction planet76)
+		(direction planet77)
+		(direction star78)
+		(direction phenomenon79)
+		(direction star80)
+		(direction planet81)
+		(direction planet82)
+		(direction phenomenon83)
+		(direction phenomenon84)
+		(direction planet85)
+		(direction phenomenon86)
+		(direction star87)
+		(direction phenomenon88)
+		(direction planet89)
+		(direction planet90)
+		(direction star91)
+		(direction phenomenon92)
+		(direction planet93)
+		(direction planet94)
+		(direction planet95)
+		(direction planet96)
+		(direction phenomenon97)
+		(direction star98)
+		(direction star99)
+		(direction phenomenon100)
+		(direction phenomenon101)
+		(direction planet102)
+		(direction planet103)
+		(direction phenomenon104)
+		(direction planet105)
+		(direction star106)
+		(direction phenomenon107)
+		(direction star108)
+		(direction planet109)
+		(direction planet110)
+		(direction planet111)
+		(direction planet112)
+		(direction phenomenon113)
+		(direction phenomenon114)
+		(direction phenomenon115)
+		(direction star116)
+		(direction star117)
+		(direction star118)
+		(direction planet119)
+		(direction phenomenon120)
+		(direction planet121)
+		(direction planet122)
+		(direction star123)
+		(direction star124)
+		(direction phenomenon125)
+		(direction planet126)
+		(direction planet127)
+		(direction planet128)
+		(direction phenomenon129)
+		(direction star130)
+		(direction phenomenon131)
+		(direction star132)
+		(direction planet133)
+		(direction phenomenon134)
+		(direction phenomenon135)
+		(direction star136)
+		(direction planet137)
+		(direction planet138)
+		(direction planet139)
+		(direction phenomenon140)
+		(direction phenomenon141)
+		(direction star142)
+		(direction star143)
+		(direction planet144)
+		(direction phenomenon145)
+		(direction phenomenon146)
+		(direction phenomenon147)
+		(direction star148)
+		(direction star149)
+		(direction phenomenon150)
+		(direction planet151)
+		(direction planet152)
+		(direction phenomenon153)
+		(direction star154)
+		(direction planet155)
+		(direction planet156)
+		(direction planet157)
+		(direction planet158)
+		(direction star159)
+		(direction phenomenon160)
+		(direction planet161)
+		(direction phenomenon162)
+		(direction phenomenon163)
+		(direction phenomenon164)
+		(direction planet165)
+		(direction planet166)
+		(direction planet167)
+		(direction star168)
+		(direction phenomenon169)
+		(direction star170)
+		(direction phenomenon171)
+		(direction phenomenon172)
+		(direction planet173)
+		(direction phenomenon174)
+		(direction planet175)
+		(direction star176)
+		(direction phenomenon177)
+		(direction planet178)
+		(direction planet179)
+		(direction planet180)
+		(direction star181)
+		(direction planet182)
+		(direction star183)
+		(direction phenomenon184)
+		(direction star185)
+		(direction star186)
+		(direction phenomenon187)
+		(direction phenomenon188)
+		(direction star189)
+		(direction star190)
+		(direction star191)
+		(direction star192)
+		(direction phenomenon193)
+		(direction star194)
+		(direction star195)
+		(direction planet196)
+		(direction star197)
+		(direction phenomenon198)
+		(direction phenomenon199)
+		(direction phenomenon200)
+		(direction planet201)
+		(direction star202)
+		(direction planet203)
+		(direction phenomenon204)
+	)
+	(:goal
+		(and
+			(pointing satellite2 phenomenon115)
+			(have_image phenomenon5 image1)
+			(have_image planet8 image2)
+			(have_image star10 thermograph3)
+			(have_image phenomenon13 image1)
+			(have_image star14 thermograph4)
+			(have_image planet15 image2)
+			(have_image planet17 image2)
+			(have_image phenomenon18 image1)
+			(have_image star19 thermograph4)
+			(have_image star20 thermograph4)
+			(have_image star22 thermograph3)
+			(have_image planet23 image1)
+			(have_image phenomenon28 thermograph3)
+			(have_image star30 thermograph3)
+			(have_image phenomenon31 thermograph4)
+			(have_image star32 image2)
+			(have_image planet33 thermograph3)
+			(have_image phenomenon34 image2)
+			(have_image phenomenon38 image2)
+			(have_image planet39 image2)
+			(have_image star40 image2)
+			(have_image planet41 image1)
+			(have_image phenomenon42 thermograph3)
+			(have_image phenomenon43 thermograph3)
+			(have_image phenomenon44 thermograph4)
+			(have_image star46 image1)
+			(have_image planet47 image1)
+			(have_image star48 image1)
+			(have_image phenomenon49 image1)
+			(have_image star52 thermograph3)
+			(have_image star53 thermograph3)
+			(have_image phenomenon54 thermograph3)
+			(have_image star55 image1)
+			(have_image phenomenon56 image2)
+			(have_image star57 image2)
+			(have_image phenomenon58 thermograph3)
+			(have_image star59 thermograph4)
+			(have_image phenomenon61 image2)
+			(have_image star63 image1)
+			(have_image phenomenon64 thermograph3)
+			(have_image planet65 thermograph4)
+			(have_image planet66 thermograph3)
+			(have_image planet67 thermograph3)
+			(have_image star69 thermograph4)
+			(have_image phenomenon70 thermograph3)
+			(have_image star72 image2)
+			(have_image star74 thermograph3)
+			(have_image planet76 thermograph3)
+			(have_image planet77 thermograph3)
+			(have_image star78 thermograph4)
+			(have_image phenomenon79 image1)
+			(have_image planet81 image1)
+			(have_image planet85 image2)
+			(have_image phenomenon86 image2)
+			(have_image star87 thermograph3)
+			(have_image planet90 thermograph4)
+			(have_image planet93 image1)
+			(have_image planet94 image2)
+			(have_image phenomenon97 image2)
+			(have_image star98 thermograph3)
+			(have_image star99 thermograph3)
+			(have_image phenomenon100 thermograph3)
+			(have_image phenomenon101 image1)
+			(have_image planet102 thermograph3)
+			(have_image planet103 thermograph3)
+			(have_image phenomenon104 thermograph3)
+			(have_image planet105 image2)
+			(have_image star106 thermograph3)
+			(have_image star108 thermograph4)
+			(have_image planet109 thermograph3)
+			(have_image planet112 thermograph4)
+			(have_image phenomenon113 image1)
+			(have_image phenomenon114 image2)
+			(have_image phenomenon115 image2)
+			(have_image star118 image2)
+			(have_image planet119 image2)
+			(have_image phenomenon120 thermograph4)
+			(have_image planet121 image2)
+			(have_image planet122 image2)
+			(have_image star123 thermograph4)
+			(have_image star124 thermograph3)
+			(have_image phenomenon125 image2)
+			(have_image planet127 thermograph4)
+			(have_image planet128 image2)
+			(have_image star130 thermograph4)
+			(have_image star132 thermograph3)
+			(have_image planet133 image1)
+			(have_image phenomenon134 image2)
+			(have_image phenomenon135 thermograph4)
+			(have_image star136 image1)
+			(have_image planet137 image2)
+			(have_image planet138 thermograph4)
+			(have_image planet139 image1)
+			(have_image phenomenon140 thermograph3)
+			(have_image star142 thermograph4)
+			(have_image planet144 image2)
+			(have_image phenomenon145 image1)
+			(have_image phenomenon146 thermograph4)
+			(have_image star148 image2)
+			(have_image star149 image1)
+			(have_image phenomenon150 thermograph4)
+			(have_image planet151 image1)
+			(have_image planet152 thermograph3)
+			(have_image phenomenon153 thermograph3)
+			(have_image star154 thermograph3)
+			(have_image planet155 image2)
+			(have_image planet156 image2)
+			(have_image star159 thermograph3)
+			(have_image phenomenon160 thermograph4)
+			(have_image planet161 thermograph3)
+			(have_image phenomenon163 thermograph3)
+			(have_image phenomenon164 thermograph3)
+			(have_image planet165 thermograph3)
+			(have_image planet166 image2)
+			(have_image star168 image1)
+			(have_image phenomenon169 image1)
+			(have_image phenomenon171 image1)
+			(have_image phenomenon172 thermograph4)
+			(have_image planet173 image2)
+			(have_image planet175 image2)
+			(have_image star176 image2)
+			(have_image planet179 thermograph4)
+			(have_image star181 image1)
+			(have_image star183 thermograph4)
+			(have_image star185 thermograph4)
+			(have_image phenomenon187 thermograph3)
+			(have_image phenomenon188 image1)
+			(have_image star189 image1)
+			(have_image star190 image1)
+			(have_image star191 image1)
+			(have_image star192 thermograph4)
+			(have_image phenomenon193 image2)
+			(have_image star194 thermograph4)
+			(have_image phenomenon198 thermograph3)
+			(have_image phenomenon199 thermograph3)
+			(have_image phenomenon200 thermograph4)
+			(have_image planet201 thermograph3)
+			(have_image star202 image2)
+			(have_image planet203 image1)
+			(have_image phenomenon204 image1)
+		)
+	)
 )
