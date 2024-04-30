@@ -1,5 +1,4 @@
-﻿
-using PDDLSharp.CodeGenerators.PDDL;
+﻿using PDDLSharp.CodeGenerators.PDDL;
 using PDDLSharp.ErrorListeners;
 using PDDLSharp.Models.PDDL;
 using PDDLSharp.Models.PDDL.Domain;
@@ -8,18 +7,16 @@ using PDDLSharp.Models.PDDL.Problem;
 using PDDLSharp.Parsers.PDDL;
 using PDDLSharp.Tools;
 
-//var targetFolder = "../../../../Benchmarks";
-var targetFolder = "../../../../Pham-Domains";
+var targetFolder = "../../../../Benchmarks";
 var files = Directory.GetFiles(targetFolder, "*.pddl", SearchOption.AllDirectories);
 
-var listener = new ErrorListener();
-var parser = new PDDLParser(listener);
-var codeGenerator = new PDDLCodeGenerator(listener);
-codeGenerator.Readable = true;
-int count = 1;
-foreach(var filePath in files)
+Parallel.ForEach(files, filePath =>
 {
-    Console.WriteLine($"File {count++} out of {files.Length}");
+    var listener = new ErrorListener();
+    var parser = new PDDLParser(listener);
+    var codeGenerator = new PDDLCodeGenerator(listener);
+    codeGenerator.Readable = true;
+    Console.WriteLine($"File: {filePath}");
     if (PDDLFileHelper.IsFileDomain(filePath))
     {
         var domain = parser.ParseAs<DomainDecl>(new FileInfo(filePath));
@@ -32,8 +29,8 @@ foreach(var filePath in files)
             domain.Functions = null;
         }
         codeGenerator.Generate(domain, filePath);
-
-    } else if (PDDLFileHelper.IsFileProblem(filePath))
+    }
+    else if (PDDLFileHelper.IsFileProblem(filePath))
     {
         var problem = parser.ParseAs<ProblemDecl>(new FileInfo(filePath));
         if (problem.Metric != null)
@@ -46,4 +43,4 @@ foreach(var filePath in files)
         }
         codeGenerator.Generate(problem, filePath);
     }
-}
+});

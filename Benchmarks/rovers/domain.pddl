@@ -1,6 +1,6 @@
 (define
 	(domain rover)
-	(:requirements :typing)
+	(:requirements :strips :typing)
 	(:types
 		rover - object
 		waypoint - object

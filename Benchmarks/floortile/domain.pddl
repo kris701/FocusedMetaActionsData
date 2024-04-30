@@ -1,6 +1,6 @@
 (define
-	(domain floortile)
-	(:requirements :typing)
+	(domain floor-tile)
+	(:requirements :typing :action-costs)
 	(:types
 		robot - object
 		tile - object
@@ -18,7 +18,7 @@
 		(available-color ?c - color)
 		(free-color ?r - robot)
 	)
-	(:action change_color
+	(:action change-color
 		:parameters (?r - robot ?c - color ?c2 - color)
 		:precondition 
 			(and
@@ -31,7 +31,7 @@
 				(robot-has ?r ?c2)
 			)
 	)
-	(:action paint_up
+	(:action paint-up
 		:parameters (?r - robot ?y - tile ?x - tile ?c - color)
 		:precondition 
 			(and
@@ -46,7 +46,7 @@
 				(painted ?y ?c)
 			)
 	)
-	(:action paint_down
+	(:action paint-down
 		:parameters (?r - robot ?y - tile ?x - tile ?c - color)
 		:precondition 
 			(and
@@ -61,7 +61,7 @@
 				(painted ?y ?c)
 			)
 	)
-	(:action move_up
+	(:action up
 		:parameters (?r - robot ?x - tile ?y - tile)
 		:precondition 
 			(and
@@ -77,7 +77,7 @@
 				(not (clear ?y))
 			)
 	)
-	(:action move_down
+	(:action down
 		:parameters (?r - robot ?x - tile ?y - tile)
 		:precondition 
 			(and
@@ -93,7 +93,7 @@
 				(not (clear ?y))
 			)
 	)
-	(:action move_right
+	(:action right
 		:parameters (?r - robot ?x - tile ?y - tile)
 		:precondition 
 			(and
@@ -109,7 +109,7 @@
 				(not (clear ?y))
 			)
 	)
-	(:action move_left
+	(:action left
 		:parameters (?r - robot ?x - tile ?y - tile)
 		:precondition 
 			(and
