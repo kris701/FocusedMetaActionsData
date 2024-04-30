@@ -1,0 +1,6 @@
+< {robot-at V0:robot C1:tile}:=1
+, {robot-has V0:robot C1:color}:=1
+, {robot-at C1:robot V0:tile, clear V0:tile}
+, {robot-at C1:robot V0:tile, clear V0:tile, painted V0:tile C2:color}:=1
+, {robot-at C2:robot V0:tile, clear V0:tile, painted V0:tile V1:color}
+>

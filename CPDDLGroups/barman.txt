@@ -1,0 +1,10 @@
+< {shaker-level shaker1 C0:level}:=1
+, {ontable shaker1, holding C0:hand shaker1}:=1
+, {ontable V0:container, holding C1:hand V0:container}:=1
+, {ontable V0:shot, holding C1:hand V0:shot}:=1
+, {holding V0:hand C1:container, handempty V0:hand}:=1
+, {empty V0:shot, contains V0:shot C1:beverage}:=1
+, {clean V0:shot, used V0:shot C1:beverage}:=1
+, {empty shaker1, contains shaker1 C0:cocktail, unshaked shaker1}:=1
+, {empty shaker1, unshaked shaker1, shaked shaker1}:=1
+>

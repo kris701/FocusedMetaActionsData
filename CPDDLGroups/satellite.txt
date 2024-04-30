@@ -1,0 +1,2 @@
+< {pointing V0:satellite C1:direction}:=1
+>

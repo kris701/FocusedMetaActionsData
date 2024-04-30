@@ -1,0 +1,19 @@
+< {at V0:truck C1:place}:=1
+, {at V0:hoist V1:place}:=1:S
+, {at V0:hoist V1:distributor}:=1:S
+, {at V0:hoist C1:place}:=1:S
+, {at V0:hoist C1:distributor}:=1:S
+, {at V0:pallet V1:place}:=1:S
+, {at V0:pallet V1:distributor}:=1:S
+, {at V0:pallet C1:place}:=1:S
+, {at V0:pallet C1:distributor}:=1:S
+, {at C1:hoist V0:place}:=1:S
+, {at C1:pallet V0:place}:=1:S
+, {at C1:hoist V0:distributor}:=1:S
+, {at C1:pallet V0:distributor}:=1:S
+, {on C1:crate V0:pallet, clear V0:pallet}:=1
+, {lifting V0:hoist C1:crate, available V0:hoist}:=1
+, {at V0:crate C1:place, in V0:crate C2:truck, lifting C3:hoist V0:crate}:=1
+, {on V0:crate C1:surface, in V0:crate C2:truck, lifting C3:hoist V0:crate}:=1
+, {on C1:crate V0:crate, in V0:crate C2:truck, lifting C3:hoist V0:crate, clear V0:crate}:=1
+>

@@ -1,0 +1,7 @@
+< {at V0:rover C1:waypoint}:=1
+, {at_soil_sample V0:waypoint}
+, {at_rock_sample V0:waypoint}
+, {empty V0:store, full V0:store}:=1
+, {have_rock_analysis C1:rover V0:waypoint, at_rock_sample V0:waypoint}:=1
+, {have_soil_analysis C1:rover V0:waypoint, at_soil_sample V0:waypoint}:=1
+>

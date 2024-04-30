@@ -1,0 +1,5 @@
+< {at V0:truck C1:location}:=1
+, {at V0:obj C1:location, in V0:obj C2:truck}:=1
+, {at V0:driver C1:location, driving V0:driver C2:truck}:=1
+, {driving C1:driver V0:truck, empty V0:truck}:=1
+>

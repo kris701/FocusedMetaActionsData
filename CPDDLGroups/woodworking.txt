@@ -1,0 +1,14 @@
+< {unused V0:part}
+, {surface-condition V0:board V1:surface}:=1:S
+, {surface-condition V0:board C1:surface}:=1:S
+, {wood V0:board V1:awood}:=1:S
+, {wood V0:board C1:awood}:=1:S
+, {boardsize V0:board C1:aboardsize}:=1
+, {unused V0:part, available V0:part}:=1
+, {unused V0:part, surface-condition V0:part C1:surface}:=1
+, {unused V0:part, treatment V0:part C1:treatmentstatus}:=1
+, {unused V0:part, wood V0:part V1:awood}
+, {unused V0:part, wood V0:part C1:awood}:=1
+, {available V0:board, in-highspeed-saw V0:board C1:highspeed-saw}:=1
+, {in-highspeed-saw C1:board V0:highspeed-saw, empty V0:highspeed-saw}:=1
+>

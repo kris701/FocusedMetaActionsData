@@ -1,0 +1,6 @@
+< {at-robot C0:object}:=1
+, {locked V0:object}
+, {at V0:object C1:object, holding V0:object}:=1
+, {locked V0:object, open V0:object}:=1
+, {holding C0:object, arm-empty}:=1
+>

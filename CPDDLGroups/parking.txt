@@ -1,0 +1,4 @@
+< {at-curb-num V0:car C1:curb, behind-car V0:car C2:car}:=1
+, {at-curb-num C1:car V0:curb, curb-clear V0:curb}:=1
+, {behind-car C1:car V0:car, car-clear V0:car}:=1
+>

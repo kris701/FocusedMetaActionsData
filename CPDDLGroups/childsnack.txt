@@ -1,0 +1,8 @@
+< {at_kitchen_bread V0:bread-portion}
+, {at_kitchen_content V0:content-portion}
+, {at V0:tray C1:place}:=1
+, {notexist V0:sandwich}
+, {at_kitchen_sandwich V0:sandwich, notexist V0:sandwich}
+, {no_gluten_sandwich V0:sandwich, notexist V0:sandwich}
+, {at_kitchen_sandwich V0:sandwich, ontray V0:sandwich C1:tray, notexist V0:sandwich}
+>

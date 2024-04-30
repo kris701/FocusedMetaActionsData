@@ -1,0 +1,4 @@
+< {arm-empty, holding C0:object}:=1
+, {clear V0:object, holding V0:object, on C1:object V0:object}:=1
+, {on-table V0:object, holding V0:object, on V0:object C1:object}:=1
+>

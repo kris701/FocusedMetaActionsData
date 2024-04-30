@@ -1,0 +1,4 @@
+< {at-robby C0:object}:=1
+, {at V0:object C1:object, carry V0:object C2:object}:=1
+, {free V0:object, carry C1:object V0:object}:=1
+>
