@@ -1,22 +1,24 @@
 (define
 	(domain miconic)
 	(:requirements :strips)
+	(:types
+		passenger - object
+		floor - object
+	)
 	(:predicates
-		(origin ?person ?floor)
-		(floor ?floor)
-		(passenger ?passenger)
-		(destin ?person ?floor)
-		(above ?floor1 ?floor2)
-		(boarded ?person)
-		(served ?person)
-		(lift-at ?floor)
+		(origin ?person - passenger ?floor - floor)
+		(destin ?person - passenger ?floor - floor)
+		(above ?floor1 - floor ?floor2 - floor)
+		(boarded ?person - passenger)
+		(not-boarded ?person - passenger)
+		(served ?person - passenger)
+		(not-served ?person - passenger)
+		(lift-at ?floor - floor)
 	)
 	(:action board
-		:parameters (?f ?p)
+		:parameters (?f - floor ?p - passenger)
 		:precondition 
 			(and
-				(floor ?f)
-				(passenger ?p)
 				(lift-at ?f)
 				(origin ?p ?f)
 			)
@@ -24,11 +26,9 @@
 			(boarded ?p)
 	)
 	(:action depart
-		:parameters (?f ?p)
+		:parameters (?f - floor ?p - passenger)
 		:precondition 
 			(and
-				(floor ?f)
-				(passenger ?p)
 				(lift-at ?f)
 				(destin ?p ?f)
 				(boarded ?p)
@@ -40,11 +40,9 @@
 			)
 	)
 	(:action up
-		:parameters (?f1 ?f2)
+		:parameters (?f1 - floor ?f2 - floor)
 		:precondition 
 			(and
-				(floor ?f1)
-				(floor ?f2)
 				(lift-at ?f1)
 				(above ?f1 ?f2)
 			)
@@ -55,11 +53,9 @@
 			)
 	)
 	(:action down
-		:parameters (?f1 ?f2)
+		:parameters (?f1 - floor ?f2 - floor)
 		:precondition 
 			(and
-				(floor ?f1)
-				(floor ?f2)
 				(lift-at ?f1)
 				(above ?f2 ?f1)
 			)
@@ -70,10 +66,9 @@
 			)
 	)
 	(:action dynamicmacro_mod_2
-		:parameters (?px2)
+		:parameters (?px2 - passenger)
 		:precondition 
 			(and
-				(passenger ?px2)
 				(boarded ?px2)
 			)
 		:effect 
@@ -83,9 +78,9 @@
 			)
 	)
 	(:action dynamicmacro_mod_4
-		:parameters (?px2)
+		:parameters (?px2 - passenger)
 		:precondition 
-			(and (passenger ?px2))
+			(and )
 		:effect 
 			(and (boarded ?px2))
 	)
