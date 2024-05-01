@@ -25,16 +25,27 @@
 		spray-varnisher2 - spray-varnisher
 		blue - acolour
 		white - acolour
+		mauve - acolour
+		red - acolour
 		beech - awood
-		teak - awood
+		pine - awood
 		p0 - part
 		p1 - part
+		p2 - part
+		p3 - part
+		p4 - part
+		p5 - part
 		b0 - board
 		b1 - board
+		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
 		s3 - aboardsize
+		s4 - aboardsize
+		s5 - aboardsize
+		s6 - aboardsize
+		s7 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -46,40 +57,70 @@
 		(boardsize-successor s0 s1)
 		(boardsize-successor s1 s2)
 		(boardsize-successor s2 s3)
+		(boardsize-successor s3 s4)
+		(boardsize-successor s4 s5)
+		(boardsize-successor s5 s6)
+		(boardsize-successor s6 s7)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
 		(empty highspeed-saw2)
-		(has-colour glazer0 white)
-		(has-colour glazer1 white)
-		(has-colour glazer1 blue)
+		(has-colour glazer0 blue)
+		(has-colour glazer1 natural)
+		(has-colour glazer2 red)
 		(has-colour glazer2 white)
-		(has-colour immersion-varnisher0 blue)
-		(has-colour immersion-varnisher1 blue)
-		(has-colour immersion-varnisher2 blue)
+		(has-colour immersion-varnisher0 red)
+		(has-colour immersion-varnisher1 white)
+		(has-colour immersion-varnisher2 natural)
 		(has-colour spray-varnisher0 blue)
+		(has-colour spray-varnisher1 red)
 		(has-colour spray-varnisher1 white)
+		(has-colour spray-varnisher1 natural)
 		(has-colour spray-varnisher2 white)
 		(unused p0)
-		(goalsize p0 small)
+		(goalsize p0 large)
 		(unused p1)
-		(goalsize p1 large)
-		(boardsize b0 s1)
-		(wood b0 beech)
-		(surface-condition b0 rough)
+		(goalsize p1 small)
+		(unused p2)
+		(goalsize p2 small)
+		(unused p3)
+		(goalsize p3 small)
+		(unused p4)
+		(goalsize p4 medium)
+		(unused p5)
+		(goalsize p5 medium)
+		(boardsize b0 s7)
+		(wood b0 pine)
+		(surface-condition b0 smooth)
 		(available b0)
-		(boardsize b1 s3)
-		(wood b1 teak)
-		(surface-condition b1 rough)
+		(boardsize b1 s5)
+		(wood b1 beech)
+		(surface-condition b1 smooth)
 		(available b1)
+		(boardsize b2 s2)
+		(wood b2 beech)
+		(surface-condition b2 rough)
+		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
-			(colour p0 blue)
+			(colour p0 red)
 			(surface-condition p0 smooth)
 			(available p1)
 			(treatment p1 glazed)
-			(colour p1 white)
+			(wood p1 beech)
+			(available p2)
+			(surface-condition p2 verysmooth)
+			(wood p2 beech)
+			(available p3)
+			(surface-condition p3 verysmooth)
+			(treatment p3 glazed)
+			(available p4)
+			(colour p4 white)
+			(wood p4 beech)
+			(available p5)
+			(colour p5 natural)
+			(surface-condition p5 verysmooth)
 		)
 	)
 )

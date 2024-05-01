@@ -11,17 +11,15 @@
 		shot4 - shot
 		shot5 - shot
 		shot6 - shot
+		shot7 - shot
 		ingredient1 - ingredient
 		ingredient2 - ingredient
-		ingredient3 - ingredient
-		ingredient4 - ingredient
-		ingredient5 - ingredient
 		cocktail1 - cocktail
+		cocktail2 - cocktail
+		cocktail3 - cocktail
+		cocktail4 - cocktail
 		dispenser1 - dispenser
 		dispenser2 - dispenser
-		dispenser3 - dispenser
-		dispenser4 - dispenser
-		dispenser5 - dispenser
 		l0 - level
 		l1 - level
 		l2 - level
@@ -34,11 +32,9 @@
 		(ontable shot4)
 		(ontable shot5)
 		(ontable shot6)
+		(ontable shot7)
 		(dispenses dispenser1 ingredient1)
 		(dispenses dispenser2 ingredient2)
-		(dispenses dispenser3 ingredient3)
-		(dispenses dispenser4 ingredient4)
-		(dispenses dispenser5 ingredient5)
 		(clean shaker1)
 		(clean shot1)
 		(clean shot2)
@@ -46,6 +42,7 @@
 		(clean shot4)
 		(clean shot5)
 		(clean shot6)
+		(clean shot7)
 		(empty shaker1)
 		(empty shot1)
 		(empty shot2)
@@ -53,6 +50,7 @@
 		(empty shot4)
 		(empty shot5)
 		(empty shot6)
+		(empty shot7)
 		(handempty left)
 		(handempty right)
 		(shaker-empty-level shaker1 l0)
@@ -60,15 +58,22 @@
 		(next l0 l1)
 		(next l1 l2)
 		(cocktail-part1 cocktail1 ingredient1)
-		(cocktail-part2 cocktail1 ingredient3)
+		(cocktail-part2 cocktail1 ingredient2)
+		(cocktail-part1 cocktail2 ingredient1)
+		(cocktail-part2 cocktail2 ingredient2)
+		(cocktail-part1 cocktail3 ingredient2)
+		(cocktail-part2 cocktail3 ingredient1)
+		(cocktail-part1 cocktail4 ingredient2)
+		(cocktail-part2 cocktail4 ingredient1)
 	)
 	(:goal
 		(and
-			(contains shot1 cocktail1)
-			(contains shot2 ingredient4)
-			(contains shot3 cocktail1)
-			(contains shot4 ingredient5)
-			(contains shot5 cocktail1)
+			(contains shot1 cocktail3)
+			(contains shot2 cocktail1)
+			(contains shot3 cocktail4)
+			(contains shot4 cocktail2)
+			(contains shot5 cocktail2)
+			(contains shot6 ingredient2)
 		)
 	)
 )

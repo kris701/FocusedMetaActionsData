@@ -11,18 +11,21 @@
 		shot4 - shot
 		shot5 - shot
 		shot6 - shot
-		shot7 - shot
-		shot8 - shot
 		ingredient1 - ingredient
 		ingredient2 - ingredient
 		ingredient3 - ingredient
 		ingredient4 - ingredient
+		ingredient5 - ingredient
 		cocktail1 - cocktail
 		cocktail2 - cocktail
+		cocktail3 - cocktail
+		cocktail4 - cocktail
+		cocktail5 - cocktail
 		dispenser1 - dispenser
 		dispenser2 - dispenser
 		dispenser3 - dispenser
 		dispenser4 - dispenser
+		dispenser5 - dispenser
 		l0 - level
 		l1 - level
 		l2 - level
@@ -35,12 +38,11 @@
 		(ontable shot4)
 		(ontable shot5)
 		(ontable shot6)
-		(ontable shot7)
-		(ontable shot8)
 		(dispenses dispenser1 ingredient1)
 		(dispenses dispenser2 ingredient2)
 		(dispenses dispenser3 ingredient3)
 		(dispenses dispenser4 ingredient4)
+		(dispenses dispenser5 ingredient5)
 		(clean shaker1)
 		(clean shot1)
 		(clean shot2)
@@ -48,8 +50,6 @@
 		(clean shot4)
 		(clean shot5)
 		(clean shot6)
-		(clean shot7)
-		(clean shot8)
 		(empty shaker1)
 		(empty shot1)
 		(empty shot2)
@@ -57,28 +57,30 @@
 		(empty shot4)
 		(empty shot5)
 		(empty shot6)
-		(empty shot7)
-		(empty shot8)
 		(handempty left)
 		(handempty right)
 		(shaker-empty-level shaker1 l0)
 		(shaker-level shaker1 l0)
 		(next l0 l1)
 		(next l1 l2)
-		(cocktail-part1 cocktail1 ingredient3)
-		(cocktail-part2 cocktail1 ingredient4)
-		(cocktail-part1 cocktail2 ingredient3)
-		(cocktail-part2 cocktail2 ingredient2)
+		(cocktail-part1 cocktail1 ingredient4)
+		(cocktail-part2 cocktail1 ingredient1)
+		(cocktail-part1 cocktail2 ingredient5)
+		(cocktail-part2 cocktail2 ingredient4)
+		(cocktail-part1 cocktail3 ingredient5)
+		(cocktail-part2 cocktail3 ingredient1)
+		(cocktail-part1 cocktail4 ingredient2)
+		(cocktail-part2 cocktail4 ingredient3)
+		(cocktail-part1 cocktail5 ingredient2)
+		(cocktail-part2 cocktail5 ingredient5)
 	)
 	(:goal
 		(and
-			(contains shot1 cocktail2)
-			(contains shot2 cocktail1)
-			(contains shot3 ingredient3)
-			(contains shot4 cocktail1)
-			(contains shot5 cocktail1)
-			(contains shot6 ingredient2)
-			(contains shot7 ingredient3)
+			(contains shot1 cocktail1)
+			(contains shot2 cocktail4)
+			(contains shot3 cocktail2)
+			(contains shot4 cocktail5)
+			(contains shot5 cocktail3)
 		)
 	)
 )

@@ -4,57 +4,58 @@
 	(:objects
 		satellite0 - satellite
 		instrument0 - instrument
-		image5 - mode
-		spectrograph0 - mode
+		satellite1 - satellite
+		instrument1 - instrument
+		instrument2 - instrument
+		instrument3 - instrument
+		thermograph0 - mode
 		thermograph2 - mode
-		thermograph1 - mode
-		thermograph7 - mode
-		spectrograph3 - mode
-		infrared6 - mode
-		infrared4 - mode
+		image1 - mode
+		star1 - direction
+		groundstation2 - direction
+		star4 - direction
+		groundstation5 - direction
+		star7 - direction
+		star6 - direction
 		star0 - direction
-		star2 - direction
-		star3 - direction
-		groundstation4 - direction
-		groundstation1 - direction
-		planet5 - direction
-		phenomenon6 - direction
-		phenomenon7 - direction
-		star8 - direction
-		phenomenon9 - direction
+		groundstation3 - direction
+		planet8 - direction
+		star9 - direction
 		planet10 - direction
 		planet11 - direction
-		star12 - direction
-		phenomenon13 - direction
+		phenomenon12 - direction
 	)
 	(:init
-		(supports instrument0 infrared6)
-		(supports instrument0 thermograph7)
-		(supports instrument0 image5)
-		(supports instrument0 infrared4)
-		(supports instrument0 spectrograph3)
-		(supports instrument0 thermograph1)
 		(supports instrument0 thermograph2)
-		(supports instrument0 spectrograph0)
-		(calibration_target instrument0 groundstation1)
+		(supports instrument0 thermograph0)
+		(supports instrument0 image1)
+		(calibration_target instrument0 star0)
 		(on_board instrument0 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 planet5)
+		(pointing satellite0 groundstation2)
+		(supports instrument1 image1)
+		(calibration_target instrument1 star6)
+		(supports instrument2 thermograph0)
+		(supports instrument2 image1)
+		(calibration_target instrument2 star0)
+		(supports instrument3 thermograph0)
+		(supports instrument3 image1)
+		(calibration_target instrument3 groundstation3)
+		(calibration_target instrument3 star0)
+		(on_board instrument1 satellite1)
+		(on_board instrument2 satellite1)
+		(on_board instrument3 satellite1)
+		(power_avail satellite1)
+		(pointing satellite1 star1)
 	)
 	(:goal
 		(and
-			(have_image planet5 infrared4)
-			(have_image planet5 thermograph1)
-			(have_image phenomenon6 infrared4)
-			(have_image phenomenon7 image5)
-			(have_image star8 spectrograph0)
-			(have_image phenomenon9 spectrograph0)
-			(have_image planet10 thermograph7)
-			(have_image planet11 infrared6)
-			(have_image star12 infrared4)
-			(have_image star12 thermograph2)
-			(have_image phenomenon13 infrared6)
-			(have_image phenomenon13 thermograph2)
+			(pointing satellite1 groundstation3)
+			(have_image planet8 image1)
+			(have_image star9 thermograph0)
+			(have_image planet10 image1)
+			(have_image planet11 image1)
+			(have_image phenomenon12 thermograph0)
 		)
 	)
 )

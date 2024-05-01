@@ -5,53 +5,45 @@
 		satellite0 - satellite
 		instrument0 - instrument
 		instrument1 - instrument
+		spectrograph0 - mode
 		image1 - mode
-		infrared0 - mode
-		groundstation0 - direction
-		groundstation3 - direction
-		star4 - direction
-		groundstation5 - direction
-		groundstation8 - direction
-		groundstation9 - direction
-		star10 - direction
-		groundstation12 - direction
-		star13 - direction
-		groundstation7 - direction
-		star2 - direction
 		groundstation1 - direction
-		groundstation6 - direction
-		groundstation11 - direction
-		star14 - direction
-		planet15 - direction
-		star16 - direction
-		phenomenon17 - direction
-		phenomenon18 - direction
-		star19 - direction
+		groundstation2 - direction
+		groundstation3 - direction
+		star0 - direction
+		groundstation4 - direction
+		phenomenon5 - direction
+		star6 - direction
+		star7 - direction
+		planet8 - direction
+		star9 - direction
+		star10 - direction
+		planet11 - direction
+		planet12 - direction
 	)
 	(:init
-		(supports instrument0 infrared0)
+		(supports instrument0 spectrograph0)
 		(supports instrument0 image1)
-		(calibration_target instrument0 star2)
-		(calibration_target instrument0 groundstation7)
-		(calibration_target instrument0 groundstation11)
-		(supports instrument1 infrared0)
+		(calibration_target instrument0 star0)
 		(supports instrument1 image1)
-		(calibration_target instrument1 groundstation11)
-		(calibration_target instrument1 groundstation6)
-		(calibration_target instrument1 groundstation1)
+		(supports instrument1 spectrograph0)
+		(calibration_target instrument1 groundstation4)
 		(on_board instrument0 satellite0)
 		(on_board instrument1 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 phenomenon17)
+		(pointing satellite0 groundstation2)
 	)
 	(:goal
 		(and
-			(have_image star14 infrared0)
-			(have_image planet15 image1)
-			(have_image star16 infrared0)
-			(have_image phenomenon17 image1)
-			(have_image phenomenon18 infrared0)
-			(have_image star19 infrared0)
+			(pointing satellite0 planet11)
+			(have_image phenomenon5 spectrograph0)
+			(have_image star6 spectrograph0)
+			(have_image star7 spectrograph0)
+			(have_image planet8 image1)
+			(have_image star9 image1)
+			(have_image star10 image1)
+			(have_image planet11 spectrograph0)
+			(have_image planet12 image1)
 		)
 	)
 )

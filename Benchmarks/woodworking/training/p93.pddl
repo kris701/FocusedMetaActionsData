@@ -4,26 +4,33 @@
 	(:objects
 		highspeed-saw0 - highspeed-saw
 		highspeed-saw1 - highspeed-saw
+		highspeed-saw2 - highspeed-saw
 		glazer0 - glazer
 		glazer1 - glazer
+		glazer2 - glazer
 		grinder0 - grinder
 		grinder1 - grinder
+		grinder2 - grinder
 		immersion-varnisher0 - immersion-varnisher
 		immersion-varnisher1 - immersion-varnisher
+		immersion-varnisher2 - immersion-varnisher
 		planer0 - planer
 		planer1 - planer
+		planer2 - planer
 		saw0 - saw
 		saw1 - saw
+		saw2 - saw
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
-		red - acolour
-		white - acolour
-		blue - acolour
-		black - acolour
+		spray-varnisher2 - spray-varnisher
 		green - acolour
+		blue - acolour
+		red - acolour
+		black - acolour
 		mauve - acolour
-		oak - awood
-		mahogany - awood
+		white - acolour
+		pine - awood
+		walnut - awood
 		p0 - part
 		p1 - part
 		p2 - part
@@ -33,12 +40,9 @@
 		p6 - part
 		p7 - part
 		p8 - part
-		p9 - part
 		b0 - board
 		b1 - board
 		b2 - board
-		b3 - board
-		b4 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -47,10 +51,6 @@
 		s5 - aboardsize
 		s6 - aboardsize
 		s7 - aboardsize
-		s8 - aboardsize
-		s9 - aboardsize
-		s10 - aboardsize
-		s11 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -66,106 +66,103 @@
 		(boardsize-successor s4 s5)
 		(boardsize-successor s5 s6)
 		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
-		(boardsize-successor s8 s9)
-		(boardsize-successor s9 s10)
-		(boardsize-successor s10 s11)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 black)
-		(has-colour glazer0 red)
+		(empty highspeed-saw2)
 		(has-colour glazer0 natural)
-		(has-colour glazer1 black)
-		(has-colour glazer1 red)
-		(has-colour glazer1 green)
-		(has-colour glazer1 natural)
+		(has-colour glazer1 mauve)
+		(has-colour glazer2 natural)
+		(has-colour glazer2 mauve)
+		(has-colour immersion-varnisher0 white)
 		(has-colour immersion-varnisher0 green)
-		(has-colour immersion-varnisher1 black)
+		(has-colour immersion-varnisher0 blue)
+		(has-colour immersion-varnisher1 natural)
+		(has-colour immersion-varnisher1 blue)
+		(has-colour immersion-varnisher2 white)
+		(has-colour immersion-varnisher2 green)
+		(has-colour spray-varnisher0 white)
 		(has-colour spray-varnisher0 green)
-		(has-colour spray-varnisher1 black)
+		(has-colour spray-varnisher0 blue)
+		(has-colour spray-varnisher1 green)
+		(has-colour spray-varnisher1 blue)
+		(has-colour spray-varnisher2 natural)
+		(has-colour spray-varnisher2 white)
 		(unused p0)
 		(goalsize p0 small)
-		(unused p1)
-		(goalsize p1 small)
+		(available p1)
+		(treatment p1 glazed)
+		(surface-condition p1 smooth)
+		(wood p1 pine)
+		(colour p1 green)
+		(goalsize p1 medium)
 		(unused p2)
-		(goalsize p2 large)
+		(goalsize p2 small)
 		(unused p3)
-		(goalsize p3 small)
+		(goalsize p3 large)
 		(unused p4)
 		(goalsize p4 medium)
 		(unused p5)
-		(goalsize p5 small)
+		(goalsize p5 large)
 		(unused p6)
-		(goalsize p6 large)
-		(unused p7)
+		(goalsize p6 small)
+		(available p7)
+		(treatment p7 glazed)
+		(surface-condition p7 verysmooth)
+		(wood p7 walnut)
+		(colour p7 green)
 		(goalsize p7 large)
 		(unused p8)
 		(goalsize p8 small)
-		(available p9)
-		(treatment p9 varnished)
-		(surface-condition p9 rough)
-		(wood p9 mahogany)
-		(colour p9 red)
-		(goalsize p9 small)
-		(boardsize b0 s6)
-		(wood b0 mahogany)
+		(boardsize b0 s5)
+		(wood b0 pine)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s6)
-		(wood b1 mahogany)
+		(boardsize b1 s7)
+		(wood b1 walnut)
 		(surface-condition b1 rough)
 		(available b1)
-		(boardsize b2 s11)
-		(wood b2 oak)
+		(boardsize b2 s0)
+		(wood b2 walnut)
 		(surface-condition b2 rough)
 		(available b2)
-		(boardsize b3 s6)
-		(wood b3 oak)
-		(surface-condition b3 rough)
-		(available b3)
-		(boardsize b4 s3)
-		(wood b4 oak)
-		(surface-condition b4 rough)
-		(available b4)
 	)
 	(:goal
 		(and
 			(available p0)
-			(surface-condition p0 verysmooth)
-			(wood p0 mahogany)
+			(surface-condition p0 smooth)
+			(wood p0 pine)
+			(treatment p0 glazed)
+			(colour p0 natural)
 			(available p1)
 			(surface-condition p1 smooth)
-			(wood p1 mahogany)
+			(colour p1 natural)
+			(wood p1 pine)
 			(available p2)
-			(surface-condition p2 verysmooth)
-			(colour p2 natural)
-			(wood p2 oak)
-			(treatment p2 glazed)
+			(surface-condition p2 smooth)
+			(wood p2 pine)
+			(treatment p2 varnished)
+			(colour p2 green)
 			(available p3)
 			(surface-condition p3 verysmooth)
-			(colour p3 black)
+			(treatment p3 varnished)
+			(colour p3 blue)
 			(available p4)
-			(surface-condition p4 smooth)
-			(colour p4 black)
+			(treatment p4 varnished)
+			(colour p4 white)
 			(available p5)
-			(surface-condition p5 smooth)
-			(treatment p5 glazed)
+			(wood p5 pine)
+			(treatment p5 varnished)
 			(available p6)
 			(surface-condition p6 smooth)
-			(colour p6 red)
 			(treatment p6 glazed)
+			(colour p6 mauve)
+			(wood p6 walnut)
 			(available p7)
-			(surface-condition p7 verysmooth)
-			(wood p7 oak)
-			(treatment p7 glazed)
+			(wood p7 walnut)
+			(treatment p7 varnished)
 			(available p8)
-			(surface-condition p8 smooth)
-			(colour p8 green)
-			(available p9)
-			(surface-condition p9 smooth)
-			(colour p9 black)
-			(wood p9 mahogany)
-			(treatment p9 glazed)
+			(surface-condition p8 verysmooth)
+			(treatment p8 varnished)
 		)
 	)
 )

@@ -41,7 +41,7 @@ foreach (var folder1 in commonFolders.Keys)
         if (file.Name != "domain.pddl")
             file.CopyTo(Path.Combine(target, name, "testing", $"p{count++}.pddl"));
     count = 1;
-    foreach (var file in new DirectoryInfo(Path.Combine(folder2.FullName, "tasks")).GetFiles().TakeLast(topN))
+    foreach (var file in new DirectoryInfo(Path.Combine(folder2.FullName, "tasks")).GetFiles().Take(topN))
         if (file.Name != "domain.pddl")
             file.CopyTo(Path.Combine(target, name, "training", $"p{count++}.pddl"));
 }

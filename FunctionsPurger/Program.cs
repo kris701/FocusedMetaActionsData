@@ -8,7 +8,9 @@ using PDDLSharp.Parsers.PDDL;
 using PDDLSharp.Tools;
 
 var targetFolder = "../../../../Benchmarks";
-var files = Directory.GetFiles(targetFolder, "*.pddl", SearchOption.AllDirectories);
+var files = Directory.GetFiles(targetFolder, "*.pddl", SearchOption.AllDirectories).ToList();
+
+files.RemoveAll(x => x.Contains("\\grid\\"));
 
 Parallel.ForEach(files, filePath =>
 {
