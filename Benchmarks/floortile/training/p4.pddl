@@ -16,11 +16,11 @@
 	(:init
 		(robot-at robot1 tile_0-2)
 		(robot-has robot1 white)
-		(robot-at robot2 tile_0-1)
+		(robot-at robot2 tile_1-1)
 		(robot-has robot2 black)
 		(available-color white)
 		(available-color black)
-		(clear tile_1-1)
+		(clear tile_0-1)
 		(clear tile_1-2)
 		(clear tile_2-1)
 		(clear tile_2-2)

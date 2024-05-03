@@ -5,50 +5,52 @@
 		satellite0 - satellite
 		instrument0 - instrument
 		instrument1 - instrument
-		satellite1 - satellite
-		instrument2 - instrument
-		thermograph1 - mode
+		infrared5 - mode
+		spectrograph3 - mode
 		thermograph0 - mode
-		groundstation1 - direction
-		star3 - direction
+		spectrograph1 - mode
+		infrared4 - mode
+		spectrograph2 - mode
+		thermograph6 - mode
 		star0 - direction
-		groundstation4 - direction
 		groundstation2 - direction
-		phenomenon5 - direction
-		phenomenon6 - direction
-		star7 - direction
-		star8 - direction
-		star9 - direction
+		groundstation3 - direction
+		groundstation4 - direction
+		star5 - direction
+		groundstation7 - direction
+		groundstation9 - direction
+		groundstation1 - direction
+		groundstation8 - direction
+		star6 - direction
 		planet10 - direction
 		star11 - direction
+		planet12 - direction
+		star13 - direction
+		phenomenon14 - direction
 	)
 	(:init
-		(supports instrument0 thermograph0)
-		(supports instrument0 thermograph1)
-		(calibration_target instrument0 star0)
+		(supports instrument0 infrared5)
+		(supports instrument0 infrared4)
+		(supports instrument0 thermograph6)
+		(supports instrument0 spectrograph2)
+		(calibration_target instrument0 groundstation1)
 		(supports instrument1 thermograph0)
-		(supports instrument1 thermograph1)
-		(calibration_target instrument1 groundstation4)
+		(supports instrument1 spectrograph1)
+		(supports instrument1 spectrograph3)
+		(calibration_target instrument1 star6)
+		(calibration_target instrument1 groundstation8)
 		(on_board instrument0 satellite0)
 		(on_board instrument1 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 star3)
-		(supports instrument2 thermograph1)
-		(supports instrument2 thermograph0)
-		(calibration_target instrument2 groundstation2)
-		(on_board instrument2 satellite1)
-		(power_avail satellite1)
-		(pointing satellite1 star9)
+		(pointing satellite0 groundstation4)
 	)
 	(:goal
 		(and
-			(have_image phenomenon5 thermograph0)
-			(have_image phenomenon6 thermograph1)
-			(have_image star7 thermograph1)
-			(have_image star8 thermograph1)
-			(have_image star9 thermograph1)
-			(have_image planet10 thermograph0)
-			(have_image star11 thermograph1)
+			(have_image planet10 thermograph6)
+			(have_image star11 infrared5)
+			(have_image planet12 spectrograph1)
+			(have_image star13 spectrograph1)
+			(have_image phenomenon14 spectrograph2)
 		)
 	)
 )

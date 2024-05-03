@@ -17,8 +17,6 @@
 		table3 - place
 		sandw1 - sandwich
 		sandw2 - sandwich
-		sandw3 - sandwich
-		sandw4 - sandwich
 	)
 	(:init
 		(at tray1 kitchen)
@@ -37,8 +35,6 @@
 		(waiting child2 table1)
 		(notexist sandw1)
 		(notexist sandw2)
-		(notexist sandw3)
-		(notexist sandw4)
 	)
 	(:goal
 		(and

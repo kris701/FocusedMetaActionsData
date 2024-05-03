@@ -4,39 +4,52 @@
 	(:objects
 		satellite0 - satellite
 		instrument0 - instrument
-		thermograph0 - mode
+		instrument1 - instrument
+		instrument2 - instrument
+		image3 - mode
+		infrared0 - mode
+		infrared4 - mode
 		infrared1 - mode
-		groundstation1 - direction
+		thermograph2 - mode
+		star0 - direction
+		groundstation3 - direction
+		star5 - direction
+		star1 - direction
+		groundstation6 - direction
 		groundstation2 - direction
 		star4 - direction
-		star5 - direction
-		groundstation6 - direction
-		groundstation7 - direction
-		star0 - direction
-		star3 - direction
-		phenomenon8 - direction
-		star9 - direction
-		planet10 - direction
-		planet11 - direction
-		star12 - direction
+		planet7 - direction
+		planet8 - direction
+		planet9 - direction
+		phenomenon10 - direction
+		star11 - direction
 	)
 	(:init
-		(supports instrument0 thermograph0)
 		(supports instrument0 infrared1)
-		(calibration_target instrument0 star3)
-		(calibration_target instrument0 star0)
+		(calibration_target instrument0 star1)
+		(supports instrument1 infrared1)
+		(supports instrument1 thermograph2)
+		(supports instrument1 infrared4)
+		(calibration_target instrument1 groundstation6)
+		(supports instrument2 infrared1)
+		(supports instrument2 infrared0)
+		(supports instrument2 thermograph2)
+		(supports instrument2 image3)
+		(calibration_target instrument2 star4)
+		(calibration_target instrument2 groundstation2)
 		(on_board instrument0 satellite0)
+		(on_board instrument1 satellite0)
+		(on_board instrument2 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 groundstation2)
+		(pointing satellite0 star1)
 	)
 	(:goal
 		(and
-			(pointing satellite0 planet11)
-			(have_image phenomenon8 thermograph0)
-			(have_image star9 thermograph0)
-			(have_image planet10 infrared1)
-			(have_image planet11 thermograph0)
-			(have_image star12 infrared1)
+			(have_image planet7 infrared4)
+			(have_image planet8 infrared0)
+			(have_image planet9 thermograph2)
+			(have_image phenomenon10 infrared0)
+			(have_image star11 infrared4)
 		)
 	)
 )

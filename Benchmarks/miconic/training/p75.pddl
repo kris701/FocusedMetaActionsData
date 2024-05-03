@@ -1,5 +1,5 @@
 (define
-	(problem mixed-f13-p8-u0-v0-d0-a0-n0-a0-b0-n0-f0)
+	(problem mixed-f13-p9-u0-v0-d0-a0-n0-a0-b0-n0-f0)
 	(:domain miconic)
 	(:objects
 		p0 - passenger
@@ -10,6 +10,7 @@
 		p5 - passenger
 		p6 - passenger
 		p7 - passenger
+		p8 - passenger
 		f0 - floor
 		f1 - floor
 		f2 - floor
@@ -103,22 +104,24 @@
 		(above f10 f11)
 		(above f10 f12)
 		(above f11 f12)
-		(origin p0 f2)
-		(destin p0 f1)
-		(origin p1 f3)
+		(origin p0 f3)
+		(destin p0 f5)
+		(origin p1 f6)
 		(destin p1 f4)
-		(origin p2 f6)
-		(destin p2 f5)
-		(origin p3 f5)
-		(destin p3 f2)
-		(origin p4 f9)
-		(destin p4 f5)
-		(origin p5 f3)
-		(destin p5 f0)
-		(origin p6 f8)
-		(destin p6 f0)
-		(origin p7 f7)
-		(destin p7 f0)
+		(origin p2 f8)
+		(destin p2 f6)
+		(origin p3 f12)
+		(destin p3 f8)
+		(origin p4 f0)
+		(destin p4 f11)
+		(origin p5 f8)
+		(destin p5 f3)
+		(origin p6 f7)
+		(destin p6 f4)
+		(origin p7 f2)
+		(destin p7 f6)
+		(origin p8 f4)
+		(destin p8 f0)
 		(lift-at f0)
 	)
 	(:goal
@@ -131,6 +134,7 @@
 			(served p5)
 			(served p6)
 			(served p7)
+			(served p8)
 		)
 	)
 )

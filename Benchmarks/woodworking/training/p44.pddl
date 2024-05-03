@@ -16,20 +16,15 @@
 		saw1 - saw
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
-		green - acolour
-		blue - acolour
 		black - acolour
-		mauve - acolour
-		teak - awood
-		pine - awood
+		white - acolour
+		beech - awood
+		walnut - awood
 		p0 - part
 		p1 - part
 		p2 - part
-		p3 - part
-		p4 - part
 		b0 - board
 		b1 - board
-		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -37,10 +32,6 @@
 		s4 - aboardsize
 		s5 - aboardsize
 		s6 - aboardsize
-		s7 - aboardsize
-		s8 - aboardsize
-		s9 - aboardsize
-		s10 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -55,64 +46,44 @@
 		(boardsize-successor s3 s4)
 		(boardsize-successor s4 s5)
 		(boardsize-successor s5 s6)
-		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
-		(boardsize-successor s8 s9)
-		(boardsize-successor s9 s10)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 green)
-		(has-colour glazer0 black)
-		(has-colour glazer0 blue)
-		(has-colour glazer1 blue)
-		(has-colour immersion-varnisher0 green)
-		(has-colour immersion-varnisher0 black)
-		(has-colour immersion-varnisher1 black)
-		(has-colour spray-varnisher0 black)
-		(has-colour spray-varnisher1 green)
-		(has-colour spray-varnisher1 black)
+		(has-colour glazer0 natural)
+		(has-colour glazer1 white)
+		(has-colour immersion-varnisher0 natural)
+		(has-colour immersion-varnisher0 white)
+		(has-colour immersion-varnisher1 white)
+		(has-colour spray-varnisher0 white)
+		(has-colour spray-varnisher1 natural)
+		(has-colour spray-varnisher1 white)
 		(unused p0)
 		(goalsize p0 large)
 		(unused p1)
-		(goalsize p1 small)
+		(goalsize p1 large)
 		(unused p2)
-		(goalsize p2 medium)
-		(unused p3)
-		(goalsize p3 small)
-		(unused p4)
-		(goalsize p4 large)
-		(boardsize b0 s9)
-		(wood b0 teak)
+		(goalsize p2 large)
+		(boardsize b0 s6)
+		(wood b0 walnut)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s1)
-		(wood b1 teak)
-		(surface-condition b1 rough)
+		(boardsize b1 s3)
+		(wood b1 beech)
+		(surface-condition b1 smooth)
 		(available b1)
-		(boardsize b2 s10)
-		(wood b2 pine)
-		(surface-condition b2 rough)
-		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
-			(surface-condition p0 smooth)
-			(treatment p0 glazed)
-			(wood p0 teak)
-			(colour p0 blue)
+			(wood p0 walnut)
+			(colour p0 natural)
 			(available p1)
-			(wood p1 teak)
-			(colour p1 black)
+			(treatment p1 varnished)
+			(surface-condition p1 verysmooth)
+			(colour p1 white)
 			(available p2)
-			(treatment p2 varnished)
-			(colour p2 black)
-			(available p3)
-			(surface-condition p3 verysmooth)
-			(wood p3 teak)
-			(available p4)
-			(wood p4 pine)
-			(colour p4 green)
+			(wood p2 beech)
+			(treatment p2 glazed)
+			(surface-condition p2 verysmooth)
 		)
 	)
 )

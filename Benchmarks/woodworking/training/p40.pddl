@@ -10,19 +10,14 @@
 		saw0 - saw
 		spray-varnisher0 - spray-varnisher
 		green - acolour
-		blue - acolour
-		black - acolour
 		mauve - acolour
-		cherry - awood
-		beech - awood
+		oak - awood
+		pine - awood
 		p0 - part
 		p1 - part
 		p2 - part
-		p3 - part
-		p4 - part
 		b0 - board
 		b1 - board
-		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -32,7 +27,6 @@
 		s6 - aboardsize
 		s7 - aboardsize
 		s8 - aboardsize
-		s9 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -49,60 +43,39 @@
 		(boardsize-successor s5 s6)
 		(boardsize-successor s6 s7)
 		(boardsize-successor s7 s8)
-		(boardsize-successor s8 s9)
 		(empty highspeed-saw0)
-		(has-colour glazer0 green)
+		(has-colour glazer0 mauve)
+		(has-colour glazer0 natural)
 		(has-colour immersion-varnisher0 natural)
-		(has-colour immersion-varnisher0 black)
-		(has-colour immersion-varnisher0 green)
 		(has-colour spray-varnisher0 natural)
-		(has-colour spray-varnisher0 black)
-		(has-colour spray-varnisher0 green)
 		(unused p0)
 		(goalsize p0 large)
 		(unused p1)
 		(goalsize p1 large)
 		(unused p2)
-		(goalsize p2 medium)
-		(unused p3)
-		(goalsize p3 large)
-		(unused p4)
-		(goalsize p4 small)
-		(boardsize b0 s9)
-		(wood b0 beech)
-		(surface-condition b0 rough)
+		(goalsize p2 large)
+		(boardsize b0 s8)
+		(wood b0 pine)
+		(surface-condition b0 smooth)
 		(available b0)
-		(boardsize b1 s7)
-		(wood b1 beech)
+		(boardsize b1 s6)
+		(wood b1 pine)
 		(surface-condition b1 rough)
 		(available b1)
-		(boardsize b2 s8)
-		(wood b2 cherry)
-		(surface-condition b2 rough)
-		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
-			(colour p0 black)
-			(treatment p0 varnished)
-			(wood p0 beech)
+			(wood p0 pine)
+			(colour p0 mauve)
+			(surface-condition p0 smooth)
+			(treatment p0 glazed)
 			(available p1)
-			(colour p1 green)
+			(wood p1 pine)
 			(treatment p1 varnished)
-			(wood p1 cherry)
-			(surface-condition p1 verysmooth)
 			(available p2)
-			(colour p2 green)
-			(surface-condition p2 verysmooth)
-			(available p3)
-			(wood p3 beech)
-			(surface-condition p3 verysmooth)
-			(available p4)
-			(colour p4 natural)
-			(treatment p4 varnished)
-			(wood p4 cherry)
-			(surface-condition p4 smooth)
+			(colour p2 natural)
+			(surface-condition p2 smooth)
 		)
 	)
 )

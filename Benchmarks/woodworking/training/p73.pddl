@@ -3,31 +3,30 @@
 	(:domain woodworking)
 	(:objects
 		highspeed-saw0 - highspeed-saw
+		highspeed-saw1 - highspeed-saw
 		glazer0 - glazer
+		glazer1 - glazer
 		grinder0 - grinder
+		grinder1 - grinder
 		immersion-varnisher0 - immersion-varnisher
+		immersion-varnisher1 - immersion-varnisher
 		planer0 - planer
+		planer1 - planer
 		saw0 - saw
+		saw1 - saw
 		spray-varnisher0 - spray-varnisher
-		red - acolour
-		black - acolour
-		green - acolour
+		spray-varnisher1 - spray-varnisher
 		mauve - acolour
-		blue - acolour
 		white - acolour
-		cherry - awood
-		mahogany - awood
+		red - acolour
+		walnut - awood
+		beech - awood
 		p0 - part
 		p1 - part
 		p2 - part
 		p3 - part
-		p4 - part
-		p5 - part
-		p6 - part
-		p7 - part
 		b0 - board
 		b1 - board
-		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -35,6 +34,9 @@
 		s4 - aboardsize
 		s5 - aboardsize
 		s6 - aboardsize
+		s7 - aboardsize
+		s8 - aboardsize
+		s9 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -49,72 +51,55 @@
 		(boardsize-successor s3 s4)
 		(boardsize-successor s4 s5)
 		(boardsize-successor s5 s6)
+		(boardsize-successor s6 s7)
+		(boardsize-successor s7 s8)
+		(boardsize-successor s8 s9)
 		(empty highspeed-saw0)
-		(has-colour glazer0 blue)
-		(has-colour glazer0 white)
-		(has-colour immersion-varnisher0 black)
-		(has-colour immersion-varnisher0 white)
-		(has-colour spray-varnisher0 black)
-		(has-colour spray-varnisher0 white)
-		(unused p0)
-		(goalsize p0 small)
+		(empty highspeed-saw1)
+		(has-colour glazer0 red)
+		(has-colour glazer1 mauve)
+		(has-colour immersion-varnisher0 mauve)
+		(has-colour immersion-varnisher0 red)
+		(has-colour immersion-varnisher1 red)
+		(has-colour spray-varnisher0 red)
+		(has-colour spray-varnisher1 mauve)
+		(available p0)
+		(treatment p0 varnished)
+		(surface-condition p0 smooth)
+		(wood p0 beech)
+		(colour p0 natural)
+		(goalsize p0 large)
 		(unused p1)
 		(goalsize p1 large)
 		(unused p2)
-		(goalsize p2 small)
+		(goalsize p2 large)
 		(unused p3)
-		(goalsize p3 small)
-		(unused p4)
-		(goalsize p4 medium)
-		(unused p5)
-		(goalsize p5 medium)
-		(unused p6)
-		(goalsize p6 medium)
-		(unused p7)
-		(goalsize p7 small)
-		(boardsize b0 s4)
-		(wood b0 cherry)
-		(surface-condition b0 smooth)
+		(goalsize p3 medium)
+		(boardsize b0 s9)
+		(wood b0 beech)
+		(surface-condition b0 rough)
 		(available b0)
 		(boardsize b1 s3)
-		(wood b1 cherry)
+		(wood b1 walnut)
 		(surface-condition b1 rough)
 		(available b1)
-		(boardsize b2 s6)
-		(wood b2 mahogany)
-		(surface-condition b2 rough)
-		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
+			(wood p0 beech)
+			(colour p0 mauve)
 			(surface-condition p0 verysmooth)
-			(treatment p0 varnished)
-			(wood p0 cherry)
 			(available p1)
-			(treatment p1 glazed)
-			(colour p1 blue)
-			(wood p1 mahogany)
+			(colour p1 red)
+			(surface-condition p1 smooth)
 			(available p2)
-			(surface-condition p2 smooth)
-			(treatment p2 varnished)
+			(treatment p2 glazed)
+			(wood p2 beech)
 			(available p3)
+			(wood p3 walnut)
+			(treatment p3 glazed)
 			(surface-condition p3 verysmooth)
-			(colour p3 white)
-			(available p4)
-			(surface-condition p4 smooth)
-			(wood p4 cherry)
-			(available p5)
-			(surface-condition p5 verysmooth)
-			(treatment p5 varnished)
-			(available p6)
-			(treatment p6 glazed)
-			(wood p6 cherry)
-			(available p7)
-			(surface-condition p7 smooth)
-			(treatment p7 varnished)
-			(colour p7 black)
-			(wood p7 cherry)
 		)
 	)
 )

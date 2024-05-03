@@ -17,17 +17,14 @@
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
 		black - acolour
-		white - acolour
-		blue - acolour
 		red - acolour
-		cherry - awood
+		green - acolour
 		oak - awood
+		cherry - awood
 		p0 - part
 		p1 - part
 		p2 - part
 		p3 - part
-		p4 - part
-		p5 - part
 		b0 - board
 		b1 - board
 		s0 - aboardsize
@@ -35,10 +32,6 @@
 		s2 - aboardsize
 		s3 - aboardsize
 		s4 - aboardsize
-		s5 - aboardsize
-		s6 - aboardsize
-		s7 - aboardsize
-		s8 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -51,43 +44,36 @@
 		(boardsize-successor s1 s2)
 		(boardsize-successor s2 s3)
 		(boardsize-successor s3 s4)
-		(boardsize-successor s4 s5)
-		(boardsize-successor s5 s6)
-		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 blue)
-		(has-colour glazer1 blue)
-		(has-colour glazer1 black)
-		(has-colour immersion-varnisher0 white)
-		(has-colour immersion-varnisher1 black)
-		(has-colour immersion-varnisher1 white)
-		(has-colour spray-varnisher0 white)
-		(has-colour spray-varnisher1 black)
-		(has-colour spray-varnisher1 white)
+		(has-colour glazer0 red)
+		(has-colour glazer1 green)
+		(has-colour immersion-varnisher0 natural)
+		(has-colour immersion-varnisher1 natural)
+		(has-colour spray-varnisher0 natural)
+		(has-colour spray-varnisher1 natural)
 		(unused p0)
 		(goalsize p0 large)
-		(unused p1)
-		(goalsize p1 small)
-		(unused p2)
+		(available p1)
+		(treatment p1 glazed)
+		(surface-condition p1 rough)
+		(wood p1 oak)
+		(colour p1 green)
+		(goalsize p1 medium)
+		(available p2)
+		(treatment p2 glazed)
+		(surface-condition p2 verysmooth)
+		(wood p2 cherry)
+		(colour p2 green)
 		(goalsize p2 small)
-		(available p3)
-		(treatment p3 varnished)
-		(surface-condition p3 rough)
-		(wood p3 cherry)
-		(colour p3 white)
+		(unused p3)
 		(goalsize p3 small)
-		(unused p4)
-		(goalsize p4 medium)
-		(unused p5)
-		(goalsize p5 medium)
-		(boardsize b0 s8)
-		(wood b0 oak)
-		(surface-condition b0 smooth)
+		(boardsize b0 s4)
+		(wood b0 cherry)
+		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s6)
-		(wood b1 cherry)
+		(boardsize b1 s2)
+		(wood b1 oak)
 		(surface-condition b1 rough)
 		(available b1)
 	)
@@ -95,27 +81,19 @@
 		(and
 			(available p0)
 			(surface-condition p0 verysmooth)
-			(wood p0 oak)
-			(colour p0 black)
+			(treatment p0 glazed)
+			(wood p0 cherry)
 			(available p1)
-			(colour p1 blue)
-			(treatment p1 glazed)
+			(treatment p1 varnished)
+			(wood p1 oak)
 			(available p2)
-			(colour p2 white)
+			(surface-condition p2 smooth)
 			(treatment p2 varnished)
-			(surface-condition p2 verysmooth)
-			(wood p2 cherry)
+			(colour p2 natural)
 			(available p3)
-			(colour p3 black)
-			(surface-condition p3 verysmooth)
-			(wood p3 cherry)
-			(available p4)
-			(surface-condition p4 smooth)
-			(treatment p4 varnished)
-			(wood p4 cherry)
-			(available p5)
-			(colour p5 black)
-			(surface-condition p5 verysmooth)
+			(treatment p3 varnished)
+			(colour p3 natural)
+			(wood p3 oak)
 		)
 	)
 )

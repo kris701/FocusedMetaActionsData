@@ -16,7 +16,6 @@
 		sandw1 - sandwich
 		sandw2 - sandwich
 		sandw3 - sandwich
-		sandw4 - sandwich
 	)
 	(:init
 		(at tray1 kitchen)
@@ -25,14 +24,15 @@
 		(at_kitchen_bread bread2)
 		(at_kitchen_content content1)
 		(at_kitchen_content content2)
-		(not_allergic_gluten child2)
+		(no_gluten_bread bread2)
+		(no_gluten_content content2)
+		(allergic_gluten child2)
 		(not_allergic_gluten child1)
-		(waiting child1 table3)
-		(waiting child2 table1)
+		(waiting child1 table1)
+		(waiting child2 table2)
 		(notexist sandw1)
 		(notexist sandw2)
 		(notexist sandw3)
-		(notexist sandw4)
 	)
 	(:goal
 		(and

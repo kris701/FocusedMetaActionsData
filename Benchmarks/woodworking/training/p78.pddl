@@ -3,38 +3,24 @@
 	(:domain woodworking)
 	(:objects
 		highspeed-saw0 - highspeed-saw
-		highspeed-saw1 - highspeed-saw
 		glazer0 - glazer
-		glazer1 - glazer
 		grinder0 - grinder
-		grinder1 - grinder
 		immersion-varnisher0 - immersion-varnisher
-		immersion-varnisher1 - immersion-varnisher
 		planer0 - planer
-		planer1 - planer
 		saw0 - saw
-		saw1 - saw
 		spray-varnisher0 - spray-varnisher
-		spray-varnisher1 - spray-varnisher
-		white - acolour
-		black - acolour
-		red - acolour
-		green - acolour
 		mauve - acolour
 		blue - acolour
-		oak - awood
+		black - acolour
+		red - acolour
 		beech - awood
+		walnut - awood
 		p0 - part
 		p1 - part
 		p2 - part
 		p3 - part
 		p4 - part
-		p5 - part
-		p6 - part
-		p7 - part
 		b0 - board
-		b1 - board
-		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -42,9 +28,6 @@
 		s4 - aboardsize
 		s5 - aboardsize
 		s6 - aboardsize
-		s7 - aboardsize
-		s8 - aboardsize
-		s9 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -59,88 +42,59 @@
 		(boardsize-successor s3 s4)
 		(boardsize-successor s4 s5)
 		(boardsize-successor s5 s6)
-		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
-		(boardsize-successor s8 s9)
 		(empty highspeed-saw0)
-		(empty highspeed-saw1)
-		(has-colour glazer0 blue)
-		(has-colour glazer0 green)
-		(has-colour glazer1 green)
-		(has-colour immersion-varnisher0 black)
-		(has-colour immersion-varnisher0 natural)
-		(has-colour immersion-varnisher1 blue)
-		(has-colour immersion-varnisher1 black)
-		(has-colour immersion-varnisher1 natural)
-		(has-colour spray-varnisher0 blue)
-		(has-colour spray-varnisher0 black)
-		(has-colour spray-varnisher0 natural)
-		(has-colour spray-varnisher1 black)
-		(has-colour spray-varnisher1 natural)
+		(has-colour glazer0 mauve)
+		(has-colour glazer0 red)
+		(has-colour immersion-varnisher0 mauve)
+		(has-colour immersion-varnisher0 red)
+		(has-colour spray-varnisher0 mauve)
+		(has-colour spray-varnisher0 red)
 		(unused p0)
-		(goalsize p0 large)
-		(unused p1)
-		(goalsize p1 small)
+		(goalsize p0 small)
+		(available p1)
+		(treatment p1 varnished)
+		(surface-condition p1 verysmooth)
+		(wood p1 beech)
+		(colour p1 mauve)
+		(goalsize p1 large)
 		(unused p2)
-		(goalsize p2 large)
+		(goalsize p2 medium)
 		(unused p3)
-		(goalsize p3 small)
+		(goalsize p3 large)
 		(available p4)
-		(treatment p4 glazed)
+		(treatment p4 colourfragments)
 		(surface-condition p4 rough)
 		(wood p4 beech)
-		(colour p4 red)
-		(goalsize p4 small)
-		(unused p5)
-		(goalsize p5 medium)
-		(unused p6)
-		(goalsize p6 medium)
-		(unused p7)
-		(goalsize p7 small)
-		(boardsize b0 s9)
-		(wood b0 oak)
+		(colour p4 natural)
+		(goalsize p4 medium)
+		(boardsize b0 s6)
+		(wood b0 beech)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s4)
-		(wood b1 oak)
-		(surface-condition b1 smooth)
-		(available b1)
-		(boardsize b2 s4)
-		(wood b2 beech)
-		(surface-condition b2 rough)
-		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
-			(treatment p0 varnished)
-			(wood p0 oak)
-			(colour p0 natural)
+			(wood p0 beech)
+			(colour p0 red)
+			(surface-condition p0 verysmooth)
 			(available p1)
-			(surface-condition p1 verysmooth)
-			(treatment p1 varnished)
 			(wood p1 beech)
+			(treatment p1 varnished)
+			(colour p1 red)
+			(surface-condition p1 smooth)
 			(available p2)
+			(wood p2 beech)
+			(treatment p2 glazed)
+			(colour p2 mauve)
 			(surface-condition p2 smooth)
-			(treatment p2 varnished)
-			(colour p2 black)
 			(available p3)
-			(wood p3 oak)
-			(colour p3 blue)
+			(colour p3 mauve)
+			(surface-condition p3 smooth)
 			(available p4)
-			(surface-condition p4 smooth)
-			(treatment p4 glazed)
-			(colour p4 green)
 			(wood p4 beech)
-			(available p5)
-			(surface-condition p5 verysmooth)
-			(treatment p5 varnished)
-			(available p6)
-			(surface-condition p6 verysmooth)
-			(treatment p6 glazed)
-			(available p7)
-			(surface-condition p7 verysmooth)
-			(treatment p7 varnished)
+			(treatment p4 varnished)
+			(surface-condition p4 verysmooth)
 		)
 	)
 )

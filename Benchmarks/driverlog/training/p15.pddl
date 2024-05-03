@@ -1,25 +1,31 @@
 (define
-	(problem dlog-1-3-2)
+	(problem dlog-2-4-2)
 	(:domain driverlog)
 	(:objects
 		driver1 - driver
+		driver2 - driver
 		truck1 - truck
 		truck2 - truck
 		truck3 - truck
+		truck4 - truck
 		package1 - obj
 		package2 - obj
 		s0 - location
 		s1 - location
 		p0-1 - location
+		p1-0 - location
 	)
 	(:init
-		(at driver1 s0)
-		(at truck1 s1)
+		(at driver1 s1)
+		(at driver2 s0)
+		(at truck1 s0)
 		(empty truck1)
 		(at truck2 s0)
 		(empty truck2)
 		(at truck3 s0)
 		(empty truck3)
+		(at truck4 s1)
+		(empty truck4)
 		(at package1 s1)
 		(at package2 s1)
 		(path s0 p0-1)
@@ -31,9 +37,12 @@
 	)
 	(:goal
 		(and
-			(at driver1 s0)
+			(at driver1 s1)
+			(at driver2 s0)
+			(at truck1 s0)
 			(at truck2 s0)
-			(at truck3 s1)
+			(at package1 s1)
+			(at package2 s1)
 		)
 	)
 )

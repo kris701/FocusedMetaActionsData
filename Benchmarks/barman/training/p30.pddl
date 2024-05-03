@@ -12,16 +12,10 @@
 		ingredient1 - ingredient
 		ingredient2 - ingredient
 		ingredient3 - ingredient
-		ingredient4 - ingredient
-		ingredient5 - ingredient
-		ingredient6 - ingredient
 		cocktail1 - cocktail
 		dispenser1 - dispenser
 		dispenser2 - dispenser
 		dispenser3 - dispenser
-		dispenser4 - dispenser
-		dispenser5 - dispenser
-		dispenser6 - dispenser
 		l0 - level
 		l1 - level
 		l2 - level
@@ -35,9 +29,6 @@
 		(dispenses dispenser1 ingredient1)
 		(dispenses dispenser2 ingredient2)
 		(dispenses dispenser3 ingredient3)
-		(dispenses dispenser4 ingredient4)
-		(dispenses dispenser5 ingredient5)
-		(dispenses dispenser6 ingredient6)
 		(clean shaker1)
 		(clean shot1)
 		(clean shot2)
@@ -54,14 +45,14 @@
 		(shaker-level shaker1 l0)
 		(next l0 l1)
 		(next l1 l2)
-		(cocktail-part1 cocktail1 ingredient5)
-		(cocktail-part2 cocktail1 ingredient3)
+		(cocktail-part1 cocktail1 ingredient3)
+		(cocktail-part2 cocktail1 ingredient2)
 	)
 	(:goal
 		(and
 			(contains shot1 cocktail1)
-			(contains shot2 ingredient3)
-			(contains shot3 ingredient4)
+			(contains shot2 cocktail1)
+			(contains shot3 ingredient3)
 		)
 	)
 )

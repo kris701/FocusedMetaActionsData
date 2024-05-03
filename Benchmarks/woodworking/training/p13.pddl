@@ -9,19 +9,19 @@
 		planer0 - planer
 		saw0 - saw
 		spray-varnisher0 - spray-varnisher
-		red - acolour
+		green - acolour
 		mauve - acolour
-		beech - awood
-		walnut - awood
+		pine - awood
+		mahogany - awood
 		p0 - part
 		p1 - part
-		p2 - part
 		b0 - board
-		b1 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
 		s3 - aboardsize
+		s4 - aboardsize
+		s5 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -33,36 +33,29 @@
 		(boardsize-successor s0 s1)
 		(boardsize-successor s1 s2)
 		(boardsize-successor s2 s3)
+		(boardsize-successor s3 s4)
+		(boardsize-successor s4 s5)
 		(empty highspeed-saw0)
 		(has-colour glazer0 natural)
 		(has-colour immersion-varnisher0 natural)
 		(has-colour spray-varnisher0 natural)
 		(unused p0)
-		(goalsize p0 large)
+		(goalsize p0 medium)
 		(unused p1)
-		(goalsize p1 small)
-		(unused p2)
-		(goalsize p2 medium)
-		(boardsize b0 s3)
-		(wood b0 beech)
-		(surface-condition b0 rough)
+		(goalsize p1 medium)
+		(boardsize b0 s5)
+		(wood b0 pine)
+		(surface-condition b0 smooth)
 		(available b0)
-		(boardsize b1 s3)
-		(wood b1 walnut)
-		(surface-condition b1 rough)
-		(available b1)
 	)
 	(:goal
 		(and
 			(available p0)
+			(colour p0 natural)
 			(surface-condition p0 smooth)
-			(treatment p0 varnished)
 			(available p1)
-			(surface-condition p1 verysmooth)
-			(treatment p1 varnished)
-			(available p2)
-			(surface-condition p2 verysmooth)
-			(colour p2 natural)
+			(colour p1 natural)
+			(wood p1 pine)
 		)
 	)
 )

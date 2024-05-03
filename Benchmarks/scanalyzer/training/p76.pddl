@@ -1,5 +1,5 @@
 (define
-	(problem scanalyzer3d-1-empty-none)
+	(problem scanalyzer3d-1-empty-both)
 	(:domain scanalyzer3d)
 	(:objects
 		car-in-1 - car

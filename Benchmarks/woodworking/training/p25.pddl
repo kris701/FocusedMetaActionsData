@@ -10,14 +10,12 @@
 		saw0 - saw
 		spray-varnisher0 - spray-varnisher
 		green - acolour
-		black - acolour
-		white - acolour
-		walnut - awood
+		red - acolour
+		oak - awood
 		cherry - awood
 		p0 - part
 		p1 - part
 		p2 - part
-		p3 - part
 		b0 - board
 		s0 - aboardsize
 		s1 - aboardsize
@@ -25,7 +23,6 @@
 		s3 - aboardsize
 		s4 - aboardsize
 		s5 - aboardsize
-		s6 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -39,52 +36,40 @@
 		(boardsize-successor s2 s3)
 		(boardsize-successor s3 s4)
 		(boardsize-successor s4 s5)
-		(boardsize-successor s5 s6)
 		(empty highspeed-saw0)
 		(has-colour glazer0 natural)
-		(has-colour immersion-varnisher0 black)
-		(has-colour immersion-varnisher0 natural)
-		(has-colour spray-varnisher0 black)
-		(has-colour spray-varnisher0 natural)
-		(available p0)
-		(treatment p0 varnished)
-		(surface-condition p0 verysmooth)
-		(wood p0 walnut)
-		(colour p0 green)
-		(goalsize p0 large)
+		(has-colour glazer0 green)
+		(has-colour immersion-varnisher0 red)
+		(has-colour spray-varnisher0 green)
+		(unused p0)
+		(goalsize p0 small)
 		(available p1)
 		(treatment p1 colourfragments)
-		(surface-condition p1 smooth)
+		(surface-condition p1 rough)
 		(wood p1 cherry)
-		(colour p1 natural)
-		(goalsize p1 medium)
+		(colour p1 red)
+		(goalsize p1 small)
 		(unused p2)
 		(goalsize p2 large)
-		(unused p3)
-		(goalsize p3 large)
-		(boardsize b0 s6)
-		(wood b0 walnut)
-		(surface-condition b0 smooth)
+		(boardsize b0 s5)
+		(wood b0 cherry)
+		(surface-condition b0 rough)
 		(available b0)
 	)
 	(:goal
 		(and
 			(available p0)
 			(treatment p0 glazed)
-			(wood p0 walnut)
+			(wood p0 cherry)
 			(available p1)
-			(colour p1 black)
-			(treatment p1 varnished)
-			(surface-condition p1 verysmooth)
+			(treatment p1 glazed)
 			(wood p1 cherry)
+			(colour p1 natural)
+			(surface-condition p1 smooth)
 			(available p2)
-			(colour p2 natural)
-			(wood p2 walnut)
-			(available p3)
-			(colour p3 black)
-			(treatment p3 varnished)
-			(surface-condition p3 smooth)
-			(wood p3 walnut)
+			(treatment p2 glazed)
+			(wood p2 cherry)
+			(colour p2 green)
 		)
 	)
 )

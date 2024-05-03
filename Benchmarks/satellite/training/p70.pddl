@@ -4,47 +4,42 @@
 	(:objects
 		satellite0 - satellite
 		instrument0 - instrument
-		instrument1 - instrument
-		spectrograph0 - mode
-		thermograph1 - mode
+		thermograph0 - mode
+		infrared3 - mode
+		infrared1 - mode
+		spectrograph2 - mode
 		groundstation1 - direction
-		groundstation2 - direction
-		star3 - direction
-		star4 - direction
-		star0 - direction
+		star2 - direction
+		groundstation3 - direction
+		groundstation4 - direction
+		groundstation0 - direction
 		phenomenon5 - direction
-		star6 - direction
+		phenomenon6 - direction
 		planet7 - direction
-		planet8 - direction
+		star8 - direction
 		star9 - direction
-		star10 - direction
-		star11 - direction
-		star12 - direction
-		phenomenon13 - direction
+		planet10 - direction
+		planet11 - direction
 	)
 	(:init
-		(supports instrument0 thermograph1)
-		(calibration_target instrument0 star0)
-		(supports instrument1 thermograph1)
-		(supports instrument1 spectrograph0)
-		(calibration_target instrument1 star0)
+		(supports instrument0 infrared1)
+		(supports instrument0 infrared3)
+		(supports instrument0 spectrograph2)
+		(supports instrument0 thermograph0)
+		(calibration_target instrument0 groundstation0)
 		(on_board instrument0 satellite0)
-		(on_board instrument1 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 star9)
+		(pointing satellite0 groundstation3)
 	)
 	(:goal
 		(and
-			(pointing satellite0 groundstation2)
-			(have_image phenomenon5 thermograph1)
-			(have_image star6 thermograph1)
-			(have_image planet7 thermograph1)
-			(have_image planet8 thermograph1)
-			(have_image star9 spectrograph0)
-			(have_image star10 thermograph1)
-			(have_image star11 spectrograph0)
-			(have_image star12 spectrograph0)
-			(have_image phenomenon13 thermograph1)
+			(have_image phenomenon5 infrared1)
+			(have_image phenomenon6 infrared1)
+			(have_image planet7 infrared1)
+			(have_image star8 thermograph0)
+			(have_image star9 thermograph0)
+			(have_image planet10 spectrograph2)
+			(have_image planet11 thermograph0)
 		)
 	)
 )

@@ -16,10 +16,10 @@
 		saw1 - saw
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
-		red - acolour
+		green - acolour
 		white - acolour
 		teak - awood
-		beech - awood
+		pine - awood
 		p0 - part
 		p1 - part
 		b0 - board
@@ -40,33 +40,37 @@
 		(boardsize-successor s2 s3)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 red)
-		(has-colour glazer1 red)
+		(has-colour glazer0 green)
+		(has-colour glazer1 white)
 		(has-colour immersion-varnisher0 natural)
-		(has-colour immersion-varnisher0 white)
+		(has-colour immersion-varnisher0 green)
 		(has-colour immersion-varnisher1 natural)
-		(has-colour immersion-varnisher1 white)
 		(has-colour spray-varnisher0 natural)
-		(has-colour spray-varnisher0 white)
+		(has-colour spray-varnisher0 green)
 		(has-colour spray-varnisher1 natural)
-		(has-colour spray-varnisher1 white)
-		(unused p0)
+		(available p0)
+		(treatment p0 varnished)
+		(surface-condition p0 smooth)
+		(wood p0 teak)
+		(colour p0 natural)
 		(goalsize p0 small)
 		(unused p1)
-		(goalsize p1 small)
+		(goalsize p1 medium)
 		(boardsize b0 s3)
 		(wood b0 teak)
-		(surface-condition b0 rough)
+		(surface-condition b0 smooth)
 		(available b0)
 	)
 	(:goal
 		(and
 			(available p0)
-			(treatment p0 varnished)
-			(colour p0 natural)
+			(surface-condition p0 smooth)
+			(colour p0 green)
 			(available p1)
+			(wood p1 teak)
 			(treatment p1 varnished)
-			(colour p1 white)
+			(surface-condition p1 verysmooth)
+			(colour p1 natural)
 		)
 	)
 )

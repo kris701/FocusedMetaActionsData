@@ -16,15 +16,13 @@
 		saw1 - saw
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
-		black - acolour
 		green - acolour
 		mauve - acolour
 		walnut - awood
-		teak - awood
+		cherry - awood
 		p0 - part
 		p1 - part
 		p2 - part
-		p3 - part
 		b0 - board
 		b1 - board
 		s0 - aboardsize
@@ -32,10 +30,6 @@
 		s2 - aboardsize
 		s3 - aboardsize
 		s4 - aboardsize
-		s5 - aboardsize
-		s6 - aboardsize
-		s7 - aboardsize
-		s8 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -48,37 +42,31 @@
 		(boardsize-successor s1 s2)
 		(boardsize-successor s2 s3)
 		(boardsize-successor s3 s4)
-		(boardsize-successor s4 s5)
-		(boardsize-successor s5 s6)
-		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 green)
+		(has-colour glazer0 mauve)
 		(has-colour glazer1 green)
-		(has-colour immersion-varnisher0 black)
 		(has-colour immersion-varnisher0 green)
-		(has-colour immersion-varnisher1 black)
 		(has-colour immersion-varnisher1 green)
-		(has-colour spray-varnisher0 black)
 		(has-colour spray-varnisher0 green)
-		(has-colour spray-varnisher1 black)
 		(has-colour spray-varnisher1 green)
 		(unused p0)
 		(goalsize p0 large)
-		(unused p1)
-		(goalsize p1 medium)
+		(available p1)
+		(treatment p1 colourfragments)
+		(surface-condition p1 smooth)
+		(wood p1 cherry)
+		(colour p1 natural)
+		(goalsize p1 large)
 		(unused p2)
-		(goalsize p2 large)
-		(unused p3)
-		(goalsize p3 small)
-		(boardsize b0 s6)
+		(goalsize p2 small)
+		(boardsize b0 s4)
 		(wood b0 walnut)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s8)
-		(wood b1 teak)
-		(surface-condition b1 rough)
+		(boardsize b1 s2)
+		(wood b1 cherry)
+		(surface-condition b1 smooth)
 		(available b1)
 	)
 	(:goal
@@ -86,20 +74,15 @@
 			(available p0)
 			(colour p0 green)
 			(wood p0 walnut)
-			(surface-condition p0 smooth)
-			(treatment p0 varnished)
 			(available p1)
-			(colour p1 green)
-			(wood p1 teak)
-			(surface-condition p1 smooth)
+			(surface-condition p1 verysmooth)
 			(treatment p1 varnished)
+			(wood p1 cherry)
 			(available p2)
+			(surface-condition p2 smooth)
+			(treatment p2 varnished)
 			(colour p2 green)
-			(wood p2 teak)
-			(treatment p2 glazed)
-			(available p3)
-			(colour p3 black)
-			(treatment p3 varnished)
+			(wood p2 cherry)
 		)
 	)
 )

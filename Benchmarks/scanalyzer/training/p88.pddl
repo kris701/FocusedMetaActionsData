@@ -1,5 +1,5 @@
 (define
-	(problem scanalyzer3d-1-ab-none)
+	(problem scanalyzer3d-1-ab-in)
 	(:domain scanalyzer3d)
 	(:objects
 		car-in-1a - car

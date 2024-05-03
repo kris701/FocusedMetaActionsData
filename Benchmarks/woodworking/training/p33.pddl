@@ -23,15 +23,12 @@
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
 		spray-varnisher2 - spray-varnisher
+		red - acolour
 		blue - acolour
-		white - acolour
-		mauve - acolour
-		walnut - awood
-		cherry - awood
+		mahogany - awood
+		pine - awood
 		p0 - part
 		p1 - part
-		p2 - part
-		p3 - part
 		b0 - board
 		b1 - board
 		s0 - aboardsize
@@ -59,52 +56,36 @@
 		(empty highspeed-saw1)
 		(empty highspeed-saw2)
 		(has-colour glazer0 blue)
-		(has-colour glazer1 blue)
-		(has-colour glazer1 mauve)
+		(has-colour glazer1 red)
 		(has-colour glazer2 blue)
-		(has-colour glazer2 mauve)
 		(has-colour immersion-varnisher0 blue)
-		(has-colour immersion-varnisher0 mauve)
-		(has-colour immersion-varnisher1 mauve)
-		(has-colour immersion-varnisher2 white)
-		(has-colour spray-varnisher0 blue)
-		(has-colour spray-varnisher0 mauve)
-		(has-colour spray-varnisher1 mauve)
-		(has-colour spray-varnisher2 mauve)
+		(has-colour immersion-varnisher1 natural)
+		(has-colour immersion-varnisher2 natural)
+		(has-colour spray-varnisher0 natural)
+		(has-colour spray-varnisher1 natural)
+		(has-colour spray-varnisher2 blue)
 		(unused p0)
 		(goalsize p0 medium)
 		(unused p1)
-		(goalsize p1 small)
-		(unused p2)
-		(goalsize p2 small)
-		(unused p3)
-		(goalsize p3 large)
-		(boardsize b0 s6)
-		(wood b0 cherry)
-		(surface-condition b0 rough)
+		(goalsize p1 large)
+		(boardsize b0 s4)
+		(wood b0 pine)
+		(surface-condition b0 smooth)
 		(available b0)
-		(boardsize b1 s1)
-		(wood b1 walnut)
+		(boardsize b1 s6)
+		(wood b1 mahogany)
 		(surface-condition b1 rough)
 		(available b1)
 	)
 	(:goal
 		(and
 			(available p0)
-			(treatment p0 glazed)
-			(colour p0 mauve)
-			(wood p0 cherry)
+			(surface-condition p0 verysmooth)
+			(treatment p0 varnished)
+			(colour p0 natural)
 			(available p1)
-			(colour p1 blue)
-			(wood p1 cherry)
-			(available p2)
-			(treatment p2 varnished)
-			(colour p2 mauve)
-			(available p3)
-			(treatment p3 glazed)
-			(colour p3 blue)
-			(surface-condition p3 verysmooth)
-			(wood p3 cherry)
+			(surface-condition p1 smooth)
+			(wood p1 mahogany)
 		)
 	)
 )

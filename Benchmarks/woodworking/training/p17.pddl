@@ -17,19 +17,15 @@
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
 		blue - acolour
-		green - acolour
-		walnut - awood
+		red - acolour
+		beech - awood
 		cherry - awood
 		p0 - part
 		p1 - part
-		p2 - part
 		b0 - board
-		b1 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
-		s3 - aboardsize
-		s4 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -40,44 +36,31 @@
 		(is-smooth verysmooth)
 		(boardsize-successor s0 s1)
 		(boardsize-successor s1 s2)
-		(boardsize-successor s2 s3)
-		(boardsize-successor s3 s4)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 green)
-		(has-colour glazer0 natural)
-		(has-colour glazer1 natural)
-		(has-colour immersion-varnisher0 green)
-		(has-colour immersion-varnisher1 green)
-		(has-colour spray-varnisher0 green)
-		(has-colour spray-varnisher1 green)
+		(has-colour glazer0 blue)
+		(has-colour glazer1 blue)
+		(has-colour immersion-varnisher0 blue)
+		(has-colour immersion-varnisher1 blue)
+		(has-colour spray-varnisher0 blue)
+		(has-colour spray-varnisher1 red)
 		(unused p0)
-		(goalsize p0 large)
+		(goalsize p0 small)
 		(unused p1)
 		(goalsize p1 small)
-		(unused p2)
-		(goalsize p2 large)
-		(boardsize b0 s4)
-		(wood b0 cherry)
-		(surface-condition b0 smooth)
+		(boardsize b0 s2)
+		(wood b0 beech)
+		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s3)
-		(wood b1 walnut)
-		(surface-condition b1 rough)
-		(available b1)
 	)
 	(:goal
 		(and
 			(available p0)
-			(treatment p0 glazed)
-			(wood p0 cherry)
+			(treatment p0 varnished)
+			(surface-condition p0 verysmooth)
 			(available p1)
-			(treatment p1 glazed)
-			(surface-condition p1 verysmooth)
-			(colour p1 natural)
-			(available p2)
-			(surface-condition p2 smooth)
-			(colour p2 green)
+			(surface-condition p1 smooth)
+			(wood p1 beech)
 		)
 	)
 )

@@ -1,5 +1,5 @@
 (define
-	(problem depot-3-2-2-5-5-4)
+	(problem depot-3-2-2-5-5-3)
 	(:domain depots)
 	(:objects
 		depot0 - depot
@@ -17,7 +17,6 @@
 		crate0 - crate
 		crate1 - crate
 		crate2 - crate
-		crate3 - crate
 		hoist0 - hoist
 		hoist1 - hoist
 		hoist2 - hoist
@@ -30,13 +29,13 @@
 		(at pallet1 depot1)
 		(clear pallet1)
 		(at pallet2 depot2)
-		(clear crate0)
-		(at pallet3 distributor0)
 		(clear crate2)
+		(at pallet3 distributor0)
+		(clear pallet3)
 		(at pallet4 distributor1)
-		(clear crate3)
-		(at truck0 distributor1)
-		(at truck1 depot0)
+		(clear crate0)
+		(at truck0 depot1)
+		(at truck1 depot1)
 		(at hoist0 depot0)
 		(available hoist0)
 		(at hoist1 depot1)
@@ -47,20 +46,18 @@
 		(available hoist3)
 		(at hoist4 distributor1)
 		(available hoist4)
-		(at crate0 depot2)
-		(on crate0 pallet2)
+		(at crate0 distributor1)
+		(on crate0 pallet4)
 		(at crate1 depot0)
 		(on crate1 pallet0)
-		(at crate2 distributor0)
-		(on crate2 pallet3)
-		(at crate3 distributor1)
-		(on crate3 pallet4)
+		(at crate2 depot2)
+		(on crate2 pallet2)
 	)
 	(:goal
 		(and
-			(on crate1 pallet4)
-			(on crate2 pallet2)
-			(on crate3 pallet1)
+			(on crate0 pallet1)
+			(on crate1 pallet3)
+			(on crate2 pallet0)
 		)
 	)
 )

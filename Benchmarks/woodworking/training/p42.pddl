@@ -17,23 +17,22 @@
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
 		mauve - acolour
-		black - acolour
-		blue - acolour
-		red - acolour
-		cherry - awood
+		white - acolour
 		pine - awood
+		beech - awood
 		p0 - part
 		p1 - part
 		p2 - part
-		p3 - part
-		p4 - part
 		b0 - board
-		b1 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
 		s3 - aboardsize
 		s4 - aboardsize
+		s5 - aboardsize
+		s6 - aboardsize
+		s7 - aboardsize
+		s8 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -46,58 +45,46 @@
 		(boardsize-successor s1 s2)
 		(boardsize-successor s2 s3)
 		(boardsize-successor s3 s4)
+		(boardsize-successor s4 s5)
+		(boardsize-successor s5 s6)
+		(boardsize-successor s6 s7)
+		(boardsize-successor s7 s8)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 blue)
-		(has-colour glazer0 natural)
-		(has-colour glazer1 blue)
-		(has-colour glazer1 natural)
-		(has-colour immersion-varnisher0 mauve)
-		(has-colour immersion-varnisher1 mauve)
-		(has-colour immersion-varnisher1 natural)
-		(has-colour spray-varnisher0 mauve)
-		(has-colour spray-varnisher0 natural)
-		(has-colour spray-varnisher1 mauve)
-		(unused p0)
+		(has-colour glazer0 white)
+		(has-colour glazer0 mauve)
+		(has-colour glazer1 mauve)
+		(has-colour immersion-varnisher0 white)
+		(has-colour immersion-varnisher1 white)
+		(has-colour spray-varnisher0 white)
+		(has-colour spray-varnisher1 white)
+		(available p0)
+		(treatment p0 colourfragments)
+		(surface-condition p0 smooth)
+		(wood p0 pine)
+		(colour p0 natural)
 		(goalsize p0 small)
 		(unused p1)
-		(goalsize p1 small)
+		(goalsize p1 medium)
 		(unused p2)
-		(goalsize p2 small)
-		(unused p3)
-		(goalsize p3 small)
-		(unused p4)
-		(goalsize p4 medium)
-		(boardsize b0 s4)
-		(wood b0 cherry)
+		(goalsize p2 large)
+		(boardsize b0 s8)
+		(wood b0 beech)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s4)
-		(wood b1 pine)
-		(surface-condition b1 rough)
-		(available b1)
 	)
 	(:goal
 		(and
 			(available p0)
-			(wood p0 cherry)
-			(colour p0 mauve)
-			(surface-condition p0 smooth)
 			(treatment p0 varnished)
+			(surface-condition p0 smooth)
 			(available p1)
-			(wood p1 pine)
-			(colour p1 natural)
+			(treatment p1 glazed)
+			(surface-condition p1 verysmooth)
+			(colour p1 mauve)
 			(available p2)
-			(wood p2 pine)
-			(surface-condition p2 verysmooth)
-			(available p3)
-			(colour p3 blue)
-			(wood p3 pine)
-			(surface-condition p3 smooth)
-			(treatment p3 glazed)
-			(available p4)
-			(treatment p4 glazed)
-			(colour p4 natural)
+			(surface-condition p2 smooth)
+			(colour p2 white)
 		)
 	)
 )

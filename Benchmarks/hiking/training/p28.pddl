@@ -1,5 +1,5 @@
 (define
-	(problem hiking-2-4-4)
+	(problem hiking-2-4-2)
 	(:domain hiking)
 	(:objects
 		car0 - car
@@ -12,8 +12,6 @@
 		couple1 - couple
 		place0 - place
 		place1 - place
-		place2 - place
-		place3 - place
 		guy0 - person
 		girl0 - person
 		guy1 - person
@@ -25,7 +23,7 @@
 		(at_person girl0 place0)
 		(walked couple0 place0)
 		(at_tent tent0 place0)
-		(down tent0)
+		(up tent0)
 		(partners couple1 guy1 girl1)
 		(at_person guy1 place0)
 		(at_person girl1 place0)
@@ -37,13 +35,11 @@
 		(at_car car2 place0)
 		(at_car car3 place0)
 		(next place0 place1)
-		(next place1 place2)
-		(next place2 place3)
 	)
 	(:goal
 		(and
-			(walked couple0 place3)
-			(walked couple1 place3)
+			(walked couple0 place1)
+			(walked couple1 place1)
 		)
 	)
 )

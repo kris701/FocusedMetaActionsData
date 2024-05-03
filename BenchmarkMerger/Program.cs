@@ -41,7 +41,40 @@ foreach (var folder1 in commonFolders.Keys)
         if (file.Name != "domain.pddl")
             file.CopyTo(Path.Combine(target, name, "testing", $"p{count++}.pddl"));
     count = 1;
-    foreach (var file in new DirectoryInfo(Path.Combine(folder2.FullName, "tasks")).GetFiles().Take(topN))
-        if (file.Name != "domain.pddl")
-            file.CopyTo(Path.Combine(target, name, "training", $"p{count++}.pddl"));
+    var ordered = new List<ProblemDifficulty>();
+    foreach(var folder in new DirectoryInfo(Path.Combine(folder2.FullName, "good-operators-unit")).GetDirectories())
+    {
+        var propFile = new FileInfo(Path.Combine(folder.FullName, "properties"));
+        if (propFile.Exists)
+        {
+            var lines = File.ReadAllLines(propFile.FullName);
+            var line = lines.FirstOrDefault(x => x.Contains("\"search_time\":"));
+            if (line != null)
+            {
+                var value = double.Parse(line.Replace("\"search_time\":","").Replace(",",""));
+                ordered.Add(new ProblemDifficulty(folder.Name, value));
+            }
+        }
+    }
+
+    ordered = ordered.OrderBy(x => x.SearchTime).Take(topN).ToList();
+    foreach(var order in ordered)
+    {
+        var targetFile = new FileInfo(Path.Combine(folder2.FullName, "tasks", $"{order.Problem}.pddl"));
+        if (!targetFile.Exists)
+            throw new Exception("File not found?");
+        targetFile.CopyTo(Path.Combine(target, name, "training", $"p{count++}.pddl"));
+    }
+}
+
+class ProblemDifficulty
+{
+    public string Problem { get; set; }
+    public double SearchTime { get; set; }
+
+    public ProblemDifficulty(string problem, double searchTime)
+    {
+        Problem = problem;
+        SearchTime = searchTime;
+    }
 }

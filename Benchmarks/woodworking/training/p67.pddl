@@ -16,23 +16,17 @@
 		saw1 - saw
 		spray-varnisher0 - spray-varnisher
 		spray-varnisher1 - spray-varnisher
+		blue - acolour
 		black - acolour
-		mauve - acolour
-		green - acolour
-		white - acolour
 		red - acolour
-		cherry - awood
 		mahogany - awood
+		walnut - awood
 		p0 - part
 		p1 - part
 		p2 - part
 		p3 - part
-		p4 - part
-		p5 - part
-		p6 - part
 		b0 - board
 		b1 - board
-		b2 - board
 		s0 - aboardsize
 		s1 - aboardsize
 		s2 - aboardsize
@@ -60,73 +54,50 @@
 		(boardsize-successor s7 s8)
 		(empty highspeed-saw0)
 		(empty highspeed-saw1)
-		(has-colour glazer0 red)
-		(has-colour glazer0 white)
 		(has-colour glazer0 natural)
+		(has-colour glazer0 red)
+		(has-colour glazer1 blue)
 		(has-colour glazer1 red)
-		(has-colour glazer1 green)
-		(has-colour glazer1 black)
-		(has-colour glazer1 natural)
-		(has-colour immersion-varnisher0 black)
 		(has-colour immersion-varnisher0 natural)
-		(has-colour immersion-varnisher1 white)
-		(has-colour immersion-varnisher1 green)
+		(has-colour immersion-varnisher0 blue)
 		(has-colour immersion-varnisher1 natural)
-		(has-colour spray-varnisher0 white)
-		(has-colour spray-varnisher0 green)
-		(has-colour spray-varnisher0 black)
 		(has-colour spray-varnisher0 natural)
 		(has-colour spray-varnisher1 natural)
+		(has-colour spray-varnisher1 blue)
 		(unused p0)
-		(goalsize p0 medium)
+		(goalsize p0 large)
 		(unused p1)
-		(goalsize p1 small)
+		(goalsize p1 medium)
 		(unused p2)
 		(goalsize p2 large)
 		(unused p3)
-		(goalsize p3 large)
-		(unused p4)
-		(goalsize p4 small)
-		(unused p5)
-		(goalsize p5 small)
-		(unused p6)
-		(goalsize p6 small)
+		(goalsize p3 medium)
 		(boardsize b0 s8)
-		(wood b0 mahogany)
-		(surface-condition b0 smooth)
+		(wood b0 walnut)
+		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s3)
+		(boardsize b1 s2)
 		(wood b1 mahogany)
-		(surface-condition b1 smooth)
+		(surface-condition b1 rough)
 		(available b1)
-		(boardsize b2 s8)
-		(wood b2 cherry)
-		(surface-condition b2 smooth)
-		(available b2)
 	)
 	(:goal
 		(and
 			(available p0)
+			(wood p0 walnut)
 			(colour p0 red)
 			(treatment p0 glazed)
 			(available p1)
-			(surface-condition p1 smooth)
-			(treatment p1 varnished)
+			(wood p1 walnut)
+			(colour p1 blue)
 			(available p2)
-			(colour p2 white)
-			(wood p2 cherry)
+			(surface-condition p2 smooth)
+			(wood p2 walnut)
+			(colour p2 natural)
+			(treatment p2 varnished)
 			(available p3)
+			(wood p3 mahogany)
 			(colour p3 natural)
-			(treatment p3 glazed)
-			(available p4)
-			(colour p4 green)
-			(surface-condition p4 verysmooth)
-			(available p5)
-			(colour p5 black)
-			(wood p5 mahogany)
-			(available p6)
-			(colour p6 natural)
-			(treatment p6 varnished)
 		)
 	)
 )

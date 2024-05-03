@@ -1,5 +1,5 @@
 (define
-	(problem hiking-7-9-2)
+	(problem hiking-3-9-2)
 	(:domain hiking)
 	(:objects
 		car0 - car
@@ -14,17 +14,9 @@
 		tent0 - tent
 		tent1 - tent
 		tent2 - tent
-		tent3 - tent
-		tent4 - tent
-		tent5 - tent
-		tent6 - tent
 		couple0 - couple
 		couple1 - couple
 		couple2 - couple
-		couple3 - couple
-		couple4 - couple
-		couple5 - couple
-		couple6 - couple
 		place0 - place
 		place1 - place
 		guy0 - person
@@ -33,14 +25,6 @@
 		girl1 - person
 		guy2 - person
 		girl2 - person
-		guy3 - person
-		girl3 - person
-		guy4 - person
-		girl4 - person
-		guy5 - person
-		girl5 - person
-		guy6 - person
-		girl6 - person
 	)
 	(:init
 		(partners couple0 guy0 girl0)
@@ -60,31 +44,7 @@
 		(at_person girl2 place0)
 		(walked couple2 place0)
 		(at_tent tent2 place0)
-		(down tent2)
-		(partners couple3 guy3 girl3)
-		(at_person guy3 place0)
-		(at_person girl3 place0)
-		(walked couple3 place0)
-		(at_tent tent3 place0)
-		(down tent3)
-		(partners couple4 guy4 girl4)
-		(at_person guy4 place0)
-		(at_person girl4 place0)
-		(walked couple4 place0)
-		(at_tent tent4 place0)
-		(down tent4)
-		(partners couple5 guy5 girl5)
-		(at_person guy5 place0)
-		(at_person girl5 place0)
-		(walked couple5 place0)
-		(at_tent tent5 place0)
-		(down tent5)
-		(partners couple6 guy6 girl6)
-		(at_person guy6 place0)
-		(at_person girl6 place0)
-		(walked couple6 place0)
-		(at_tent tent6 place0)
-		(down tent6)
+		(up tent2)
 		(at_car car0 place0)
 		(at_car car1 place0)
 		(at_car car2 place0)
@@ -101,10 +61,6 @@
 			(walked couple0 place1)
 			(walked couple1 place1)
 			(walked couple2 place1)
-			(walked couple3 place1)
-			(walked couple4 place1)
-			(walked couple5 place1)
-			(walked couple6 place1)
 		)
 	)
 )

@@ -5,44 +5,53 @@
 		satellite0 - satellite
 		instrument0 - instrument
 		instrument1 - instrument
-		thermograph0 - mode
-		spectrograph2 - mode
+		instrument2 - instrument
+		thermograph3 - mode
+		thermograph2 - mode
+		infrared4 - mode
 		spectrograph1 - mode
+		spectrograph0 - mode
+		spectrograph5 - mode
+		groundstation1 - direction
+		groundstation3 - direction
 		groundstation4 - direction
-		star5 - direction
 		groundstation6 - direction
-		star7 - direction
-		star1 - direction
-		star2 - direction
-		star3 - direction
 		star0 - direction
-		phenomenon8 - direction
-		phenomenon9 - direction
-		star10 - direction
-		phenomenon11 - direction
-		planet12 - direction
+		star5 - direction
+		groundstation2 - direction
+		phenomenon7 - direction
+		planet8 - direction
+		star9 - direction
+		planet10 - direction
+		planet11 - direction
 	)
 	(:init
-		(supports instrument0 thermograph0)
+		(supports instrument0 spectrograph0)
 		(supports instrument0 spectrograph1)
-		(supports instrument0 spectrograph2)
-		(calibration_target instrument0 star2)
-		(calibration_target instrument0 star1)
-		(supports instrument1 thermograph0)
-		(calibration_target instrument1 star0)
-		(calibration_target instrument1 star3)
+		(supports instrument0 spectrograph5)
+		(calibration_target instrument0 star0)
+		(supports instrument1 thermograph3)
+		(supports instrument1 thermograph2)
+		(calibration_target instrument1 star5)
+		(supports instrument2 thermograph3)
+		(supports instrument2 infrared4)
+		(calibration_target instrument2 groundstation2)
 		(on_board instrument0 satellite0)
 		(on_board instrument1 satellite0)
+		(on_board instrument2 satellite0)
 		(power_avail satellite0)
-		(pointing satellite0 star10)
+		(pointing satellite0 groundstation2)
 	)
 	(:goal
 		(and
-			(have_image phenomenon8 spectrograph2)
-			(have_image phenomenon9 spectrograph2)
-			(have_image star10 spectrograph1)
-			(have_image phenomenon11 spectrograph2)
-			(have_image planet12 spectrograph1)
+			(have_image phenomenon7 spectrograph5)
+			(have_image phenomenon7 infrared4)
+			(have_image planet8 thermograph2)
+			(have_image planet8 spectrograph1)
+			(have_image star9 spectrograph0)
+			(have_image star9 thermograph2)
+			(have_image planet10 spectrograph0)
+			(have_image planet11 infrared4)
 		)
 	)
 )
