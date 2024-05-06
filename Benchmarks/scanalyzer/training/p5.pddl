@@ -1,5 +1,5 @@
 (define
-	(problem scanalyzer3d-2-ab-both)
+	(problem scanalyzer3d-2-ab-in)
 	(:domain scanalyzer3d)
 	(:objects
 		car-in-1a - car
@@ -25,9 +25,7 @@
 		(cycle-4 seg-in-2a seg-in-2b seg-out-1a seg-out-1b)
 		(cycle-4 seg-in-2a seg-in-2b seg-out-2a seg-out-2b)
 		(cycle-4-with-analysis seg-in-1a seg-in-1b seg-out-1a seg-out-1b)
-		(cycle-4-with-analysis seg-in-1a seg-in-1b seg-out-2a seg-out-2b)
 		(cycle-4-with-analysis seg-in-2a seg-in-2b seg-out-1a seg-out-1b)
-		(cycle-4-with-analysis seg-in-2a seg-in-2b seg-out-2a seg-out-2b)
 		(on car-in-1a seg-in-1a)
 		(on car-in-1b seg-in-1b)
 		(on car-in-2a seg-in-2a)

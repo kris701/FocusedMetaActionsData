@@ -1,10 +1,10 @@
 Domain: scanalyzer
-Total Problems: 194
+Total Problems: 392
 Target Problems: 5
-Lowest: 0.100384
+Lowest: 0.01
 Highest: 7.78815
-	Search Time for 'p1': 0.607944
-	Search Time for 'p2': 1.97569
-	Search Time for 'p3': 5.70776
-	Search Time for 'p4': 6.73186
-	Search Time for 'p5': 7.78815
+	Search Time for 'p1': 0.01
+	Search Time for 'p2': 0.01
+	Search Time for 'p3': 0.01
+	Search Time for 'p4': 0.2956
+	Search Time for 'p5': 5.70599

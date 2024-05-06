@@ -5,7 +5,7 @@ var benchmark1 = "autoscale-benchmarks/21.11-agile-strips";
 var benchmark2 = "autoscale-learning/data";
 var target = "../../../../Benchmarks";
 var selectN = 5;
-var minSearch = 0.1;
+var minSearch = 0;
 var maxSearch = 10;
 
 if (Directory.Exists(target))
@@ -79,7 +79,7 @@ foreach (var folder1 in commonFolders.Keys)
 
     var selected = new List<ProblemDifficulty>();
     var space = ordered.Count / selectN;
-    for (int i = ordered.Count - 1; i >= 0; i -= space)
+    for (int i = 0; i < ordered.Count; i += space)
     {
         selected.Add(ordered[i]);
         if (selected.Count >= selectN)
@@ -89,7 +89,6 @@ foreach (var folder1 in commonFolders.Keys)
     if (selected.Count != selectN)
         Console.WriteLine($"\tInvalid selection in the '{name}' domain!");
 
-    selected.Reverse();
     foreach (var select in selected)
     {
         sb.AppendLine($"\tSearch Time for 'p{count}': {select.SearchTime}");

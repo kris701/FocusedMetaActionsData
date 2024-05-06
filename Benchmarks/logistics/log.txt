@@ -1,10 +1,10 @@
 Domain: logistics
-Total Problems: 1139
+Total Problems: 2509
 Target Problems: 5
-Lowest: 0.100481
+Lowest: 0.01
 Highest: 9.90402
-	Search Time for 'p1': 0.168488
-	Search Time for 'p2': 0.291048
-	Search Time for 'p3': 0.581048
-	Search Time for 'p4': 1.62552
-	Search Time for 'p5': 9.90402
+	Search Time for 'p1': 0.01
+	Search Time for 'p2': 0.0142077
+	Search Time for 'p3': 0.0435588
+	Search Time for 'p4': 0.134288
+	Search Time for 'p5': 0.490689

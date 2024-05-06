@@ -1,10 +1,10 @@
 Domain: satellite
-Total Problems: 1092
+Total Problems: 1394
 Target Problems: 5
-Lowest: 0.101156
+Lowest: 0.01
 Highest: 9.22517
-	Search Time for 'p1': 0.258699
-	Search Time for 'p2': 0.536816
-	Search Time for 'p3': 1.04776
-	Search Time for 'p4': 2.54973
-	Search Time for 'p5': 9.22517
+	Search Time for 'p1': 0.01
+	Search Time for 'p2': 0.0936302
+	Search Time for 'p3': 0.278488
+	Search Time for 'p4': 0.694367
+	Search Time for 'p5': 1.94186
