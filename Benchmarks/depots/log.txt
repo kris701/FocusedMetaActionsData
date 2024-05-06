@@ -1,0 +1,10 @@
+Domain: depots
+Total Problems: 620
+Target Problems: 5
+Lowest: 0.104634
+Highest: 9.91717
+	Search Time for 'p1': 0.354618
+	Search Time for 'p2': 0.703882
+	Search Time for 'p3': 1.35827
+	Search Time for 'p4': 3.34645
+	Search Time for 'p5': 9.91717

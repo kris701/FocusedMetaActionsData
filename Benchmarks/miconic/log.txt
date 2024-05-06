@@ -1,0 +1,10 @@
+Domain: miconic
+Total Problems: 431
+Target Problems: 5
+Lowest: 0.101769
+Highest: 9.8975
+	Search Time for 'p1': 0.422393
+	Search Time for 'p2': 0.926639
+	Search Time for 'p3': 2.19983
+	Search Time for 'p4': 4.44359
+	Search Time for 'p5': 9.8975

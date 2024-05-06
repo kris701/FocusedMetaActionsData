@@ -1,0 +1,10 @@
+Domain: blocksworld
+Total Problems: 266
+Target Problems: 5
+Lowest: 0.243597
+Highest: 9.99274
+	Search Time for 'p1': 0.542841
+	Search Time for 'p2': 1.01079
+	Search Time for 'p3': 3.0161
+	Search Time for 'p4': 5.79609
+	Search Time for 'p5': 9.99274

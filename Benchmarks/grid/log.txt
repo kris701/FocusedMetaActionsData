@@ -1,0 +1,10 @@
+Domain: grid
+Total Problems: 1713
+Target Problems: 5
+Lowest: 0.100119
+Highest: 9.94143
+	Search Time for 'p1': 0.193343
+	Search Time for 'p2': 0.40448
+	Search Time for 'p3': 0.875221
+	Search Time for 'p4': 2.34126
+	Search Time for 'p5': 9.94143

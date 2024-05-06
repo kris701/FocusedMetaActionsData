@@ -1,0 +1,10 @@
+Domain: barman
+Total Problems: 130
+Target Problems: 5
+Lowest: 0.102928
+Highest: 8.74689
+	Search Time for 'p1': 0.363334
+	Search Time for 'p2': 0.971102
+	Search Time for 'p3': 2.64283
+	Search Time for 'p4': 4.98348
+	Search Time for 'p5': 8.74689

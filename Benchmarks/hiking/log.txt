@@ -1,0 +1,10 @@
+Domain: hiking
+Total Problems: 196
+Target Problems: 5
+Lowest: 0.103423
+Highest: 9.88435
+	Search Time for 'p1': 0.306161
+	Search Time for 'p2': 1.10808
+	Search Time for 'p3': 3.29083
+	Search Time for 'p4': 5.50318
+	Search Time for 'p5': 9.88435

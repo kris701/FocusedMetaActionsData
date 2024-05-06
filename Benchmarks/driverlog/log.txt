@@ -1,0 +1,10 @@
+Domain: driverlog
+Total Problems: 220
+Target Problems: 5
+Lowest: 0.104611
+Highest: 9.97584
+	Search Time for 'p1': 0.249537
+	Search Time for 'p2': 0.555656
+	Search Time for 'p3': 1.36302
+	Search Time for 'p4': 3.33487
+	Search Time for 'p5': 9.97584

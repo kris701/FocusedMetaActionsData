@@ -1,8 +1,16 @@
 ﻿// Requires the two repositories to be cloned to the bin folder.
+using System.Text;
+
 var benchmark1 = "autoscale-benchmarks/21.11-agile-strips";
 var benchmark2 = "autoscale-learning/data";
 var target = "../../../../Benchmarks";
-var topN = 100;
+var selectN = 5;
+var minSearch = 0.1;
+var maxSearch = 10;
+
+if (Directory.Exists(target))
+    Directory.Delete(target, true);
+Directory.CreateDirectory(target);
 
 // Ignore zenotravel, as it has the `either` expression
 var ignore = new List<string>() { "zenotravel" };
@@ -24,12 +32,13 @@ foreach(var folder in foldersStr1)
 foreach (var folder1 in commonFolders.Keys)
 {
     var name = folder1.Name;
+    Console.WriteLine($"Merging for domain '{name}'");
     var folder2 = commonFolders[folder1];
     var domain = new FileInfo(Path.Combine(folder1.FullName, "domain.pddl"));
     var domain2 = new FileInfo(Path.Combine(folder2.FullName, "tasks", "domain.pddl"));
 
     if (domain.Length != domain2.Length)
-        Console.WriteLine($"Domain files for '{name}' does not have the same size! Check and make sure they are the same.");
+        Console.WriteLine($"\tDomain files for '{name}' does not have the same size! Check and make sure they are the same.");
 
     Directory.CreateDirectory(Path.Combine(target, name));
     Directory.CreateDirectory(Path.Combine(target, name, "training"));
@@ -57,14 +66,40 @@ foreach (var folder1 in commonFolders.Keys)
         }
     }
 
-    ordered = ordered.OrderBy(x => x.SearchTime).Take(topN).ToList();
-    foreach(var order in ordered)
+    ordered = ordered.OrderBy(x => x.SearchTime).Where(x => x.SearchTime > minSearch && x.SearchTime < maxSearch).ToList();
+    if (ordered.Count < selectN)
+        Console.WriteLine($"\tNot enough samples in the '{name}' domain!");
+    var sb = new StringBuilder();
+
+    sb.AppendLine($"Domain: {name}");
+    sb.AppendLine($"Total Problems: {ordered.Count}");
+    sb.AppendLine($"Target Problems: {selectN}");
+    sb.AppendLine($"Lowest: {ordered.MinBy(x => x.SearchTime)!.SearchTime}");
+    sb.AppendLine($"Highest: {ordered.MaxBy(x => x.SearchTime)!.SearchTime}");
+
+    var selected = new List<ProblemDifficulty>();
+    var space = ordered.Count / selectN;
+    for (int i = ordered.Count - 1; i >= 0; i -= space)
     {
-        var targetFile = new FileInfo(Path.Combine(folder2.FullName, "tasks", $"{order.Problem}.pddl"));
+        selected.Add(ordered[i]);
+        if (selected.Count >= selectN)
+            break;
+    }
+
+    if (selected.Count != selectN)
+        Console.WriteLine($"\tInvalid selection in the '{name}' domain!");
+
+    selected.Reverse();
+    foreach (var select in selected)
+    {
+        sb.AppendLine($"\tSearch Time for 'p{count}': {select.SearchTime}");
+        var targetFile = new FileInfo(Path.Combine(folder2.FullName, "tasks", $"{select.Problem}.pddl"));
         if (!targetFile.Exists)
             throw new Exception("File not found?");
         targetFile.CopyTo(Path.Combine(target, name, "training", $"p{count++}.pddl"));
     }
+
+    File.WriteAllText(Path.Combine(target, name, "log.txt"), sb.ToString());
 }
 
 class ProblemDifficulty

@@ -1,0 +1,10 @@
+Domain: gripper
+Total Problems: 159
+Target Problems: 5
+Lowest: 0.223314
+Highest: 8.6622
+	Search Time for 'p1': 0.472369
+	Search Time for 'p2': 1.26216
+	Search Time for 'p3': 2.48692
+	Search Time for 'p4': 5.09171
+	Search Time for 'p5': 8.6622

@@ -1,0 +1,10 @@
+Domain: floortile
+Total Problems: 148
+Target Problems: 5
+Lowest: 0.109342
+Highest: 9.95492
+	Search Time for 'p1': 0.605514
+	Search Time for 'p2': 1.49813
+	Search Time for 'p3': 4.36784
+	Search Time for 'p4': 5.87486
+	Search Time for 'p5': 9.95492
