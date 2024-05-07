@@ -12,13 +12,13 @@ Highest: 0.963736
 
 Domain: hiking
 Folder: usefulness
-Total Problems: 51
+Total Problems: 57
 Target Problems: 5
-Lowest: 5.10001
-Highest: 9.88435
-	Search Time for 'p1': 5.10001
-	Search Time for 'p2': 5.41964
-	Search Time for 'p3': 6.78131
-	Search Time for 'p4': 7.30619
-	Search Time for 'p5': 8.63933
+Lowest: 10.2518
+Highest: 29.8722
+	Search Time for 'p1': 10.2518
+	Search Time for 'p2': 13.6583
+	Search Time for 'p3': 15.8916
+	Search Time for 'p4': 19.8238
+	Search Time for 'p5': 24.4227
 
