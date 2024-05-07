@@ -1,4 +1,5 @@
 Domain: parking
+Folder: training
 Total Problems: 145
 Target Problems: 5
 Lowest: 0.01
@@ -8,3 +9,16 @@ Highest: 0.8677
 	Search Time for 'p3': 0.0205212
 	Search Time for 'p4': 0.0636286
 	Search Time for 'p5': 0.373974
+
+Domain: parking
+Folder: usefulness
+Total Problems: 62
+Target Problems: 5
+Lowest: 3.0333
+Highest: 9.49311
+	Search Time for 'p1': 3.0333
+	Search Time for 'p2': 3.79511
+	Search Time for 'p3': 4.86458
+	Search Time for 'p4': 5.98795
+	Search Time for 'p5': 7.05697
+

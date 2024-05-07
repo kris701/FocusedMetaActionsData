@@ -1,4 +1,5 @@
 Domain: woodworking
+Folder: training
 Total Problems: 131
 Target Problems: 5
 Lowest: 0.01
@@ -8,3 +9,16 @@ Highest: 0.982586
 	Search Time for 'p3': 0.03924
 	Search Time for 'p4': 0.144802
 	Search Time for 'p5': 0.41327
+
+Domain: woodworking
+Folder: usefulness
+Total Problems: 60
+Target Problems: 5
+Lowest: 3.06018
+Highest: 9.88695
+	Search Time for 'p1': 3.06018
+	Search Time for 'p2': 3.99646
+	Search Time for 'p3': 4.96393
+	Search Time for 'p4': 6.22312
+	Search Time for 'p5': 7.94762
+

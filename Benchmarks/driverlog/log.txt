@@ -1,4 +1,5 @@
 Domain: driverlog
+Folder: training
 Total Problems: 315
 Target Problems: 5
 Lowest: 0.01
@@ -8,3 +9,16 @@ Highest: 0.993189
 	Search Time for 'p3': 0.0276322
 	Search Time for 'p4': 0.0793328
 	Search Time for 'p5': 0.321467
+
+Domain: driverlog
+Folder: usefulness
+Total Problems: 50
+Target Problems: 5
+Lowest: 3.11102
+Highest: 9.97584
+	Search Time for 'p1': 3.11102
+	Search Time for 'p2': 3.70819
+	Search Time for 'p3': 5.51467
+	Search Time for 'p4': 6.25476
+	Search Time for 'p5': 7.81625
+

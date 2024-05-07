@@ -1,4 +1,5 @@
 Domain: barman
+Folder: training
 Total Problems: 84
 Target Problems: 5
 Lowest: 0.0143801
@@ -8,3 +9,16 @@ Highest: 0.971102
 	Search Time for 'p3': 0.102928
 	Search Time for 'p4': 0.210445
 	Search Time for 'p5': 0.54673
+
+Domain: barman
+Folder: usefulness
+Total Problems: 45
+Target Problems: 5
+Lowest: 3.04889
+Highest: 8.74689
+	Search Time for 'p1': 3.04889
+	Search Time for 'p2': 3.73939
+	Search Time for 'p3': 4.98348
+	Search Time for 'p4': 5.87447
+	Search Time for 'p5': 7.5064
+

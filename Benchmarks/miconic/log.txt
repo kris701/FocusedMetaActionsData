@@ -1,4 +1,5 @@
 Domain: miconic
+Folder: training
 Total Problems: 238
 Target Problems: 5
 Lowest: 0.01
@@ -8,3 +9,16 @@ Highest: 0.997301
 	Search Time for 'p3': 0.201279
 	Search Time for 'p4': 0.404707
 	Search Time for 'p5': 0.644814
+
+Domain: miconic
+Folder: usefulness
+Total Problems: 137
+Target Problems: 5
+Lowest: 3.0106
+Highest: 9.8975
+	Search Time for 'p1': 3.0106
+	Search Time for 'p2': 3.64476
+	Search Time for 'p3': 4.51201
+	Search Time for 'p4': 5.82411
+	Search Time for 'p5': 6.98552
+

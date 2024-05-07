@@ -1,4 +1,5 @@
 Domain: logistics
+Folder: training
 Total Problems: 2173
 Target Problems: 5
 Lowest: 0.01
@@ -8,3 +9,16 @@ Highest: 0.997613
 	Search Time for 'p3': 0.034729
 	Search Time for 'p4': 0.0852993
 	Search Time for 'p5': 0.233571
+
+Domain: logistics
+Folder: usefulness
+Total Problems: 139
+Target Problems: 5
+Lowest: 3.00248
+Highest: 9.90402
+	Search Time for 'p1': 3.00248
+	Search Time for 'p2': 3.53673
+	Search Time for 'p3': 4.14484
+	Search Time for 'p4': 5.15929
+	Search Time for 'p5': 7.08259
+
