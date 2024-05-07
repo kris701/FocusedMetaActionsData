@@ -12,13 +12,13 @@ Highest: 0.864209
 
 Domain: childsnack
 Folder: usefulness
-Total Problems: 19
+Total Problems: 18
 Target Problems: 5
-Lowest: 3.86637
-Highest: 9.93661
-	Search Time for 'p1': 3.86637
-	Search Time for 'p2': 4.8695
-	Search Time for 'p3': 5.58241
-	Search Time for 'p4': 6.01608
-	Search Time for 'p5': 8.01807
+Lowest: 1.04775
+Highest: 4.8695
+	Search Time for 'p1': 1.04775
+	Search Time for 'p2': 1.15328
+	Search Time for 'p3': 1.4397
+	Search Time for 'p4': 1.779
+	Search Time for 'p5': 2.02877
 

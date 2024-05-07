@@ -12,13 +12,13 @@ Highest: 0.999445
 
 Domain: satellite
 Folder: usefulness
-Total Problems: 182
+Total Problems: 363
 Target Problems: 5
-Lowest: 3.00559
-Highest: 9.22517
-	Search Time for 'p1': 3.00559
-	Search Time for 'p2': 3.51367
-	Search Time for 'p3': 4.18318
-	Search Time for 'p4': 5.34672
-	Search Time for 'p5': 6.51379
+Lowest: 1.00352
+Highest: 4.96495
+	Search Time for 'p1': 1.00352
+	Search Time for 'p2': 1.25481
+	Search Time for 'p3': 1.65959
+	Search Time for 'p4': 2.37429
+	Search Time for 'p5': 3.2104
 

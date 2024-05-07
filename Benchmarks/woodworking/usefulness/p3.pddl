@@ -3,27 +3,20 @@
 	(:domain woodworking)
 	(:objects
 		highspeed-saw0 - highspeed-saw
-		highspeed-saw1 - highspeed-saw
 		glazer0 - glazer
-		glazer1 - glazer
 		grinder0 - grinder
-		grinder1 - grinder
 		immersion-varnisher0 - immersion-varnisher
-		immersion-varnisher1 - immersion-varnisher
 		planer0 - planer
-		planer1 - planer
 		saw0 - saw
-		saw1 - saw
 		spray-varnisher0 - spray-varnisher
-		spray-varnisher1 - spray-varnisher
-		black - acolour
-		blue - acolour
-		red - acolour
 		mauve - acolour
 		white - acolour
+		blue - acolour
+		black - acolour
 		green - acolour
+		red - acolour
+		walnut - awood
 		pine - awood
-		teak - awood
 		p0 - part
 		p1 - part
 		p2 - part
@@ -32,7 +25,6 @@
 		p5 - part
 		p6 - part
 		p7 - part
-		p8 - part
 		b0 - board
 		b1 - board
 		b2 - board
@@ -44,7 +36,6 @@
 		s5 - aboardsize
 		s6 - aboardsize
 		s7 - aboardsize
-		s8 - aboardsize
 	)
 	(:init
 		(grind-treatment-change varnished colourfragments)
@@ -60,64 +51,44 @@
 		(boardsize-successor s4 s5)
 		(boardsize-successor s5 s6)
 		(boardsize-successor s6 s7)
-		(boardsize-successor s7 s8)
 		(empty highspeed-saw0)
-		(empty highspeed-saw1)
-		(has-colour glazer0 green)
-		(has-colour glazer1 blue)
-		(has-colour glazer1 mauve)
-		(has-colour glazer1 green)
-		(has-colour immersion-varnisher0 mauve)
-		(has-colour immersion-varnisher0 blue)
-		(has-colour immersion-varnisher1 green)
-		(has-colour immersion-varnisher1 blue)
-		(has-colour spray-varnisher0 mauve)
-		(has-colour spray-varnisher0 blue)
-		(has-colour spray-varnisher1 green)
-		(has-colour spray-varnisher1 blue)
+		(has-colour glazer0 natural)
+		(has-colour glazer0 blue)
+		(has-colour immersion-varnisher0 natural)
+		(has-colour spray-varnisher0 natural)
 		(available p0)
 		(treatment p0 varnished)
-		(surface-condition p0 rough)
-		(wood p0 teak)
-		(colour p0 mauve)
-		(goalsize p0 large)
+		(surface-condition p0 verysmooth)
+		(wood p0 pine)
+		(colour p0 blue)
+		(goalsize p0 small)
 		(unused p1)
-		(goalsize p1 small)
+		(goalsize p1 medium)
 		(unused p2)
-		(goalsize p2 large)
-		(available p3)
-		(treatment p3 varnished)
-		(surface-condition p3 verysmooth)
-		(wood p3 teak)
-		(colour p3 green)
-		(goalsize p3 medium)
+		(goalsize p2 small)
+		(unused p3)
+		(goalsize p3 small)
 		(unused p4)
-		(goalsize p4 large)
+		(goalsize p4 small)
 		(unused p5)
 		(goalsize p5 medium)
-		(available p6)
-		(treatment p6 colourfragments)
-		(surface-condition p6 smooth)
-		(wood p6 teak)
-		(colour p6 natural)
+		(unused p6)
 		(goalsize p6 medium)
-		(unused p7)
+		(available p7)
+		(treatment p7 glazed)
+		(surface-condition p7 rough)
+		(wood p7 pine)
+		(colour p7 green)
 		(goalsize p7 large)
-		(available p8)
-		(treatment p8 varnished)
-		(surface-condition p8 smooth)
-		(wood p8 teak)
-		(colour p8 black)
-		(goalsize p8 large)
-		(boardsize b0 s8)
-		(wood b0 teak)
+		(boardsize b0 s7)
+		(wood b0 walnut)
 		(surface-condition b0 rough)
 		(available b0)
-		(boardsize b1 s1)
-		(wood b1 teak)
+		(boardsize b1 s5)
+		(wood b1 walnut)
 		(surface-condition b1 rough)
 		(available b1)
-		(boardsize b2 s3)
+		(boardsize b2 s6)
 		(wood b2 pine)
 		(surface-condition b2 rough)
 		(available b2)
@@ -125,34 +96,32 @@
 	(:goal
 		(and
 			(available p0)
+			(colour p0 natural)
 			(surface-condition p0 smooth)
-			(wood p0 teak)
+			(wood p0 pine)
 			(available p1)
+			(colour p1 natural)
+			(surface-condition p1 verysmooth)
 			(treatment p1 glazed)
-			(surface-condition p1 smooth)
+			(wood p1 walnut)
 			(available p2)
+			(surface-condition p2 verysmooth)
 			(treatment p2 glazed)
-			(wood p2 teak)
 			(available p3)
-			(colour p3 blue)
-			(wood p3 teak)
+			(surface-condition p3 verysmooth)
+			(treatment p3 glazed)
 			(available p4)
-			(colour p4 mauve)
-			(wood p4 teak)
+			(surface-condition p4 smooth)
+			(treatment p4 glazed)
 			(available p5)
-			(colour p5 green)
+			(colour p5 blue)
 			(treatment p5 glazed)
-			(surface-condition p5 smooth)
 			(available p6)
-			(colour p6 blue)
+			(colour p6 natural)
 			(treatment p6 varnished)
 			(available p7)
-			(colour p7 green)
-			(surface-condition p7 smooth)
-			(available p8)
-			(colour p8 blue)
-			(treatment p8 varnished)
-			(surface-condition p8 verysmooth)
+			(wood p7 pine)
+			(surface-condition p7 verysmooth)
 		)
 	)
 )

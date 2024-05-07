@@ -12,13 +12,13 @@ Highest: 0.998987
 
 Domain: rovers
 Folder: usefulness
-Total Problems: 190
+Total Problems: 377
 Target Problems: 5
-Lowest: 3.04038
-Highest: 9.96696
-	Search Time for 'p1': 3.04038
-	Search Time for 'p2': 3.53556
-	Search Time for 'p3': 4.33801
-	Search Time for 'p4': 5.41011
-	Search Time for 'p5': 6.77451
+Lowest: 1.01653
+Highest: 4.97524
+	Search Time for 'p1': 1.01653
+	Search Time for 'p2': 1.2996
+	Search Time for 'p3': 1.6871
+	Search Time for 'p4': 2.25991
+	Search Time for 'p5': 3.31877
 

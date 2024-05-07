@@ -12,13 +12,13 @@ Highest: 0.982586
 
 Domain: woodworking
 Folder: usefulness
-Total Problems: 60
+Total Problems: 56
 Target Problems: 5
-Lowest: 3.06018
-Highest: 9.88695
-	Search Time for 'p1': 3.06018
-	Search Time for 'p2': 3.99646
-	Search Time for 'p3': 4.96393
-	Search Time for 'p4': 6.22312
-	Search Time for 'p5': 7.94762
+Lowest: 1.06064
+Highest: 4.96989
+	Search Time for 'p1': 1.06064
+	Search Time for 'p2': 1.3711
+	Search Time for 'p3': 2.18524
+	Search Time for 'p4': 3.19394
+	Search Time for 'p5': 4.07431
 

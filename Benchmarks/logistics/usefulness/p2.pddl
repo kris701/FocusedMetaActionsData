@@ -1,16 +1,15 @@
 (define
-	(problem logistics-c8-s3-p3-a1)
+	(problem logistics-c6-s3-p3-a2)
 	(:domain logistics-strips)
 	(:objects
 		a0
+		a1
 		c0
 		c1
 		c2
 		c3
 		c4
 		c5
-		c6
-		c7
 		t0
 		t1
 		t2
@@ -19,7 +18,6 @@
 		t5
 		t6
 		t7
-		t8
 		l0-0
 		l0-1
 		l0-2
@@ -38,26 +36,19 @@
 		l5-0
 		l5-1
 		l5-2
-		l6-0
-		l6-1
-		l6-2
-		l7-0
-		l7-1
-		l7-2
 		p0
 		p1
 		p2
 	)
 	(:init
 		(airplane a0)
+		(airplane a1)
 		(city c0)
 		(city c1)
 		(city c2)
 		(city c3)
 		(city c4)
 		(city c5)
-		(city c6)
-		(city c7)
 		(truck t0)
 		(truck t1)
 		(truck t2)
@@ -66,7 +57,6 @@
 		(truck t5)
 		(truck t6)
 		(truck t7)
-		(truck t8)
 		(location l0-0)
 		(in-city l0-0 c0)
 		(location l0-1)
@@ -103,48 +93,34 @@
 		(in-city l5-1 c5)
 		(location l5-2)
 		(in-city l5-2 c5)
-		(location l6-0)
-		(in-city l6-0 c6)
-		(location l6-1)
-		(in-city l6-1 c6)
-		(location l6-2)
-		(in-city l6-2 c6)
-		(location l7-0)
-		(in-city l7-0 c7)
-		(location l7-1)
-		(in-city l7-1 c7)
-		(location l7-2)
-		(in-city l7-2 c7)
 		(airport l0-0)
 		(airport l1-0)
 		(airport l2-0)
 		(airport l3-0)
 		(airport l4-0)
 		(airport l5-0)
-		(airport l6-0)
-		(airport l7-0)
 		(obj p0)
 		(obj p1)
 		(obj p2)
 		(at t0 l0-2)
-		(at t1 l1-2)
-		(at t2 l2-1)
-		(at t3 l3-1)
-		(at t4 l4-2)
-		(at t5 l5-2)
-		(at t6 l6-0)
-		(at t7 l7-2)
-		(at t8 l7-0)
-		(at p0 l7-1)
-		(at p1 l5-2)
-		(at p2 l6-0)
-		(at a0 l7-0)
+		(at t1 l1-1)
+		(at t2 l2-2)
+		(at t3 l3-2)
+		(at t4 l4-1)
+		(at t5 l5-0)
+		(at t6 l3-1)
+		(at t7 l2-2)
+		(at p0 l3-0)
+		(at p1 l4-2)
+		(at p2 l3-1)
+		(at a0 l5-0)
+		(at a1 l2-0)
 	)
 	(:goal
 		(and
-			(at p0 l0-2)
-			(at p1 l1-1)
-			(at p2 l7-0)
+			(at p0 l1-0)
+			(at p1 l3-2)
+			(at p2 l5-0)
 		)
 	)
 )

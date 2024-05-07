@@ -12,13 +12,13 @@ Highest: 0.997613
 
 Domain: logistics
 Folder: usefulness
-Total Problems: 139
+Total Problems: 276
 Target Problems: 5
-Lowest: 3.00248
-Highest: 9.90402
-	Search Time for 'p1': 3.00248
-	Search Time for 'p2': 3.53673
-	Search Time for 'p3': 4.14484
-	Search Time for 'p4': 5.15929
-	Search Time for 'p5': 7.08259
+Lowest: 1.00261
+Highest: 4.97328
+	Search Time for 'p1': 1.00261
+	Search Time for 'p2': 1.25156
+	Search Time for 'p3': 1.64503
+	Search Time for 'p4': 2.38724
+	Search Time for 'p5': 3.35236
 

@@ -12,13 +12,13 @@ Highest: 0.982963
 
 Domain: floortile
 Folder: usefulness
-Total Problems: 77
+Total Problems: 53
 Target Problems: 5
-Lowest: 3.1119
-Highest: 9.95492
-	Search Time for 'p1': 3.1119
-	Search Time for 'p2': 4.14157
-	Search Time for 'p3': 4.9963
-	Search Time for 'p4': 5.85569
-	Search Time for 'p5': 7.10382
+Lowest: 1.00063
+Highest: 4.9963
+	Search Time for 'p1': 1.00063
+	Search Time for 'p2': 1.40144
+	Search Time for 'p3': 2.71943
+	Search Time for 'p4': 3.69912
+	Search Time for 'p5': 4.36784
 

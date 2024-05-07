@@ -12,13 +12,13 @@ Highest: 0.997301
 
 Domain: miconic
 Folder: usefulness
-Total Problems: 137
+Total Problems: 183
 Target Problems: 5
-Lowest: 3.0106
-Highest: 9.8975
-	Search Time for 'p1': 3.0106
-	Search Time for 'p2': 3.64476
-	Search Time for 'p3': 4.51201
-	Search Time for 'p4': 5.82411
-	Search Time for 'p5': 6.98552
+Lowest: 1.01759
+Highest: 4.9918
+	Search Time for 'p1': 1.01759
+	Search Time for 'p2': 1.37028
+	Search Time for 'p3': 2.09911
+	Search Time for 'p4': 2.85457
+	Search Time for 'p5': 3.73041
 

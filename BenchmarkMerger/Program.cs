@@ -8,8 +8,8 @@ var target = "../../../../Benchmarks";
 var selectN = 5;
 var minSearchTraining = 0;
 var maxSearchTraining = 1;
-var minSearchUseful = 3;
-var maxSearchUseful = 10;
+var minSearchUseful = 1;
+var maxSearchUseful = 5;
 
 if (Directory.Exists(target))
     Directory.Delete(target, true);
@@ -72,40 +72,6 @@ foreach (var folder1 in commonFolders.Keys)
 
     ExtractDataset(ordered, minSearchTraining, maxSearchTraining, name, Path.Combine(folder2.FullName, "tasks"), target, "training");
     ExtractDataset(ordered, minSearchUseful, maxSearchUseful, name, Path.Combine(folder2.FullName, "tasks"), target, "usefulness");
-
-    //ordered = ordered.OrderBy(x => x.SearchTime).Where(x => x.SearchTime > minSearchTraining && x.SearchTime < maxSearchTraining).ToList();
-    //if (ordered.Count < selectN)
-    //    Console.WriteLine($"\tNot enough samples in the '{name}' domain!");
-    //var sb = new StringBuilder();
-
-    //sb.AppendLine($"Domain: {name}");
-    //sb.AppendLine($"Total Problems: {ordered.Count}");
-    //sb.AppendLine($"Target Problems: {selectN}");
-    //sb.AppendLine($"Lowest: {ordered.MinBy(x => x.SearchTime)!.SearchTime}");
-    //sb.AppendLine($"Highest: {ordered.MaxBy(x => x.SearchTime)!.SearchTime}");
-
-    //var selected = new List<ProblemDifficulty>();
-    //var space = ordered.Count / selectN;
-    //for (int i = 0; i < ordered.Count; i += space)
-    //{
-    //    selected.Add(ordered[i]);
-    //    if (selected.Count >= selectN)
-    //        break;
-    //}
-
-    //if (selected.Count != selectN)
-    //    Console.WriteLine($"\tInvalid selection in the '{name}' domain!");
-
-    //foreach (var select in selected)
-    //{
-    //    sb.AppendLine($"\tSearch Time for 'p{count}': {select.SearchTime}");
-    //    var targetFile = new FileInfo(Path.Combine(folder2.FullName, "tasks", $"{select.Problem}.pddl"));
-    //    if (!targetFile.Exists)
-    //        throw new Exception("File not found?");
-    //    targetFile.CopyTo(Path.Combine(target, name, "training", $"p{count++}.pddl"));
-    //}
-
-    //File.WriteAllText(Path.Combine(target, name, "log.txt"), sb.ToString());
 }
 
 void ExtractDataset(List<ProblemDifficulty> ordered, int minTime, int maxTime, string name, string sourceFolder, string targetFolder, string targetSubFolder)
