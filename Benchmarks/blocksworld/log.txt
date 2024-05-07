@@ -12,13 +12,13 @@ Highest: 0.968493
 
 Domain: blocksworld
 Folder: usefulness
-Total Problems: 94
+Total Problems: 66
 Target Problems: 5
-Lowest: 1.01079
-Highest: 4.95392
-	Search Time for 'p1': 1.01079
-	Search Time for 'p2': 1.59016
-	Search Time for 'p3': 2.29834
-	Search Time for 'p4': 3.20523
-	Search Time for 'p5': 3.8578
+Lowest: 5.02216
+Highest: 9.99274
+	Search Time for 'p1': 5.02216
+	Search Time for 'p2': 5.85376
+	Search Time for 'p3': 6.89031
+	Search Time for 'p4': 7.70483
+	Search Time for 'p5': 8.73212
 

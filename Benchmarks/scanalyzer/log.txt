@@ -12,13 +12,13 @@ Highest: 0.697763
 
 Domain: scanalyzer
 Folder: usefulness
-Total Problems: 15
+Total Problems: 111
 Target Problems: 5
-Lowest: 1.95673
-Highest: 1.98567
-	Search Time for 'p1': 1.95673
-	Search Time for 'p2': 1.96178
-	Search Time for 'p3': 1.97114
-	Search Time for 'p4': 1.97221
-	Search Time for 'p5': 1.97868
+Lowest: 5.64695
+Highest: 7.78815
+	Search Time for 'p1': 5.64695
+	Search Time for 'p2': 5.69883
+	Search Time for 'p3': 5.71957
+	Search Time for 'p4': 6.69936
+	Search Time for 'p5': 6.80521
 

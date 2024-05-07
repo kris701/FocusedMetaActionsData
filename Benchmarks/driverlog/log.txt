@@ -12,13 +12,13 @@ Highest: 0.993189
 
 Domain: driverlog
 Folder: usefulness
-Total Problems: 68
+Total Problems: 34
 Target Problems: 5
-Lowest: 1.00433
-Highest: 4.9969
-	Search Time for 'p1': 1.00433
-	Search Time for 'p2': 1.36302
-	Search Time for 'p3': 1.77387
-	Search Time for 'p4': 2.3284
-	Search Time for 'p5': 3.11102
+Lowest: 5.03889
+Highest: 9.97584
+	Search Time for 'p1': 5.03889
+	Search Time for 'p2': 5.59738
+	Search Time for 'p3': 6.01795
+	Search Time for 'p4': 6.70778
+	Search Time for 'p5': 7.81625
 

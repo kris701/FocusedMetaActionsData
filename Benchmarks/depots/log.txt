@@ -12,13 +12,13 @@ Highest: 0.995436
 
 Domain: depots
 Folder: usefulness
-Total Problems: 226
+Total Problems: 75
 Target Problems: 5
-Lowest: 1.00031
-Highest: 4.99441
-	Search Time for 'p1': 1.00031
-	Search Time for 'p2': 1.28496
-	Search Time for 'p3': 1.78073
-	Search Time for 'p4': 2.53915
-	Search Time for 'p5': 3.40712
+Lowest: 5.12658
+Highest: 9.91717
+	Search Time for 'p1': 5.12658
+	Search Time for 'p2': 5.65275
+	Search Time for 'p3': 6.3643
+	Search Time for 'p4': 7.04296
+	Search Time for 'p5': 8.30255
 

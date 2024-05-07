@@ -12,13 +12,13 @@ Highest: 0.971102
 
 Domain: barman
 Folder: usefulness
-Total Problems: 52
+Total Problems: 26
 Target Problems: 5
-Lowest: 1.12156
-Highest: 4.98348
-	Search Time for 'p1': 1.12156
-	Search Time for 'p2': 1.63968
-	Search Time for 'p3': 2.37182
-	Search Time for 'p4': 2.87648
-	Search Time for 'p5': 3.51155
+Lowest: 5.03376
+Highest: 8.74689
+	Search Time for 'p1': 5.03376
+	Search Time for 'p2': 5.48745
+	Search Time for 'p3': 6.10675
+	Search Time for 'p4': 7.19192
+	Search Time for 'p5': 7.67872
 
