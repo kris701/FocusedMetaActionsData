@@ -1,10 +1,10 @@
 Domain: rovers
-Total Problems: 6104
+Total Problems: 5638
 Target Problems: 5
 Lowest: 0.01
-Highest: 9.96696
+Highest: 0.998987
 	Search Time for 'p1': 0.01
 	Search Time for 'p2': 0.01
-	Search Time for 'p3': 0.0242578
-	Search Time for 'p4': 0.0644483
-	Search Time for 'p5': 0.228166
+	Search Time for 'p3': 0.0209217
+	Search Time for 'p4': 0.0504931
+	Search Time for 'p5': 0.146217

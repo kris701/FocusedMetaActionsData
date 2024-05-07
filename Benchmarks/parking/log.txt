@@ -1,10 +1,10 @@
 Domain: parking
-Total Problems: 240
+Total Problems: 145
 Target Problems: 5
 Lowest: 0.01
-Highest: 9.49311
+Highest: 0.8677
 	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0168315
-	Search Time for 'p3': 0.249452
-	Search Time for 'p4': 0.8677
-	Search Time for 'p5': 4.01099
+	Search Time for 'p2': 0.01
+	Search Time for 'p3': 0.0205212
+	Search Time for 'p4': 0.0636286
+	Search Time for 'p5': 0.373974

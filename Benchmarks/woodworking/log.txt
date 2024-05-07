@@ -1,10 +1,10 @@
 Domain: woodworking
-Total Problems: 221
+Total Problems: 131
 Target Problems: 5
 Lowest: 0.01
-Highest: 9.88695
+Highest: 0.982586
 	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0283958
-	Search Time for 'p3': 0.221444
-	Search Time for 'p4': 1.09597
-	Search Time for 'p5': 4.19353
+	Search Time for 'p2': 0.0148061
+	Search Time for 'p3': 0.03924
+	Search Time for 'p4': 0.144802
+	Search Time for 'p5': 0.41327

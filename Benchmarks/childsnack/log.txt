@@ -1,10 +1,10 @@
 Domain: childsnack
-Total Problems: 114
+Total Problems: 81
 Target Problems: 5
 Lowest: 0.01
-Highest: 9.93661
+Highest: 0.864209
 	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0223061
-	Search Time for 'p3': 0.0602385
-	Search Time for 'p4': 0.421312
-	Search Time for 'p5': 1.47759
+	Search Time for 'p2': 0.0153105
+	Search Time for 'p3': 0.0320906
+	Search Time for 'p4': 0.0676485
+	Search Time for 'p5': 0.342639

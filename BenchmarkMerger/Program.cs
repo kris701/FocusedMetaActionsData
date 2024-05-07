@@ -6,7 +6,7 @@ var benchmark2 = "autoscale-learning/data";
 var target = "../../../../Benchmarks";
 var selectN = 5;
 var minSearch = 0;
-var maxSearch = 10;
+var maxSearch = 1;
 
 if (Directory.Exists(target))
     Directory.Delete(target, true);
