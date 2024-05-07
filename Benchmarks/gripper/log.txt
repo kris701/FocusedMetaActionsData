@@ -12,13 +12,13 @@ Highest: 0.645663
 
 Domain: gripper
 Folder: usefulness
-Total Problems: 84
+Total Problems: 43
 Target Problems: 5
-Lowest: 10.4217
-Highest: 29.8073
-	Search Time for 'p1': 10.4217
-	Search Time for 'p2': 13.3759
-	Search Time for 'p3': 16.5768
-	Search Time for 'p4': 19.1969
-	Search Time for 'p5': 28.3653
+Lowest: 5.01292
+Highest: 8.6622
+	Search Time for 'p1': 5.01292
+	Search Time for 'p2': 5.06609
+	Search Time for 'p3': 5.80408
+	Search Time for 'p4': 6.60254
+	Search Time for 'p5': 7.2437
 

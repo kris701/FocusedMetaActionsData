@@ -1,6 +1,6 @@
 (define
 	(problem bw-rand-5)
-	(:domain blocksworld)
+	(:domain blocksworld-4ops)
 	(:objects
 		b1
 		b2

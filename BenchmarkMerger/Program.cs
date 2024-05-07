@@ -8,8 +8,8 @@ var target = "../../../../Benchmarks";
 var selectN = 5;
 var minSearchTraining = 0;
 var maxSearchTraining = 1;
-var minSearchUseful = 10;
-var maxSearchUseful = 30;
+var minSearchUseful = 5;
+var maxSearchUseful = 10;
 
 if (Directory.Exists(target))
     Directory.Delete(target, true);
