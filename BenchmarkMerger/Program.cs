@@ -1,15 +1,15 @@
-﻿// Requires the two repositories to be cloned to the bin folder.
-using System.Text;
-using System.Xml.Linq;
+﻿using System.Text;
 
+// Requires the two repositories to be cloned to the bin folder.
 var benchmark1 = "autoscale-benchmarks/21.11-agile-strips";
 var benchmark2 = "autoscale-learning/data";
 var target = "../../../../Benchmarks";
-var selectN = 5;
+var selectNTraining = 5;
 var minSearchTraining = 0;
 var maxSearchTraining = 1;
-var minSearchUseful = 5;
-var maxSearchUseful = 10;
+var selectNUseful = 2;
+var minSearchUseful = 60;
+var maxSearchUseful = 100;
 
 if (Directory.Exists(target))
     Directory.Delete(target, true);
@@ -70,11 +70,11 @@ foreach (var folder1 in commonFolders.Keys)
         }
     }
 
-    ExtractDataset(ordered, minSearchTraining, maxSearchTraining, name, Path.Combine(folder2.FullName, "tasks"), target, "training");
-    ExtractDataset(ordered, minSearchUseful, maxSearchUseful, name, Path.Combine(folder2.FullName, "tasks"), target, "usefulness");
+    ExtractDataset(ordered, minSearchTraining, maxSearchTraining, selectNTraining, name, Path.Combine(folder2.FullName, "tasks"), target, "training");
+    ExtractDataset(ordered, minSearchUseful, maxSearchUseful, selectNUseful, name, Path.Combine(folder2.FullName, "tasks"), target, "usefulness");
 }
 
-void ExtractDataset(List<ProblemDifficulty> ordered, int minTime, int maxTime, string name, string sourceFolder, string targetFolder, string targetSubFolder)
+void ExtractDataset(List<ProblemDifficulty> ordered, int minTime, int maxTime, int selectN, string name, string sourceFolder, string targetFolder, string targetSubFolder)
 {
     var subSet = ordered.OrderBy(x => x.SearchTime).Where(x => x.SearchTime > minTime && x.SearchTime < maxTime).ToList();
     if (subSet.Count < selectN)

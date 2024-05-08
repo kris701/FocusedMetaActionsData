@@ -1,5 +1,5 @@
 (define
-	(problem gripper-17)
+	(problem gripper-30)
 	(:domain gripper-strips)
 	(:objects
 		rooma
@@ -23,6 +23,19 @@
 		ball15
 		ball16
 		ball17
+		ball18
+		ball19
+		ball20
+		ball21
+		ball22
+		ball23
+		ball24
+		ball25
+		ball26
+		ball27
+		ball28
+		ball29
+		ball30
 	)
 	(:init
 		(room rooma)
@@ -46,6 +59,19 @@
 		(ball ball15)
 		(ball ball16)
 		(ball ball17)
+		(ball ball18)
+		(ball ball19)
+		(ball ball20)
+		(ball ball21)
+		(ball ball22)
+		(ball ball23)
+		(ball ball24)
+		(ball ball25)
+		(ball ball26)
+		(ball ball27)
+		(ball ball28)
+		(ball ball29)
+		(ball ball30)
 		(free left)
 		(free right)
 		(at ball1 rooma)
@@ -65,6 +91,19 @@
 		(at ball15 rooma)
 		(at ball16 rooma)
 		(at ball17 rooma)
+		(at ball18 rooma)
+		(at ball19 rooma)
+		(at ball20 rooma)
+		(at ball21 rooma)
+		(at ball22 rooma)
+		(at ball23 rooma)
+		(at ball24 rooma)
+		(at ball25 rooma)
+		(at ball26 rooma)
+		(at ball27 rooma)
+		(at ball28 rooma)
+		(at ball29 rooma)
+		(at ball30 rooma)
 		(at-robby rooma)
 	)
 	(:goal
@@ -86,6 +125,19 @@
 			(at ball15 roomb)
 			(at ball16 roomb)
 			(at ball17 roomb)
+			(at ball18 roomb)
+			(at ball19 roomb)
+			(at ball20 roomb)
+			(at ball21 roomb)
+			(at ball22 roomb)
+			(at ball23 roomb)
+			(at ball24 roomb)
+			(at ball25 roomb)
+			(at ball26 roomb)
+			(at ball27 roomb)
+			(at ball28 roomb)
+			(at ball29 roomb)
+			(at ball30 roomb)
 		)
 	)
 )
