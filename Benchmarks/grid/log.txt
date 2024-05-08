@@ -12,10 +12,13 @@ Highest: 0.99899
 
 Domain: grid
 Folder: usefulness
-Total Problems: 20
-Target Problems: 2
-Lowest: 60.0711
-Highest: 93.2589
-	Search Time for 'p1': 60.0711
-	Search Time for 'p2': 80.5593
+Total Problems: 96
+Target Problems: 5
+Lowest: 10.0556
+Highest: 29.8343
+	Search Time for 'p1': 10.0556
+	Search Time for 'p2': 11.8252
+	Search Time for 'p3': 15.1408
+	Search Time for 'p4': 19.3037
+	Search Time for 'p5': 24.4422
 

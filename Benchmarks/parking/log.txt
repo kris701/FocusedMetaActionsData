@@ -12,10 +12,13 @@ Highest: 0.8677
 
 Domain: parking
 Folder: usefulness
-Total Problems: 23
-Target Problems: 2
-Lowest: 61.0192
-Highest: 96.8689
-	Search Time for 'p1': 61.0192
-	Search Time for 'p2': 69.2901
+Total Problems: 58
+Target Problems: 5
+Lowest: 10.0367
+Highest: 29.4201
+	Search Time for 'p1': 10.0367
+	Search Time for 'p2': 11.8562
+	Search Time for 'p3': 14.9807
+	Search Time for 'p4': 16.2247
+	Search Time for 'p5': 18.7554
 

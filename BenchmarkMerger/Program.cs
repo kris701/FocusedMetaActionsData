@@ -7,9 +7,9 @@ var target = "../../../../Benchmarks";
 var selectNTraining = 5;
 var minSearchTraining = 0;
 var maxSearchTraining = 1;
-var selectNUseful = 2;
-var minSearchUseful = 60;
-var maxSearchUseful = 100;
+var selectNUseful = 5;
+var minSearchUseful = 10;
+var maxSearchUseful = 30;
 
 if (Directory.Exists(target))
     Directory.Delete(target, true);
