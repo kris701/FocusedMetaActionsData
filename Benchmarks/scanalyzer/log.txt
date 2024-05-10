@@ -4,11 +4,11 @@ Total Problems: 266
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.697763
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.01
-	Search Time for 'p3': 0.01
-	Search Time for 'p4': 0.01
-	Search Time for 'p5': 0.102365
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.01
+	Search Time for 'p03.pddl': 0.01
+	Search Time for 'p04.pddl': 0.01
+	Search Time for 'p05.pddl': 0.102365
 
 Domain: scanalyzer
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 55
 Target Problems: 5
 Lowest: 12.3654
 Highest: 14.943
-	Search Time for 'p1': 12.3654
-	Search Time for 'p2': 12.4159
-	Search Time for 'p3': 12.4456
-	Search Time for 'p4': 12.4702
-	Search Time for 'p5': 12.4875
+	Search Time for 'p01.pddl': 12.3654
+	Search Time for 'p02.pddl': 12.4159
+	Search Time for 'p03.pddl': 12.4456
+	Search Time for 'p04.pddl': 12.4702
+	Search Time for 'p05.pddl': 12.4875
 

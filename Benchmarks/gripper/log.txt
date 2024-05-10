@@ -4,11 +4,11 @@ Total Problems: 61
 Target Problems: 5
 Lowest: 0.0806604
 Highest: 0.645663
-	Search Time for 'p1': 0.0806604
-	Search Time for 'p2': 0.223513
-	Search Time for 'p3': 0.235455
-	Search Time for 'p4': 0.469184
-	Search Time for 'p5': 0.475103
+	Search Time for 'p01.pddl': 0.0806604
+	Search Time for 'p02.pddl': 0.223513
+	Search Time for 'p03.pddl': 0.235455
+	Search Time for 'p04.pddl': 0.469184
+	Search Time for 'p05.pddl': 0.475103
 
 Domain: gripper
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 84
 Target Problems: 5
 Lowest: 10.4217
 Highest: 29.8073
-	Search Time for 'p1': 10.4217
-	Search Time for 'p2': 13.3759
-	Search Time for 'p3': 16.5768
-	Search Time for 'p4': 19.1969
-	Search Time for 'p5': 28.3653
+	Search Time for 'p01.pddl': 10.4217
+	Search Time for 'p02.pddl': 13.3759
+	Search Time for 'p03.pddl': 16.5768
+	Search Time for 'p04.pddl': 19.1969
+	Search Time for 'p05.pddl': 28.3653
 

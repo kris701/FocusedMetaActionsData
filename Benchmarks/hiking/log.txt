@@ -4,11 +4,11 @@ Total Problems: 125
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.963736
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0218881
-	Search Time for 'p3': 0.0889795
-	Search Time for 'p4': 0.184856
-	Search Time for 'p5': 0.442871
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0218881
+	Search Time for 'p03.pddl': 0.0889795
+	Search Time for 'p04.pddl': 0.184856
+	Search Time for 'p05.pddl': 0.442871
 
 Domain: hiking
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 57
 Target Problems: 5
 Lowest: 10.2518
 Highest: 29.8722
-	Search Time for 'p1': 10.2518
-	Search Time for 'p2': 13.6583
-	Search Time for 'p3': 15.8916
-	Search Time for 'p4': 19.8238
-	Search Time for 'p5': 24.4227
+	Search Time for 'p01.pddl': 10.2518
+	Search Time for 'p02.pddl': 13.6583
+	Search Time for 'p03.pddl': 15.8916
+	Search Time for 'p04.pddl': 19.8238
+	Search Time for 'p05.pddl': 24.4227
 

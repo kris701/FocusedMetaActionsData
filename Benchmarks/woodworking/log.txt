@@ -4,11 +4,11 @@ Total Problems: 131
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.982586
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0148061
-	Search Time for 'p3': 0.03924
-	Search Time for 'p4': 0.144802
-	Search Time for 'p5': 0.41327
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0148061
+	Search Time for 'p03.pddl': 0.03924
+	Search Time for 'p04.pddl': 0.144802
+	Search Time for 'p05.pddl': 0.41327
 
 Domain: woodworking
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 41
 Target Problems: 5
 Lowest: 10.0235
 Highest: 29.9646
-	Search Time for 'p1': 10.0235
-	Search Time for 'p2': 11.5999
-	Search Time for 'p3': 15.0637
-	Search Time for 'p4': 19.1552
-	Search Time for 'p5': 25.7477
+	Search Time for 'p01.pddl': 10.0235
+	Search Time for 'p02.pddl': 11.5999
+	Search Time for 'p03.pddl': 15.0637
+	Search Time for 'p04.pddl': 19.1552
+	Search Time for 'p05.pddl': 25.7477
 

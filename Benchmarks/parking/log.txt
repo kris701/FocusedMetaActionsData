@@ -4,11 +4,11 @@ Total Problems: 145
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.8677
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.01
-	Search Time for 'p3': 0.0205212
-	Search Time for 'p4': 0.0636286
-	Search Time for 'p5': 0.373974
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.01
+	Search Time for 'p03.pddl': 0.0205212
+	Search Time for 'p04.pddl': 0.0636286
+	Search Time for 'p05.pddl': 0.373974
 
 Domain: parking
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 58
 Target Problems: 5
 Lowest: 10.0367
 Highest: 29.4201
-	Search Time for 'p1': 10.0367
-	Search Time for 'p2': 11.8562
-	Search Time for 'p3': 14.9807
-	Search Time for 'p4': 16.2247
-	Search Time for 'p5': 18.7554
+	Search Time for 'p01.pddl': 10.0367
+	Search Time for 'p02.pddl': 11.8562
+	Search Time for 'p03.pddl': 14.9807
+	Search Time for 'p04.pddl': 16.2247
+	Search Time for 'p05.pddl': 18.7554
 

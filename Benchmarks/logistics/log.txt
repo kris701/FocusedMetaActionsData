@@ -4,11 +4,11 @@ Total Problems: 2173
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.997613
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0121141
-	Search Time for 'p3': 0.034729
-	Search Time for 'p4': 0.0852993
-	Search Time for 'p5': 0.233571
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0121141
+	Search Time for 'p03.pddl': 0.034729
+	Search Time for 'p04.pddl': 0.0852993
+	Search Time for 'p05.pddl': 0.233571
 
 Domain: logistics
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 76
 Target Problems: 5
 Lowest: 10.0246
 Highest: 29.4307
-	Search Time for 'p1': 10.0246
-	Search Time for 'p2': 12.2207
-	Search Time for 'p3': 14.8205
-	Search Time for 'p4': 18.9388
-	Search Time for 'p5': 23.8215
+	Search Time for 'p01.pddl': 10.0246
+	Search Time for 'p02.pddl': 12.2207
+	Search Time for 'p03.pddl': 14.8205
+	Search Time for 'p04.pddl': 18.9388
+	Search Time for 'p05.pddl': 23.8215
 

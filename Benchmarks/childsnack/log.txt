@@ -4,11 +4,11 @@ Total Problems: 81
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.864209
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0153105
-	Search Time for 'p3': 0.0320906
-	Search Time for 'p4': 0.0676485
-	Search Time for 'p5': 0.342639
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0153105
+	Search Time for 'p03.pddl': 0.0320906
+	Search Time for 'p04.pddl': 0.0676485
+	Search Time for 'p05.pddl': 0.342639
 
 Domain: childsnack
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 24
 Target Problems: 5
 Lowest: 10.3634
 Highest: 29.8104
-	Search Time for 'p1': 10.3634
-	Search Time for 'p2': 13.1357
-	Search Time for 'p3': 15.0576
-	Search Time for 'p4': 16.4515
-	Search Time for 'p5': 18.8739
+	Search Time for 'p01.pddl': 10.3634
+	Search Time for 'p02.pddl': 13.1357
+	Search Time for 'p03.pddl': 15.0576
+	Search Time for 'p04.pddl': 16.4515
+	Search Time for 'p05.pddl': 18.8739
 

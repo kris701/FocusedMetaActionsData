@@ -52,7 +52,7 @@ foreach (var folder1 in commonFolders.Keys)
     int count = 1;
     foreach (var file in folder1.GetFiles())
         if (file.Name != "domain.pddl")
-            file.CopyTo(Path.Combine(target, name, "testing", $"p{count++}.pddl"));
+            file.CopyTo(Path.Combine(target, name, "testing", MakeName(count++)));
     count = 1;
     var ordered = new List<ProblemDifficulty>();
     foreach(var folder in new DirectoryInfo(Path.Combine(folder2.FullName, "good-operators-unit")).GetDirectories())
@@ -103,15 +103,22 @@ void ExtractDataset(List<ProblemDifficulty> ordered, int minTime, int maxTime, i
     var count = 1;
     foreach (var select in selected)
     {
-        sb.AppendLine($"\tSearch Time for 'p{count}': {select.SearchTime}");
+        sb.AppendLine($"\tSearch Time for '{MakeName(count)}': {select.SearchTime}");
         var targetFile = new FileInfo(Path.Combine(sourceFolder, $"{select.Problem}.pddl"));
         if (!targetFile.Exists)
             throw new Exception("File not found?");
-        targetFile.CopyTo(Path.Combine(targetFolder, name, targetSubFolder, $"p{count++}.pddl"));
+        targetFile.CopyTo(Path.Combine(targetFolder, name, targetSubFolder, MakeName(count++)));
     }
     sb.AppendLine();
 
     File.AppendAllText(Path.Combine(target, name, "log.txt"), sb.ToString());
+}
+
+string MakeName(int number)
+{
+    if (number < 10)
+        return $"p0{number}.pddl";
+    return $"p{number}.pddl";
 }
 
 class ProblemDifficulty

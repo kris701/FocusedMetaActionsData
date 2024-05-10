@@ -4,11 +4,11 @@ Total Problems: 141
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.982963
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0165245
-	Search Time for 'p3': 0.0332962
-	Search Time for 'p4': 0.0755555
-	Search Time for 'p5': 0.223882
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0165245
+	Search Time for 'p03.pddl': 0.0332962
+	Search Time for 'p04.pddl': 0.0755555
+	Search Time for 'p05.pddl': 0.223882
 
 Domain: floortile
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 28
 Target Problems: 5
 Lowest: 10.4233
 Highest: 29.9259
-	Search Time for 'p1': 10.4233
-	Search Time for 'p2': 11.325
-	Search Time for 'p3': 13.7063
-	Search Time for 'p4': 14.4611
-	Search Time for 'p5': 17.5123
+	Search Time for 'p01.pddl': 10.4233
+	Search Time for 'p02.pddl': 11.325
+	Search Time for 'p03.pddl': 13.7063
+	Search Time for 'p04.pddl': 14.4611
+	Search Time for 'p05.pddl': 17.5123
 

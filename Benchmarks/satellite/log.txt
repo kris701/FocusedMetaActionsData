@@ -4,11 +4,11 @@ Total Problems: 940
 Target Problems: 5
 Lowest: 0.01
 Highest: 0.999445
-	Search Time for 'p1': 0.01
-	Search Time for 'p2': 0.0624916
-	Search Time for 'p3': 0.152978
-	Search Time for 'p4': 0.288628
-	Search Time for 'p5': 0.559552
+	Search Time for 'p01.pddl': 0.01
+	Search Time for 'p02.pddl': 0.0624916
+	Search Time for 'p03.pddl': 0.152978
+	Search Time for 'p04.pddl': 0.288628
+	Search Time for 'p05.pddl': 0.559552
 
 Domain: satellite
 Folder: usefulness
@@ -16,9 +16,9 @@ Total Problems: 80
 Target Problems: 5
 Lowest: 10.1831
 Highest: 29.8806
-	Search Time for 'p1': 10.1831
-	Search Time for 'p2': 12.2748
-	Search Time for 'p3': 14.0967
-	Search Time for 'p4': 16.8523
-	Search Time for 'p5': 22.4328
+	Search Time for 'p01.pddl': 10.1831
+	Search Time for 'p02.pddl': 12.2748
+	Search Time for 'p03.pddl': 14.0967
+	Search Time for 'p04.pddl': 16.8523
+	Search Time for 'p05.pddl': 22.4328
 
