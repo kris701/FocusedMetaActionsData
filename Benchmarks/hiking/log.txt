@@ -1,24 +1,24 @@
 Domain: hiking
 Folder: training
-Total Problems: 125
+Total Problems: 13
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.963736
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0218881
-	Search Time for 'p03.pddl': 0.0889795
-	Search Time for 'p04.pddl': 0.184856
-	Search Time for 'p05.pddl': 0.442871
+Lowest: 41
+Highest: 254
+	Search Time for 'p01.pddl': 41
+	Search Time for 'p02.pddl': 73
+	Search Time for 'p03.pddl': 105
+	Search Time for 'p04.pddl': 121
+	Search Time for 'p05.pddl': 153
 
 Domain: hiking
 Folder: usefulness
-Total Problems: 57
+Total Problems: 39
 Target Problems: 5
-Lowest: 10.2518
-Highest: 29.8722
-	Search Time for 'p01.pddl': 10.2518
-	Search Time for 'p02.pddl': 13.6583
-	Search Time for 'p03.pddl': 15.8916
-	Search Time for 'p04.pddl': 19.8238
-	Search Time for 'p05.pddl': 24.4227
+Lowest: 612
+Highest: 4108
+	Search Time for 'p01.pddl': 612
+	Search Time for 'p02.pddl': 824
+	Search Time for 'p03.pddl': 1196
+	Search Time for 'p04.pddl': 1521
+	Search Time for 'p05.pddl': 2380
 

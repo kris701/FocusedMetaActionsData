@@ -1,24 +1,24 @@
 Domain: logistics
 Folder: training
-Total Problems: 2173
+Total Problems: 582
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.997613
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0121141
-	Search Time for 'p03.pddl': 0.034729
-	Search Time for 'p04.pddl': 0.0852993
-	Search Time for 'p05.pddl': 0.233571
+Lowest: 24
+Highest: 136
+	Search Time for 'p01.pddl': 24
+	Search Time for 'p02.pddl': 78
+	Search Time for 'p03.pddl': 96
+	Search Time for 'p04.pddl': 110
+	Search Time for 'p05.pddl': 126
 
 Domain: logistics
 Folder: usefulness
-Total Problems: 76
+Total Problems: 1747
 Target Problems: 5
-Lowest: 10.0246
-Highest: 29.4307
-	Search Time for 'p01.pddl': 10.0246
-	Search Time for 'p02.pddl': 12.2207
-	Search Time for 'p03.pddl': 14.8205
-	Search Time for 'p04.pddl': 18.9388
-	Search Time for 'p05.pddl': 23.8215
+Lowest: 184
+Highest: 306
+	Search Time for 'p01.pddl': 184
+	Search Time for 'p02.pddl': 210
+	Search Time for 'p03.pddl': 234
+	Search Time for 'p04.pddl': 258
+	Search Time for 'p05.pddl': 282
 

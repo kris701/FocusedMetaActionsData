@@ -1,24 +1,24 @@
 Domain: floortile
 Folder: training
-Total Problems: 141
+Total Problems: 12
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.982963
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0165245
-	Search Time for 'p03.pddl': 0.0332962
-	Search Time for 'p04.pddl': 0.0755555
-	Search Time for 'p05.pddl': 0.223882
+Lowest: 64
+Highest: 120
+	Search Time for 'p01.pddl': 64
+	Search Time for 'p02.pddl': 64
+	Search Time for 'p03.pddl': 92
+	Search Time for 'p04.pddl': 92
+	Search Time for 'p05.pddl': 120
 
 Domain: floortile
 Folder: usefulness
-Total Problems: 28
+Total Problems: 38
 Target Problems: 5
-Lowest: 10.4233
-Highest: 29.9259
-	Search Time for 'p01.pddl': 10.4233
-	Search Time for 'p02.pddl': 11.325
-	Search Time for 'p03.pddl': 13.7063
-	Search Time for 'p04.pddl': 14.4611
-	Search Time for 'p05.pddl': 17.5123
+Lowest: 282
+Highest: 892
+	Search Time for 'p01.pddl': 282
+	Search Time for 'p02.pddl': 384
+	Search Time for 'p03.pddl': 476
+	Search Time for 'p04.pddl': 628
+	Search Time for 'p05.pddl': 752
 

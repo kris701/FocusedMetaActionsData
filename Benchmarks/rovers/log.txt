@@ -1,24 +1,24 @@
 Domain: rovers
 Folder: training
-Total Problems: 5638
+Total Problems: 575
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.998987
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.01
-	Search Time for 'p03.pddl': 0.0209217
-	Search Time for 'p04.pddl': 0.0504931
-	Search Time for 'p05.pddl': 0.146217
+Lowest: 0
+Highest: 65
+	Search Time for 'p01.pddl': 0
+	Search Time for 'p02.pddl': 36
+	Search Time for 'p03.pddl': 46
+	Search Time for 'p04.pddl': 53
+	Search Time for 'p05.pddl': 59
 
 Domain: rovers
 Folder: usefulness
-Total Problems: 67
+Total Problems: 1727
 Target Problems: 5
-Lowest: 10.0159
-Highest: 29.3625
-	Search Time for 'p01.pddl': 10.0159
-	Search Time for 'p02.pddl': 12.4043
-	Search Time for 'p03.pddl': 15.1765
-	Search Time for 'p04.pddl': 17.9825
-	Search Time for 'p05.pddl': 21.0525
+Lowest: 92
+Highest: 159
+	Search Time for 'p01.pddl': 92
+	Search Time for 'p02.pddl': 106
+	Search Time for 'p03.pddl': 119
+	Search Time for 'p04.pddl': 133
+	Search Time for 'p05.pddl': 146
 

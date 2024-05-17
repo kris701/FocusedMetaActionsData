@@ -1,24 +1,24 @@
 Domain: woodworking
 Folder: training
-Total Problems: 131
+Total Problems: 18
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.982586
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0148061
-	Search Time for 'p03.pddl': 0.03924
-	Search Time for 'p04.pddl': 0.144802
-	Search Time for 'p05.pddl': 0.41327
+Lowest: 92
+Highest: 354
+	Search Time for 'p01.pddl': 92
+	Search Time for 'p02.pddl': 110
+	Search Time for 'p03.pddl': 141
+	Search Time for 'p04.pddl': 188
+	Search Time for 'p05.pddl': 272
 
 Domain: woodworking
 Folder: usefulness
-Total Problems: 41
+Total Problems: 56
 Target Problems: 5
-Lowest: 10.0235
-Highest: 29.9646
-	Search Time for 'p01.pddl': 10.0235
-	Search Time for 'p02.pddl': 11.5999
-	Search Time for 'p03.pddl': 15.0637
-	Search Time for 'p04.pddl': 19.1552
-	Search Time for 'p05.pddl': 25.7477
+Lowest: 632
+Highest: 1622
+	Search Time for 'p01.pddl': 632
+	Search Time for 'p02.pddl': 728
+	Search Time for 'p03.pddl': 932
+	Search Time for 'p04.pddl': 1130
+	Search Time for 'p05.pddl': 1255
 

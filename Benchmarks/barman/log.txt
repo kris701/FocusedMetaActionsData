@@ -1,24 +1,24 @@
 Domain: barman
 Folder: training
-Total Problems: 84
+Total Problems: 36
 Target Problems: 5
-Lowest: 0.0143801
-Highest: 0.971102
-	Search Time for 'p01.pddl': 0.0143801
-	Search Time for 'p02.pddl': 0.0314214
-	Search Time for 'p03.pddl': 0.102928
-	Search Time for 'p04.pddl': 0.210445
-	Search Time for 'p05.pddl': 0.54673
+Lowest: 118
+Highest: 446
+	Search Time for 'p01.pddl': 118
+	Search Time for 'p02.pddl': 238
+	Search Time for 'p03.pddl': 302
+	Search Time for 'p04.pddl': 374
+	Search Time for 'p05.pddl': 418
 
 Domain: barman
 Folder: usefulness
-Total Problems: 38
+Total Problems: 110
 Target Problems: 5
-Lowest: 10.0186
-Highest: 29.5772
-	Search Time for 'p01.pddl': 10.0186
-	Search Time for 'p02.pddl': 11.3659
-	Search Time for 'p03.pddl': 14.745
-	Search Time for 'p04.pddl': 16.1844
-	Search Time for 'p05.pddl': 23.8446
+Lowest: 642
+Highest: 1022
+	Search Time for 'p01.pddl': 642
+	Search Time for 'p02.pddl': 734
+	Search Time for 'p03.pddl': 818
+	Search Time for 'p04.pddl': 910
+	Search Time for 'p05.pddl': 1002
 

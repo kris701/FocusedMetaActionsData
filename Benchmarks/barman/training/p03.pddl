@@ -11,9 +11,11 @@
 		shot4 - shot
 		ingredient1 - ingredient
 		ingredient2 - ingredient
+		ingredient3 - ingredient
 		cocktail1 - cocktail
 		dispenser1 - dispenser
 		dispenser2 - dispenser
+		dispenser3 - dispenser
 		l0 - level
 		l1 - level
 		l2 - level
@@ -26,6 +28,7 @@
 		(ontable shot4)
 		(dispenses dispenser1 ingredient1)
 		(dispenses dispenser2 ingredient2)
+		(dispenses dispenser3 ingredient3)
 		(clean shaker1)
 		(clean shot1)
 		(clean shot2)
@@ -48,8 +51,8 @@
 	(:goal
 		(and
 			(contains shot1 cocktail1)
-			(contains shot2 ingredient2)
-			(contains shot3 cocktail1)
+			(contains shot2 cocktail1)
+			(contains shot3 ingredient2)
 		)
 	)
 )

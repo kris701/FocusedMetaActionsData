@@ -32,29 +32,33 @@
 		tile_6-4 - tile
 		robot1 - robot
 		robot2 - robot
+		robot3 - robot
+		robot4 - robot
 		white - color
 		black - color
 	)
 	(:init
-		(robot-at robot1 tile_3-3)
+		(robot-at robot1 tile_3-1)
 		(robot-has robot1 white)
-		(robot-at robot2 tile_2-4)
+		(robot-at robot2 tile_1-3)
 		(robot-has robot2 black)
+		(robot-at robot3 tile_1-4)
+		(robot-has robot3 white)
+		(robot-at robot4 tile_0-2)
+		(robot-has robot4 black)
 		(available-color white)
 		(available-color black)
 		(clear tile_0-1)
-		(clear tile_0-2)
 		(clear tile_0-3)
 		(clear tile_0-4)
 		(clear tile_1-1)
 		(clear tile_1-2)
-		(clear tile_1-3)
-		(clear tile_1-4)
 		(clear tile_2-1)
 		(clear tile_2-2)
 		(clear tile_2-3)
-		(clear tile_3-1)
+		(clear tile_2-4)
 		(clear tile_3-2)
+		(clear tile_3-3)
 		(clear tile_3-4)
 		(clear tile_4-1)
 		(clear tile_4-2)

@@ -1,24 +1,24 @@
 Domain: scanalyzer
 Folder: training
-Total Problems: 266
+Total Problems: 6
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.697763
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.01
-	Search Time for 'p03.pddl': 0.01
-	Search Time for 'p04.pddl': 0.01
-	Search Time for 'p05.pddl': 0.102365
+Lowest: 4
+Highest: 96
+	Search Time for 'p01.pddl': 4
+	Search Time for 'p02.pddl': 4
+	Search Time for 'p03.pddl': 4
+	Search Time for 'p04.pddl': 60
+	Search Time for 'p05.pddl': 72
 
 Domain: scanalyzer
 Folder: usefulness
-Total Problems: 55
+Total Problems: 19
 Target Problems: 5
-Lowest: 12.3654
-Highest: 14.943
-	Search Time for 'p01.pddl': 12.3654
-	Search Time for 'p02.pddl': 12.4159
-	Search Time for 'p03.pddl': 12.4456
-	Search Time for 'p04.pddl': 12.4702
-	Search Time for 'p05.pddl': 12.4875
+Lowest: 1120
+Highest: 32736
+	Search Time for 'p01.pddl': 1120
+	Search Time for 'p02.pddl': 2700
+	Search Time for 'p03.pddl': 5544
+	Search Time for 'p04.pddl': 10192
+	Search Time for 'p05.pddl': 17836
 

@@ -1,24 +1,24 @@
 Domain: depots
 Folder: training
-Total Problems: 322
+Total Problems: 313
 Target Problems: 5
-Lowest: 0.0519985
-Highest: 0.995436
-	Search Time for 'p01.pddl': 0.0519985
-	Search Time for 'p02.pddl': 0.227261
-	Search Time for 'p03.pddl': 0.36361
-	Search Time for 'p04.pddl': 0.543173
-	Search Time for 'p05.pddl': 0.727179
+Lowest: 250
+Highest: 420
+	Search Time for 'p01.pddl': 250
+	Search Time for 'p02.pddl': 330
+	Search Time for 'p03.pddl': 350
+	Search Time for 'p04.pddl': 396
+	Search Time for 'p05.pddl': 417
 
 Domain: depots
 Folder: usefulness
-Total Problems: 46
+Total Problems: 939
 Target Problems: 5
-Lowest: 10.3623
-Highest: 29.4279
-	Search Time for 'p01.pddl': 10.3623
-	Search Time for 'p02.pddl': 11.7153
-	Search Time for 'p03.pddl': 13.8345
-	Search Time for 'p04.pddl': 18.4604
-	Search Time for 'p05.pddl': 24.0414
+Lowest: 520
+Highest: 756
+	Search Time for 'p01.pddl': 520
+	Search Time for 'p02.pddl': 564
+	Search Time for 'p03.pddl': 624
+	Search Time for 'p04.pddl': 630
+	Search Time for 'p05.pddl': 720
 

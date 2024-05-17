@@ -1,24 +1,24 @@
 Domain: grid
 Folder: training
-Total Problems: 1794
+Total Problems: 519
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.99899
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0423718
-	Search Time for 'p03.pddl': 0.101865
-	Search Time for 'p04.pddl': 0.202006
-	Search Time for 'p05.pddl': 0.428677
+Lowest: 82
+Highest: 302
+	Search Time for 'p01.pddl': 82
+	Search Time for 'p02.pddl': 162
+	Search Time for 'p03.pddl': 212
+	Search Time for 'p04.pddl': 238
+	Search Time for 'p05.pddl': 274
 
 Domain: grid
 Folder: usefulness
-Total Problems: 96
+Total Problems: 1559
 Target Problems: 5
-Lowest: 10.0556
-Highest: 29.8343
-	Search Time for 'p01.pddl': 10.0556
-	Search Time for 'p02.pddl': 11.8252
-	Search Time for 'p03.pddl': 15.1408
-	Search Time for 'p04.pddl': 19.3037
-	Search Time for 'p05.pddl': 24.4422
+Lowest: 417
+Highest: 694
+	Search Time for 'p01.pddl': 417
+	Search Time for 'p02.pddl': 474
+	Search Time for 'p03.pddl': 548
+	Search Time for 'p04.pddl': 593
+	Search Time for 'p05.pddl': 690
 

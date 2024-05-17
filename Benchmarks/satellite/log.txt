@@ -1,24 +1,24 @@
 Domain: satellite
 Folder: training
-Total Problems: 940
+Total Problems: 323
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.999445
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0624916
-	Search Time for 'p03.pddl': 0.152978
-	Search Time for 'p04.pddl': 0.288628
-	Search Time for 'p05.pddl': 0.559552
+Lowest: 135
+Highest: 362
+	Search Time for 'p01.pddl': 135
+	Search Time for 'p02.pddl': 238
+	Search Time for 'p03.pddl': 279
+	Search Time for 'p04.pddl': 307
+	Search Time for 'p05.pddl': 331
 
 Domain: satellite
 Folder: usefulness
-Total Problems: 80
+Total Problems: 972
 Target Problems: 5
-Lowest: 10.1831
-Highest: 29.8806
-	Search Time for 'p01.pddl': 10.1831
-	Search Time for 'p02.pddl': 12.2748
-	Search Time for 'p03.pddl': 14.0967
-	Search Time for 'p04.pddl': 16.8523
-	Search Time for 'p05.pddl': 22.4328
+Lowest: 510
+Highest: 1433
+	Search Time for 'p01.pddl': 510
+	Search Time for 'p02.pddl': 655
+	Search Time for 'p03.pddl': 818
+	Search Time for 'p04.pddl': 1026
+	Search Time for 'p05.pddl': 1250
 

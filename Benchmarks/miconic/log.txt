@@ -1,24 +1,24 @@
 Domain: miconic
 Folder: training
-Total Problems: 238
+Total Problems: 463
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.997301
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0872441
-	Search Time for 'p03.pddl': 0.201279
-	Search Time for 'p04.pddl': 0.404707
-	Search Time for 'p05.pddl': 0.644814
+Lowest: 30
+Highest: 190
+	Search Time for 'p01.pddl': 30
+	Search Time for 'p02.pddl': 90
+	Search Time for 'p03.pddl': 122
+	Search Time for 'p04.pddl': 148
+	Search Time for 'p05.pddl': 170
 
 Domain: miconic
 Folder: usefulness
-Total Problems: 111
+Total Problems: 1392
 Target Problems: 5
-Lowest: 10.1992
-Highest: 29.6575
-	Search Time for 'p01.pddl': 10.1992
-	Search Time for 'p02.pddl': 12.9295
-	Search Time for 'p03.pddl': 15.7812
-	Search Time for 'p04.pddl': 18.4937
-	Search Time for 'p05.pddl': 23.3546
+Lowest: 300
+Highest: 1110
+	Search Time for 'p01.pddl': 300
+	Search Time for 'p02.pddl': 398
+	Search Time for 'p03.pddl': 526
+	Search Time for 'p04.pddl': 682
+	Search Time for 'p05.pddl': 878
 

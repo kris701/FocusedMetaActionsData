@@ -1,24 +1,24 @@
 Domain: parking
 Folder: training
-Total Problems: 145
+Total Problems: 7
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.8677
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.01
-	Search Time for 'p03.pddl': 0.0205212
-	Search Time for 'p04.pddl': 0.0636286
-	Search Time for 'p05.pddl': 0.373974
+Lowest: 24
+Highest: 432
+	Search Time for 'p01.pddl': 24
+	Search Time for 'p02.pddl': 60
+	Search Time for 'p03.pddl': 120
+	Search Time for 'p04.pddl': 168
+	Search Time for 'p05.pddl': 280
 
 Domain: parking
 Folder: usefulness
-Total Problems: 58
+Total Problems: 23
 Target Problems: 5
-Lowest: 10.0367
-Highest: 29.4201
-	Search Time for 'p01.pddl': 10.0367
-	Search Time for 'p02.pddl': 11.8562
-	Search Time for 'p03.pddl': 14.9807
-	Search Time for 'p04.pddl': 16.2247
-	Search Time for 'p05.pddl': 18.7554
+Lowest: 3672
+Highest: 35150
+	Search Time for 'p01.pddl': 3672
+	Search Time for 'p02.pddl': 6468
+	Search Time for 'p03.pddl': 11050
+	Search Time for 'p04.pddl': 17400
+	Search Time for 'p05.pddl': 24684
 

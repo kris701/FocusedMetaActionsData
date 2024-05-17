@@ -1,24 +1,24 @@
 Domain: childsnack
 Folder: training
-Total Problems: 81
+Total Problems: 56
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.864209
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0153105
-	Search Time for 'p03.pddl': 0.0320906
-	Search Time for 'p04.pddl': 0.0676485
-	Search Time for 'p05.pddl': 0.342639
+Lowest: 44
+Highest: 186
+	Search Time for 'p01.pddl': 44
+	Search Time for 'p02.pddl': 68
+	Search Time for 'p03.pddl': 92
+	Search Time for 'p04.pddl': 112
+	Search Time for 'p05.pddl': 136
 
 Domain: childsnack
 Folder: usefulness
-Total Problems: 24
+Total Problems: 168
 Target Problems: 5
-Lowest: 10.3634
-Highest: 29.8104
-	Search Time for 'p01.pddl': 10.3634
-	Search Time for 'p02.pddl': 13.1357
-	Search Time for 'p03.pddl': 15.0576
-	Search Time for 'p04.pddl': 16.4515
-	Search Time for 'p05.pddl': 18.8739
+Lowest: 507
+Highest: 2128
+	Search Time for 'p01.pddl': 507
+	Search Time for 'p02.pddl': 836
+	Search Time for 'p03.pddl': 1282
+	Search Time for 'p04.pddl': 1282
+	Search Time for 'p05.pddl': 1726
 

@@ -1,24 +1,24 @@
 Domain: gripper
 Folder: training
-Total Problems: 61
+Total Problems: 71
 Target Problems: 5
-Lowest: 0.0806604
-Highest: 0.645663
-	Search Time for 'p01.pddl': 0.0806604
-	Search Time for 'p02.pddl': 0.223513
-	Search Time for 'p03.pddl': 0.235455
-	Search Time for 'p04.pddl': 0.469184
-	Search Time for 'p05.pddl': 0.475103
+Lowest: 66
+Highest: 626
+	Search Time for 'p01.pddl': 66
+	Search Time for 'p02.pddl': 178
+	Search Time for 'p03.pddl': 290
+	Search Time for 'p04.pddl': 402
+	Search Time for 'p05.pddl': 514
 
 Domain: gripper
 Folder: usefulness
-Total Problems: 84
+Total Problems: 215
 Target Problems: 5
-Lowest: 10.4217
-Highest: 29.8073
-	Search Time for 'p01.pddl': 10.4217
-	Search Time for 'p02.pddl': 13.3759
-	Search Time for 'p03.pddl': 16.5768
-	Search Time for 'p04.pddl': 19.1969
-	Search Time for 'p05.pddl': 28.3653
+Lowest: 1202
+Highest: 2914
+	Search Time for 'p01.pddl': 1202
+	Search Time for 'p02.pddl': 1546
+	Search Time for 'p03.pddl': 1890
+	Search Time for 'p04.pddl': 2234
+	Search Time for 'p05.pddl': 2578
 

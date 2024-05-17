@@ -1,24 +1,24 @@
 Domain: driverlog
 Folder: training
-Total Problems: 315
+Total Problems: 403
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.993189
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0126893
-	Search Time for 'p03.pddl': 0.0276322
-	Search Time for 'p04.pddl': 0.0793328
-	Search Time for 'p05.pddl': 0.321467
+Lowest: 18
+Highest: 236
+	Search Time for 'p01.pddl': 18
+	Search Time for 'p02.pddl': 102
+	Search Time for 'p03.pddl': 144
+	Search Time for 'p04.pddl': 176
+	Search Time for 'p05.pddl': 208
 
 Domain: driverlog
 Folder: usefulness
-Total Problems: 34
+Total Problems: 1209
 Target Problems: 5
-Lowest: 10.7743
-Highest: 29.9978
-	Search Time for 'p01.pddl': 10.7743
-	Search Time for 'p02.pddl': 12.8761
-	Search Time for 'p03.pddl': 15.5919
-	Search Time for 'p04.pddl': 18.2367
-	Search Time for 'p05.pddl': 23.2183
+Lowest: 364
+Highest: 798
+	Search Time for 'p01.pddl': 364
+	Search Time for 'p02.pddl': 440
+	Search Time for 'p03.pddl': 516
+	Search Time for 'p04.pddl': 600
+	Search Time for 'p05.pddl': 690
 

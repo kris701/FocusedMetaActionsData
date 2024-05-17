@@ -1,24 +1,24 @@
 Domain: blocksworld
 Folder: training
-Total Problems: 214
+Total Problems: 208
 Target Problems: 5
-Lowest: 0.01
-Highest: 0.968493
-	Search Time for 'p01.pddl': 0.01
-	Search Time for 'p02.pddl': 0.0181459
-	Search Time for 'p03.pddl': 0.0534916
-	Search Time for 'p04.pddl': 0.312865
-	Search Time for 'p05.pddl': 0.588193
+Lowest: 50
+Highest: 128
+	Search Time for 'p01.pddl': 50
+	Search Time for 'p02.pddl': 50
+	Search Time for 'p03.pddl': 72
+	Search Time for 'p04.pddl': 98
+	Search Time for 'p05.pddl': 98
 
 Domain: blocksworld
 Folder: usefulness
-Total Problems: 104
+Total Problems: 625
 Target Problems: 5
-Lowest: 10.0051
-Highest: 29.9469
-	Search Time for 'p01.pddl': 10.0051
-	Search Time for 'p02.pddl': 11.3301
-	Search Time for 'p03.pddl': 14.7135
-	Search Time for 'p04.pddl': 19.4005
-	Search Time for 'p05.pddl': 22.5013
+Lowest: 242
+Highest: 968
+	Search Time for 'p01.pddl': 242
+	Search Time for 'p02.pddl': 338
+	Search Time for 'p03.pddl': 450
+	Search Time for 'p04.pddl': 648
+	Search Time for 'p05.pddl': 800
 
