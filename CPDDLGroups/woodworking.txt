@@ -1,5 +1,4 @@
 < {unused V0:part}
-, {surface-condition V0:board V1:surface}:=1:S
 , {surface-condition V0:board C1:surface}:=1:S
 , {wood V0:board V1:awood}:=1:S
 , {wood V0:board C1:awood}:=1:S

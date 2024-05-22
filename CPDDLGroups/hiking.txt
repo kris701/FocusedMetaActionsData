@@ -1,6 +1,6 @@
-< {at_tent tent0 C0:place}:=1
+< {at_tent V0:tent C1:place}:=1
 , {at_person V0:person C1:place}:=1
 , {at_car V0:car C1:place}:=1
-, {walked couple0 C0:place}:=1
-, {up tent0, down tent0}:=1
+, {walked V0:couple C1:place}:=1
+, {up V0:tent, down V0:tent}:=1
 >
